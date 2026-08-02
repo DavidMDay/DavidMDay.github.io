@@ -1,2 +1,2 @@
-# DavidMDay-github.io
+# DavidMDay.github.io
 Public experiment
