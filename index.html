@@ -34,7 +34,13 @@ title: "My GitHub Pages Blog"
         <p>A simple static website running on Jekyll.</p>
     </header>
 
-    <main>
+    <main> <!-- Added Documents Section -->
+        <h3>Research & Papers</h3>
+        <ul> 
+            <li> <a href="{{ '/assets/translations/conical_shell.pdf' | relative_url }}"
+                target="_blank">Read My LaTeX Document (PDF)</a>
+            </li>
+        </ul>
         <h3>Recent Posts</h3>
         <ul>
             {% for post in site.posts %}
@@ -47,6 +53,10 @@ title: "My GitHub Pages Blog"
             {% endfor %}
         </ul>
     </main>
+
+
+
+
 
 </body>
 </html>
