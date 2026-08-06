@@ -38,5 +38,5 @@ jobs:
           author_name: 'GitHub Action Bot'
           author_email: 'actions@github.com'
           message: 'chore: auto-compiled latest PDF via latexmk'
-          add: 'assets/my-paper/document.pdf'
+          add: 'assets/translations/conical_shell.pdf'
 
