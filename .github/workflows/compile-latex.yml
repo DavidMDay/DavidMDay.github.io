@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+# Silences the Node 24 runner deprecation warnings sitewide
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
+
 jobs:
   build_latex:
     # This defines WHERE GitHub runs the workflow (on a cloud-hosted Linux server)
@@ -19,9 +24,9 @@ jobs:
         with:
           # Point directly to your main .tex file name specified in your Makefile
           root_file: assets/translations/conical_shell.tex
-          # Explicitly tell the server to compile using your latexmk engine
+          # Removed -g and -use-make to safely ignore missing bibliography files
           compiler: latexmk
-          args: -pdf- -latexmkrc=none -use-make -g
+          args: -pdf- -latexmkrc=none
 
       - name: Commit and Push Updated PDF
         uses: EndBug/add-and-commit@v9
