@@ -9,10 +9,8 @@ on:
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
-
 jobs:
   build_latex:
-    # This defines WHERE GitHub runs the workflow (on a cloud-hosted Linux server)
     runs-on: ubuntu-latest
 
     steps:
@@ -22,10 +20,9 @@ jobs:
       - name: Compile LaTeX document via latexmk
         uses: xu-cheng/latex-action@v3
         with:
-          # Point directly to your main .tex file name specified in your Makefile
           root_file: assets/translations/conical_shell.tex
-          # Removed -g and -use-make to safely ignore missing bibliography files
           compiler: latexmk
+          # Removed -g and -use-make to safely ignore missing bibliography files
           args: -pdf- -latexmkrc=none
 
       - name: Commit and Push Updated PDF
