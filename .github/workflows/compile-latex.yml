@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '**.tex'
-      - '**.bib'
-      - 'Makefile'
 
 jobs:
   build_latex:
@@ -22,15 +18,10 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           # Point directly to your main .tex file name specified in your Makefile
-          root_file: conical_shell.tex
+          root_file: assets/translations/conical_shell.tex
           # Explicitly tell the server to compile using your latexmk engine
           compiler: latexmk
           args: -pdf- -latexmkrc=none -use-make
-
-      - name: Ensure Assets Directory Exists and Move PDF
-        run: |
-          mkdir -p assets/translations
-          mv conical_shell.pdf assets/translations/conical_shell.pdf
 
       - name: Commit and Push Updated PDF
         uses: EndBug/add-and-commit@v9
