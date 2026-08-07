@@ -1,23 +1,28 @@
-%% !BIB TS-program = biber
-\documentclass[11pt]{amsart}
-\usepackage[a4paper]{geometry}
-\usepackage[backend=biber,autocite=plain,backref=true]{biblatex}
-\usepackage{amsmath, amssymb, amsfonts}
+\documentclass{amsart}
+\usepackage[style=numeric,backend=biber,autocite=superscript,sorting=none]{biblatex}
 \usepackage{url}
-\addbibresource{assets/translations/conical_shell.bib}
+\addbibresource{references.bib}
 
-\author{Maximillian Julius Otto Strutt \cite{strutt_1933}}
 \title{Natural Frequencies of a Thin Conical Shell}
-\address[Eindhoven]{Natuurkundig Laboratorium der N. V. Philips' Gloeilampenfabrieken, Eindhoven/Holland}
+\author{Maximillian Julius Otto Strutt}
+\address{Naturkundig Laboratorium der N. V. Philips' Gloeilampenfabrieken, Eindhoven/Holland}
 \date{May 18 1933}
 \begin{document}
 \maketitle
 
+\noindent
+\textbf{Translator's Note:} This document is an open-source English translation 
+created by David M. Day. The original text was published in German by 
+Maximillian Strutt in 1933 \autocite{Strutt1933}.
+This translation is hosted publicly on GitHub for research and educational purposes.
+
 \textbf{Summary}
 The natural frequencies of a thin conical shell are calculated under the
 assumption that no vibrations cause expansion of the shell.  The calculation
-method is from Lord Rayleigh \cite[\S 235 f]{rayleigh_sound_v1_1945},
-\cite[page 551]{rayleigh_1902}, \cite{rayleigh_1881}.  To approximate the
+method is from Lord Rayleigh.~\autocite{Rayleigh1881}~\autocite[\S 235 f]{RayleighSoundVol1Ed2}
+%~\autocite[page 551]{ScientificPapersVol1}
+
+To approximate the
 conditions practically encountered in loudspeaker cones, it is assumed that the
 conical shell is enclosed on one side by a rigid disk and on the other side
 free.  The transition from the cone to the known formulas for the cylinder is
@@ -30,9 +35,9 @@ The moving part (diaphragm) of loudspeakers is often designed in the shape of a
 cone for reasons of stiffness.
 
 The differential equations for the deformation of a conical
-shell~\cite[page~603]{love_edition4} are so complex that no attempt has been
+shell~\autocite[page~603]{LoveEd4} are so complex that no attempt has been
 made to calculate the natural frequencies based on these equations.  In
-contrast, the calculation using Rayleigh's method~\cite{rayleigh_1902} for a
+contrast, the calculation using Rayleigh's method~\autocite{ScientificPapersVol1} for a
 thin shell (which applies to loudspeakers) is straightforward.
 
 If coordinates are introduced on the surface (\(x\) in
@@ -151,7 +156,7 @@ r w \cos \beta+\frac{d v}{d \varphi} \sin \beta-\frac{d u}{d \varphi} \cos \beta
 r^2 \frac{d w}{d z}+\frac{d u}{d q} \tan \beta+\frac{d v}{d \varphi}=0
 \]
 It is easy to verify that equations (4b), (4c), and (4ad) are identical to
-those obtained by Lord Rayleigh \cite[p 399 Eq 14]{rayleigh_sound_v1_1945}
+those obtained by Lord Rayleigh \autocite[p 399 Eq 14]{RayleighSoundVol1Ed2}
 by a different method.
 Their solution, under the condition that the cone's surface is enclosed by an
 inextensible disk at \(z = l_1\), \(u(x,y, l_1)=0\) and \(w(x,y,l_1)=0\),
@@ -180,7 +185,7 @@ Taking \(\omega_1\) and \(\omega_2\) from Equations (4e) and (4f) respectively,
 Using \(x = (z-z_o)/ \cos \beta\), \(y = r \phi\), it follows from this that:
 \[
 \begin{aligned}
-2\bar{z}= &-2xy \frac{\cos \beta}{r}\left\{\frac{d^2 v}{d z d \varphi} \sin \beta-\frac{d^2 u}{d z d \varphi} \cos \beta+r \frac{d w}{d z} \cos \beta\right\} \\
+2\bar{z}= &-2 x y \frac{\cos \beta}{r}\left\{\frac{d^2 v}{d z d \varphi} \sin \beta-\frac{d^2 u}{d z d \varphi} \cos \beta+r \frac{d w}{d z} \cos \beta\right\} \\
 & +\frac{y^2}{r^2}\left\{\frac{d^2 v}{d \varphi^2} \sin \beta+u \cos \beta+r \cos \beta-\frac{d^2 u}{d \varphi^2} \cos \beta\right. \\
 & \left.+2 r \frac{d w}{d \varphi} \cos \beta-r \frac{d u}{d z} \sin \beta \cos ^2 \beta+r \frac{d v}{d z} \sin ^2 \beta \cos \beta\right\} \\
 & +x^2 \cos ^2 \beta\left\{\frac{d^2 v}{d z^2} \sin \beta-\frac{d^2 u}{d z^2} \cos \beta\right\} .
@@ -195,7 +200,7 @@ Taking into account Equations (4b), (4c), and (4ad), one can simplify to:
 \end{aligned}\right.
 \end{equation}
 The transition to the cylinder \(beta = 0\) leads to
-Lord Rayleigh's formulas \cite[p 414 Eq 6]{rayleigh_sound_v1_1945}.
+Lord Rayleigh's formulas \autocite[p 414 Eq 6]{RayleighSoundVol1Ed2}.
 
 Before deformation, (6) read:
 \[2\bar{z}=y^2 \frac{\cos \beta}{r^2}.\]
@@ -240,7 +245,7 @@ The cone's surface has kinetic energy,
 \[
 T=\varrho d \int_{l_1}^{l_2} d z ~ z \tan \beta \int_0^{2 \pi} d \varphi\left\{\left(\frac{d u}{d t}\right)^2+\left(\frac{d v}{d t}\right)^2+\left(\frac{r d w}{d t}\right)^2\right\}
 \]
-where \(\rho\) is the density.  Assuming temporal variaiont of \(u,v,w\) of \(\cos \omega t\):
+where \(\rho\) is the density.  Assuming temporal variation of \(u,v,w\) of \(\cos \omega t\):
 \begin{equation}\label{eq10p734}
 \begin{aligned}
 -T & = \pi \omega^2 \varrho ~ d ~ l_1^4 \tan^3 \beta \cdot \pi \sum_i A_i^2\left[( i ^ { 2 } + 1 ) \left\{\frac{1}{4}\left(\frac{l_2^4}{l_1^4}-1\right)\right.\right. \\
@@ -281,7 +286,7 @@ or,
 \[
 \omega_i^2=\frac{4 d^2}{3 \varrho R^4} \frac{m n}{m+n} \frac{\left(i^3-i\right)^2}{i^2+1},
 \]
-a well-known formula \cite[p 417 Eq 18]{rayleigh_sound_v1_1945}.
+a well-known formula \autocite[p 417 Eq 18]{RayleighSoundVol1Ed2}.
 
 It is often useful to have a simple formula at hand for high frequencies. From
 (11), (12), (13), and (8), we obtain:
