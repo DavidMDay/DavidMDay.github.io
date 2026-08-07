@@ -1,11 +1,25 @@
-FILENAME = conical_shell
+# Variables
+SOURCE   = main.tex
+JOBNAME  = strutt1933translation
 
-all:
-	latexmk -pdf $(FILENAME).tex
+# Default target
+all: pdf
 
+# Build target using latexmk
+pdf: $(SOURCE)
+	latexmk -pdf -jobname=$(JOBNAME) $(SOURCE)
+
+# Continuous preview mode (useful while editing)
+watch: $(SOURCE)
+	latexmk -pdf -pvc -jobname=$(JOBNAME) $(SOURCE)
+
+# Clean build artifacts but keep the final PDF
 clean:
-	latexmk -c
+	latexmk -c -jobname=$(JOBNAME)
 
+# Clean everything including the final PDF
 cleanall:
-	latexmk -C
+	latexmk -C -jobname=$(JOBNAME)
+
+.PHONY: all pdf watch clean cleanall
 

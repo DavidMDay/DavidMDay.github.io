@@ -16,10 +16,10 @@ jobs:
       - name: Compile LaTeX document via latexmk
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: assets/translations/conical_shell.tex
+          root_file: assets/translations/main.tex
           compiler: latexmk
           # Removed -g and -use-make to ignore missing bibliography files
-          args: -pdf- -latexmkrc=none -use-make
+          args: -pdf- -latexmkrc=none -jobname=strutt1933translation
 
       - name: Commit and Push Updated PDF
         uses: EndBug/add-and-commit@v9
