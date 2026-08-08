@@ -22,7 +22,7 @@ jobs:
           args: "-pdf -norc -jobname=strutt1933translation -output-directory=assets/translations"
 
       - name: Verify Output File Exist
-        run: ls -la assets/translations/myTranslation.pdf
+        run: ls -la assets/translations/strutt1933translation.pdf
 
       - name: Commit and Push Updated PDF
         uses: EndBug/add-and-commit@v9
