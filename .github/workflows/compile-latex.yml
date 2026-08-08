@@ -19,7 +19,10 @@ jobs:
           root_file: assets/translations/main.tex
           compiler: latexmk
           # Removed -g and -use-make to ignore missing bibliography files
-          args: -pdf- -latexmkrc=none -jobname=strutt1933translation
+          args: "-pdf -norc -jobname=strutt1933translation output-directory=assets/translations"
+
+      - name: Verify Output File Exist
+        run: ls -la assets/translations/myTranslation.pdf
 
       - name: Commit and Push Updated PDF
         uses: EndBug/add-and-commit@v9
@@ -27,5 +30,5 @@ jobs:
           author_name: 'GitHub Action Bot'
           author_email: 'actions@github.com'
           message: 'chore: auto-compiled latest PDF via latexmk'
-          add: 'assets/translations/conical_shell.pdf'
+          add: 'assets/translations/strutt1933translation.pdf'
 
