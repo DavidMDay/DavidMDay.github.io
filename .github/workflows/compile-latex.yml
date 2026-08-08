@@ -19,7 +19,7 @@ jobs:
           root_file: assets/translations/main.tex
           compiler: latexmk
           # Removed -g and -use-make to ignore missing bibliography files
-          args: "-pdf -norc -jobname=strutt1933translation output-directory=assets/translations"
+          args: "-pdf -norc -jobname=strutt1933translation -output-directory=assets/translations"
 
       - name: Verify Output File Exist
         run: ls -la assets/translations/myTranslation.pdf
