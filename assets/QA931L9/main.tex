@@ -1,0 +1,132 @@
+\documentclass[a4paper,draft]{book}
+\input{DraftPackages}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{nth}
+
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes} % for pic
+\tikzset{>=latex} % for LaTeX arrow head
+\author{Love}
+
+\usepackage{tocloft}
+\input{NewCommands}
+
+%\addbibresource{/Users/coracle/Documents/VSCODE_LATEX/paraboloid/cones.bib}
+\raggedbottom\addtolength{\cftsecnumwidth}{20pt} % Add space for sections
+% Add space for subsections (if needed)
+\addtolength{\cftsubsecnumwidth}{20pt}
+
+% Table of Contents  widen space for numbers
+%\renewcommand{\cftsecnumwidth}{3.2em}%  section
+%\renewcommand{\cftsubsecnumwidth}{4.0em} % subsection
+
+\title{Scans of Treatise to LaTeX}
+\begin{document}
+\maketitle
+\tableofcontents
+
+% short version
+   \todo[inline]{Skip pages 1--31}
+% long version
+%  \chapter*{Historical Introduction}
+%  \todo[inline]{Skip pages 8--12}
+%  \setcounter{page}{12}
+%  \input{historical_introduction}
+%  \todo[inline]{Skip pages 17--31}
+
+\setcounter{page}{32}
+\chapter{Analysis of Strain}
+\section{Extension}
+\input{article01Love}
+\todo[inline]{Imagine Fig 2 is here.}
+\input{article7Love}
+\todo[inline]{missing, not started, not scanned 37--45 art 7--14}
+\setcounter{section}{14}
+\setcounter{equation}{13}
+\input{page46}
+\todo[inline]{missing, not started, p 47--50, art 15--18, is scanned}
+\todo[inline]{skip p 47--50, art 15--18 to p51 Art 18 Determined by Strain}
+\setcounter{section}{18}
+\setcounter{equation}{27}
+\input{article19Love}
+
+\todo[inline]{ends mid art 21, page 54 bottom, missing, not started 55 etc}
+\todo[inline]{Desktop: scans of 55--56,58, missing chap 1 appndx? }
+\todo[inline]{Chapers 2--22 missing}
+
+\setcounter{chapter}{23}
+\chapter{General Theory of Thin Plates and Shells}
+\setcounter{section}{321}
+
+\input{article322Love}
+
+\textbf{Chapter 24 A,  Equilibrium of thin plates and shells}
+
+\begin{tabular}{ccc}
+Article&   & page ed 3/ (4) \\
+322    &   &  517 \\
+336    & thin &  556 \\
+339    & cylinder &  556 \\
+344    & sphere &   560 (583) \\
+345    & edge   & 575 (586) \\
+346    & cone & 582 (90) \\
+347    & edge symm  & 583 (91) \\
+348    & ext lateral & 583 (94) \\
+349    & edge lateral & 584 (95) \\
+350    & extens  & 593 (1) \\
+351    & inex & 595 (3) \\
+352    & edge & 597  (5) \\
+\end{tabular}
+
+The double factorial is used.  Edition 4 has 8 more pages.
+
+\setcounter{section}{344}
+\section{last half page}
+\begin{tabular}{ccc}
+Article&   & page ed 3/ (4) \\
+345    & sphere  & 578 (586) \\
+346    & ext  & 582 (90) \\
+347    & edge symm  & 583 (91) \\
+\end{tabular}
+
+\input{article346Love}
+
+\setcounter{equation}{75}
+
+\input{article347Love}
+
+\input{article348Love}
+
+
+\begin{tabular}{ccc}
+Article&   & page ed 3/ (4) \\
+349    & edge lateral & 584 (95) \\
+349 a  &  & 587 \\
+349 b &   & 589  \\
+350   &   &   \\
+\end{tabular}
+
+\setcounter{section}{350}
+\input{article351Love}
+
+Skip over the rest of article 351.
+
+\setcounter{equation}{161}
+\begin{equation}\label{eq161} m, \end{equation}
+\begin{equation}\label{eq162} \gamma, \end{equation}
+\begin{equation}\label{eq163} \sigma. \end{equation}
+
+Conical Shell, Edge effect
+\begin{tabular}{ccc}
+Article&   & page ed 3/ (4) \\
+351    & inex & 595 (3) \\
+352 a   & formation & 599  (7) \\
+352 b   & prep &   600 (8) \\
+352 c   & sol &   601 (9) \\
+\end{tabular}
+\section{Edge effects unsymmetric}
+
+\input{article352Love}
+
+%\printbibliography[heading=bibintoc,title={References}]
+\end{document}

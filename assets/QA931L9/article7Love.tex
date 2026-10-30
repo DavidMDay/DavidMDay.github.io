@@ -1,0 +1,90 @@
+\begin{figure}[!h]
+\centering
+  %\usepackage{tikz}
+  %\usetikzlibrary{angles,quotes} % for pic
+  %\tikzset{>=latex} % for LaTeX arrow head
+\begin{tikzpicture}[scale=1.5]
+  % Define the coordinates
+
+  \coordinate (O) at (0,0);
+  \coordinate (M) at (1.78,0);
+  \coordinate (X) at (3.16,0);
+
+  \coordinate (Left) at (-0.89,2); 
+  \coordinate (Right) at (3.67,2); 
+  \coordinate (Y) at (0,2.54);
+  %  A < P < B < Q < N < K
+  \coordinate (A) at (-0.64,2);
+
+  \coordinate (P) at (0.39,2); 
+  \coordinate (B) at (0.62,2); 
+
+  \coordinate (Q) at (1.62,2);
+  \coordinate (N) at (2.16,2);  % N - P = M - O
+  \coordinate (K) at (3.42,2);  % K -Q  = N -P
+
+  % Draw the closed polygon (triangle)
+  \draw[thick] (O) -- (M) -- (N) -- (P) -- cycle;
+  \draw[thick] (O) -- (M) -- (K) -- (Q) -- cycle;
+  \draw[thick] (O) -- (B) -- (A) -- cycle;
+
+  \draw[->,dashed] (O) -- (Y); 
+  \draw[->,dashed] (M) -- (X); 
+  \draw[<-,dashed] (Left) -- (A); 
+  \draw[dashed,->] (K) -- (Right); 
+  \draw pic ["$\theta$",draw,->,thick,angle radius=30, angle eccentricity=0.8,] {angle= M--O--P};
+  \draw pic ["$\alpha$",draw,->,thick,angle radius=40, angle eccentricity=0.8] {angle= Y--O--A};
+
+  % Draw and label the vertices
+  \node[label=below :$O$] at (O) {};
+  \node[label=below :$M$] at (M) {};
+  \node[label=below:$x$] at (X) {};
+  \node[label=above:$A$] at (A) {};
+  \node[label=right:$y$] at (Y) {};
+  \node[label=above:$P$] at (P) {};
+  \node[label=above:$B$] at (B) {};
+  \node[label=above:$Q$] at (Q) {};
+  \node[label=above:$N$] at (N) {};
+  \node[label=above:$K$] at (K) {};
+\end{tikzpicture}
+ \caption{Exact Shear}
+ \label{fig:2}
+\end{figure}
+If the angle \(x O P=\theta\) we may prove that
+\[
+\tan P O Q=\frac{2 \tan \alpha \tan ^2 \theta}{\sec ^2 \theta+2 \tan \alpha
+\tan \theta}, \quad \tan x O Q=\frac{\tan \theta}{1+2 \tan \alpha \tan \theta}
+\]
+In particular, if \(\theta=\frac{1}{2} \pi, \cot x O Q=s\), so that, if \(s\)
+is small, it is the complement of the angle in the strained state between two
+lines of particles which, in the unstrained state, were at right angles to each
+other.
+
+
+\section{Homogeneous strain.} % 6
+In the cases of simple extension and simple shear, the component displacements
+are expressed as linear functions of the coordinates. In general, if a body is
+strained so that the component displacement can be expressed in this way, the
+strain is said to be \textit{homogeneous}.
+
+Let the displacement corresponding with a homogeneous strain be given by the
+equations
+\[
+u=a_{11} x+a_{12} y+a_{13} z, \quad v=a_{21} x+a_{22} y+a_{23} z, \quad
+w=a_{31} x+a_{32} y+a_{33} z .
+\]
+Since \(x, y, z\) are changed into \(x+u, y+v, z+w\), that is, are transformed
+by a linear substitution, any plane is transformed into a plane, and any
+ellipsoid is transformed, in general, into an ellipsoid. We infer at once the
+following characteristics of homogeneous strain: 
+\begin{itemize}
+\item[(i)] Straight lines remain straight. 
+\item[(ii)] Parallel straight lines remain parallel. 
+\item[(iii)] All straight lines in the same direction are extended, or
+contracted, in the same ratio. 
+\item[(iv)] A sphere is transformed into an ellipsoid, and any three orthogonal
+diameters of the sphere are transformed into three conjugate diameters of the
+ellipsoid. 
+\item[(v)] Any ellipsoid of a certain shape and orientation is transformed into
+a sphere, and any set of conjugate diameters of the ellipsoid is transformed
+\end{itemize}

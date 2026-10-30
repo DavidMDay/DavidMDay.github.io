@@ -1,0 +1,437 @@
+%!TEX root = Love602.tex
+606 CONICAL SHELL CH. XXIV A %\section{Article 352}
+
+in the case of lateral forces. The equations of the system fall into two
+sets. One set arises from the equations of equilibrium, which become
+
+\[\begin{aligned}
+& \frac{d}{d r}\left(t_1 r\right) \sin \gamma-n s_2-t_2 \sin \gamma=0, \\
+& \frac{d}{d r}\left(s_1 r\right) \sin \gamma-n t_2-s_2 \sin \gamma-n_2 \cos \gamma=0, \\
+& \frac{d}{d r}\left(n_1 r\right) \sin \gamma+n n_2+t_2 \cos \gamma=0, \\
+& \frac{d}{d r}\left(h_1 r\right) \sin \gamma+n g_2+h_1 \sin \gamma+n_2 r \sin \gamma=0, \\
+& \frac{\omega}{d r}\left(g_1 r\right) \sin \gamma-n h_1-g_2 \sin \gamma-n_1 r \sin \gamma=0, \\
+& -h_1 \cos \gamma+\left(s_1+s_2\right) r \sin \gamma=0 .
+\end{aligned}\]
+
+The other set arises from the equations expressing the stress-resultants
+and stress-couples in terms of the displacement. The equations of this set are
+\[\begin{aligned}
+& t_1=\frac{d U}{d r}+\sigma\left(\frac{U}{r}+n V-W \cos \gamma\right. \\
+& r \sin \gamma \\
+& t_2=\sigma \frac{d U}{d r}+\left(\frac{U}{r}+\frac{n V-W \cos \gamma}{r \sin \gamma}\right), \\
+& s_1-s_2=(1-\sigma)\left(\frac{d V}{d r}-\frac{V}{r}-\frac{n U}{r \sin \gamma}\right), \\
+& g_1=-\frac{h^2}{3}\left\{\frac{d^2 W}{d r^2}+\sigma\left(\frac{n V \cos \gamma-n^2 W}{r^2 \sin ^2 \gamma}+\frac{1}{r} \frac{d W}{d r}\right)\right\} \\
+& g_2=-\frac{1}{2}\left\{\sigma \frac{d^2 W}{d r^2}+\left(\frac{n V \cos \gamma-n^2 W}{r^2 \sin ^2 \gamma}+\frac{1}{r} \frac{d W}{d r}\right)\right\} \\
+& h_1=\frac{h^2}{3}(1-\sigma) \frac{d}{d r}\left(\frac{V \cos \gamma-n W}{r \sin \gamma}\right) .
+\end{aligned}\]
+
+It will be observed that the 6th of equations (145) and the 3rd of
+equations (146) are equivalent to the formulæ for \(S_1, S_2\) in
+Article 330.
+
+We shall simplify the equations (146) a little by introducing instead of
+\(U, V, W\) the quantities \(\xi, \eta, \zeta\) defined by the equations
+
+\[\xi=\frac{U}{r}, \quad=\frac{V \cos \gamma-n W}{r \sin \gamma}, \zeta=\frac{W}{r} .\]
+
+Then the solution is effected in three stages. The first stage, marked
+(a), consists in eliminating \(n_1, n_2, s_2\) by means of the 4th, 5th,
+and 6th of equations (145), so as to obtain three equations containing
+\(t_1, t_2, s_1, g_1, g_2, h_1\), and transforming these, by means of
+(146) and (147), into three equations for determining
+\(\xi, \eta, \zeta\). The second stage, marked (b), consists in assuming
+for \(\xi, \eta, \zeta\) such forms as \(e^{m a} X\), where
+
+\[\frac{x^2}{2}=\frac{r}{h},\]
+
+%Article 352. EDGE-EFFECT. UNSYMMETRICAL CONDITIONS 607
+
+and obtaining the equations which the quantities of the type \(X\) must
+satisfy. The third stage, marked (c), consists in assuming the
+quantities of the type \(X\) to be expressible in the form
+
+\[z^a\left(c_0+c_1 z+c_2 z^2+\ldots\right),\]
+where \(z=x^{-1}\), and determining the coefficients
+\(m, a, c_0, c_1, \ldots\), in so far as these are not arbitrary.
+
+\subsection{Formation of the equations.(a)}
+
+In the first three of equations (145) we substitute for
+\(s_2, n_1, n_2\) from the last three, obtaining the equations
+
+\[\begin{aligned}
+& \frac{d}{d r}\left(t_1 r\right)+\frac{n}{\sin \gamma}\left(s_1-\frac{h_1}{r \tan \gamma}\right)-t_2=0, \\
+& \left\{\frac{d}{d r}\left(s_1 r\right)+s_1\right\} \sin \gamma+\frac{\cos \gamma}{r} \frac{d}{d r}\left(h_1 r\right)-n\left(t_2-\frac{g_2}{r \tan \gamma}\right)=0, \\
+& \frac{d^2}{d r^2}\left(g_1 r\right) \sin \gamma-\frac{2 n}{r} \frac{d}{d r}\left(h_1 r\right)-\frac{d g_2}{d r} \sin \gamma-\frac{n^2 g_2}{r \sin \gamma}+t_2 \cos \gamma=0 .
+\end{aligned}\]
+
+We eliminate \(U, V, W\) from equations (146) by using equations (147),
+obtaining the equations
+
+\[\begin{aligned}
+& t_1=\frac{d}{d r}(r \xi)+\sigma\left(\xi+n \eta \sec \gamma+\frac{n^2-\cos ^2 \gamma}{\sin \gamma \cos \gamma} \zeta\right), \\
+& t_2=\sigma \frac{d}{d r}(r \xi)+\left(\xi+n \eta \sec \gamma+\frac{n^2-\cos ^2}{\sin \gamma \cos \gamma} \zeta\right), \\
+& \quad \frac{1-\sigma}{2}\left\{-\frac{n}{\sin \gamma} \xi+\left(r \tan \gamma+\frac{h^2}{3 r \tan \gamma}\right) \frac{d \eta}{d r}+n r \frac{d \zeta}{d r} \sec \gamma\right\}, \\
+& g_1: \quad \frac{h^2}{3}\left[\frac{d^2}{d r^2}(r \zeta)+\sigma\left\{\begin{array}{c}
+n \eta \\
+r \sin \gamma
+\end{array}+\frac{1}{r} \frac{d}{d r}(r \zeta)\right\}\right], \\
+& g_2=-\frac{h^2}{3}\left[\sigma \frac{d^2}{d r^2}\left(r()+\left\{\frac{n \eta}{r \sin \gamma}+\frac{1}{r} \frac{d}{d r}(r \zeta)\right\}\right],\right. \\
+& h_1=\frac{h^2}{3}(1-\sigma) \frac{d \eta}{d r} .
+\end{aligned}\]
+
+len we put
+
+\[r=\rho h,\]
+
+Id substitute from (149) in (148) obtaining three equations from which
+\(h\) is explicitly sent. The condition that \(h\) is small is now
+replaced by the condition that a solution is quired for large values of
+\(p\). A little simplification is effected by putting
+
+\[\xi_1=\xi \rho, \quad \eta_1=\eta \rho, \quad \zeta_1=\zeta \rho .\]
+
+Then the three equations become
+
+\[
+\left(\frac{d^2 \xi_1}{d \rho^2}+\frac{d \xi_1}{d \rho}-\frac{\xi_1}{\rho}\right) \sin \gamma-\frac{n^2(1-\sigma)}{2 \sin \gamma} \frac{\xi_1}{\rho}+
+\]
+\[
+\sigma n \tan \gamma \frac{d \eta_1}{d \rho}+n \frac{1-\sigma}{2} \tan \gamma\left(\frac{d \eta_1}{d \rho}-\frac{\eta_1}{\rho}\right)
+\]
+\[
+\frac{1-\sigma}{6 \tan \gamma} \frac{1}{\rho^2}\left(\frac{d \eta_1}{d \rho}-\frac{\eta_1}{\rho}\right)-n \tan \gamma \frac{\eta_1}{\rho}+\left(n^2 \frac{1+\sigma}{2 \cos \gamma}-\sigma \cos \gamma\right) \frac{d \zeta_1}{d \rho}
+\]
+\[
+-n^2\left(\frac{3-\sigma}{2 \cos \gamma}-\cos \gamma\right) \frac{\zeta_1}{\rho}=0,
+\]
+
+608 CONICAL SHELL CH. XXIV A
+
+(153)
+\[\begin{array}{r}
+-n \frac{1+\sigma}{2} \frac{d \xi_1}{d \rho}-n \frac{3-\sigma}{2} \frac{\xi_1}{\rho}+
+\frac{1-\sigma}{2} \frac{\sin ^2 \gamma}{\cos \gamma}\left(\rho \frac{d^2 \eta_1}{d \rho^2}+\frac{d \eta_1}{d \rho}-\frac{\eta_1}{\rho}\right)+ \\
+\frac{1-\sigma}{2} \cos \gamma\left(\frac{1}{\rho} \frac{d^2 \eta_1}{d \rho^2}-\frac{1}{\rho^2} \frac{d \eta_1}{d \rho}+\frac{\eta_1}{\rho^3}\right) \\
+-\frac{n^2}{\cos \gamma} \frac{\eta_1}{\rho}-\frac{n^2 \cos \gamma}{3 \sin ^2 \gamma} \frac{\eta_1}{\rho^3}+\frac{1-\sigma}{2} n \tan \gamma\left(\rho \frac{d^2 \zeta_1}{d \rho^2}+\frac{d \zeta_1}{d \rho}-\frac{\zeta_1}{\rho}\right)+ \\
+-\frac{\sigma n}{3 \tan \gamma} \frac{1}{\rho} \frac{d^2 \zeta_1}{d \rho^2}-\frac{n}{3 \tan \gamma} \frac{1}{\rho^2} \frac{d \zeta_1}{d \rho} \\
+-n \frac{n^2-\cos 2 \gamma}{\sin \gamma \cos \gamma} \frac{\zeta_1}{\rho}=0, \ldots
+\end{array}
+\]
+and
+\[\begin{aligned}
+\sigma \cos \gamma \frac{d \xi_1}{d \rho}+\frac{\xi_1}{\rho} \cos \gamma-n \frac{2-\sigma}{3} \frac{1}{\rho} \frac{d^2 \eta_1}{d \rho^2}+\frac{n}{\rho^2} \frac{d \eta_1}{d \rho}+n \frac{\eta_1}{\rho}+\left(\frac{n^3}{3 \sin ^2 \gamma}-\frac{4 n}{3}\right) \frac{\eta_1}{\rho^3} \\
+-\frac{\sin \gamma}{3}\left(\rho \frac{d^4 \zeta_1}{d \rho^4}+2 \frac{d^3 \zeta_1}{d \rho^3}-\frac{1}{\rho} \frac{d^2 \zeta_1}{d \rho^2}+\frac{1}{\rho^2} \frac{d \zeta_1}{d \rho}\right)+\frac{\sigma n^2}{3 \sin \gamma} \frac{1}{\rho} \frac{d^2 \zeta_1}{d \rho^2}+\frac{n^2}{3 \sin \gamma} \frac{1}{\rho^2} \frac{d \zeta_1}{d \rho}+ \\
+\frac{n^2-\cos ^2 \gamma}{\sin \gamma} \frac{\zeta_1}{\rho}=0 .
+\end{aligned}\]
+
+\subsection{Preparation for solution (b)}
+
+In the three equations (152), (153), (154) we change the independent
+variable by putting
+
+\[\rho=\frac{1}{2} x^2 .\]
+
+It will prove convenient presently to have \(x \xi_1\) as a dependent
+variable instead of \(\xi_1\), so we put
+\[\xi_2=x \xi_1,\]
+and write the three equations in the forms
+\[
+\frac{\sin \gamma}{2}\left(\frac{d^2 \xi_2}{d x^2}-\frac{1}{x} \frac{d \xi_5}{d x}-\frac{3}{x^2} \xi_2\right)-n^2 \frac{1-\sigma}{\sin \gamma} \frac{\xi_2}{x^2}+
+\]
+\[
++n \frac{1+\sigma}{2} \frac{d \eta_1}{d x} \tan \gamma-n(3-\sigma) \frac{\eta_1}{x} \tan \gamma +
+\]
+\[
+ -2 n \frac{1-\sigma}{3 \tan \gamma}\left(\frac{1}{x^4} \frac{d \eta_1}{d x}-\frac{2}{x^6} \eta_1\right)+\left(n^2 \frac{1+\sigma}{2 \cos \gamma}-\sigma \cos \gamma\right) \frac{d \zeta_1}{d x}+
+\]
+\[
+-\left(n^2 \frac{3-\sigma}{\cos \gamma}-2 \cos \gamma\right) \frac{\zeta_1}{x}=0,
+\]
+
+\[\begin{aligned}
+& -n \frac{1+\sigma}{2} \frac{1}{x^2} \frac{d \xi_2}{d x}-n \frac{5-3 \sigma}{2} \frac{\xi_2}{x^3}+\frac{1-\sigma}{4} \frac{\sin ^2 \gamma}{\cos \gamma}\left(\frac{d^2 \eta_1}{d x^2}+\frac{1}{x} \frac{d \eta_1}{d x}-\frac{4}{x^2} \eta_1\right) \\
+& +(1-\sigma) \cos \gamma\left(\frac{1}{x^4} \frac{d^2 \eta_1}{d x^2}-\frac{3}{x^6} \frac{d \eta_1}{d x}+\frac{4}{x^6} \eta_1\right)-\frac{2 n^2}{\cos \gamma} \frac{\eta_1}{x^3}-\frac{8 n^3 \cos \gamma}{3 \sin ^2 \gamma} \frac{\eta_1}{x^6} \\
+& +\frac{1-\sigma}{4} n \tan \gamma\left(\frac{d^2 \zeta_1}{d x^2}+\frac{1}{x} \frac{d \zeta_1}{d x}-\frac{4}{x^2} \zeta_1\right)-\frac{2 \sigma n}{3 \tan \gamma}\left(\frac{1}{x^4} \frac{d^2 \zeta_1}{d x^2}-\frac{1}{x^5} \frac{d \zeta_1}{d x}\right) \\
+& -\frac{4 n}{3 \tan \gamma} \frac{1}{x^5} \frac{d \zeta_1}{d x}-2 n \frac{n^2-\cos 2}{d x} \frac{\zeta_1}{\sin \gamma \cos \gamma}=0,
+\end{aligned}\]
+and
+
+\[\begin{array}{c}
+\sigma \frac{d \xi_2}{d x} \cos \gamma+\frac{\psi-\sigma}{x} \xi_2 \cos \gamma-2 n \frac{2-\sigma}{3} \frac{1}{x^2} \frac{d^2 \eta_1}{d x^2}+2 n \frac{8-\sigma}{3} \frac{1}{x^3} \frac{d \eta_1}{d x}+\\
+\left(\frac{8 n^3}{3 \sin ^2 \gamma}-\frac{32}{3} n\right) \frac{\eta_1}{x^4}+2 n \eta_1 \\
+-\frac{\sin \gamma}{6}\left(\frac{d^4 \zeta_1}{d x^4}-\frac{2}{x} \frac{d^3 \zeta_1}{d x^3}-\frac{1}{x^2} \frac{d^2 \zeta_1}{d x^2}+\frac{9}{x^3} \frac{d \zeta_1}{d x}\right)+\frac{2 \sigma n^2}{3 \sin ^2 \gamma}\left(\frac{1}{x^2} \frac{d^2 \zeta_1}{d x^3}-\frac{1}{x^3} \frac{d \zeta_1}{d x}\right) \\
++\frac{4 n^2}{3 \sin \gamma} \frac{1}{x^3} \frac{d \zeta_1}{d x}+2 \frac{n^2-\cos ^2 \gamma}{\sin \gamma} \zeta_1=0 . \quad \ldots . .(159)
+\end{array}\]
+
+%352. EDGE-EFFECT. UNSYMMETRICAL CONDITIONS 609
+
+Equations (157), (158), (159) are three linear differential equations
+for the determination of \(\xi_2, \eta_1, \zeta_1\) as functions of
+\(x\), and we seek solutions of a certain type answering to the normal
+integrals of a single linear differential equation. The first step is to
+put
+
+\[\xi_2=X e^{m x}, \quad \eta_1=Y e^{m x}, \quad \zeta_1=Z e^{m x},\]
+where \(m\) is at present undetermined. Then \(X, Y, Z\) satisfy the
+three equations
+\[
+\begin{array}{c}
+\frac{\sin \gamma}{2}\left\{\left(\frac{d^2 X}{d x^2}+2 m \frac{d X}{d x}+m^2 X\right)-\frac{1}{x}\left(\frac{d X}{d x}+m X\right)-\frac{3}{x^2} X\right\}
+-n^2 \frac{1-\sigma}{\sin \gamma} \frac{X}{x^2} \\
++n \frac{1+\sigma}{2} \tan \gamma\left(\frac{d Y}{d x}+m Y\right)\\
+-n(3-\sigma) \tan \gamma \frac{Y}{x}-2 n \frac{1-\sigma}{3 \tan \gamma}\left\{\frac{1}{x^4}\left(\frac{d Y}{d x}+m Y\right)-\frac{2}{x^6} Y\right\} \\
++\left(n^2 \frac{1+\sigma}{2 \cos \gamma}-\sigma \cos \gamma\right)\left(\frac{d Z}{d x}+m Z\right)-\left(n^2 \frac{3-\sigma}{\cos \gamma}-2 \cos \gamma\right) \frac{Z}{x}=0, \ldots \ldots(161) \\
+-n \frac{1+\sigma}{2} \frac{1}{x^2}\left(\frac{d X}{d x}+m X\right)-n \frac{5-3 \sigma}{2} \frac{X}{x^3} \\
++\frac{1-\sigma}{4} \frac{\sin ^2 \gamma}{\cos \gamma}\left\{\left(\frac{d^2 Y}{d x^2}+2 m \frac{d Y}{d x}+m^2 Y\right)+\frac{1}{x}\left(\frac{d Y}{d x}+m Y\right)-\frac{4}{x^3} Y\right\} \\
++(1-\sigma) \cos \gamma\left\{\frac{1}{x^4}\left(\frac{d^2 Y}{d x^2}+2 m \frac{d Y}{d x}+m^2 Y\right)-\frac{3}{x^6}\left(\frac{d Y}{d x}+m Y\right)+\frac{4}{x^3} Y\right\} \\
+-\frac{2 n^2}{\cos \gamma} \frac{Y}{x^2}-\frac{8 n^3 \cos \gamma}{3 \sin ^2 \gamma} \frac{Y}{x^3} \\
++\frac{1-\sigma}{4} n \tan \gamma\left\{\left(\frac{d^2 Z}{d x^2}+2 m \frac{d Z}{d x}+m^2 Z\right)+\frac{1}{x}\left(\frac{d Z}{d x}+m Z\right)-\frac{4}{x^2} Z\right\} \\
+-\frac{2 \sigma n}{3 \tan \gamma}\left\{\frac{1}{x^4}\left(\frac{d^2 Z}{d x^2}+2 m \frac{d Z}{d x}+m^2 Z\right)-\frac{1}{x^6}\left(\frac{d Z}{d x}+m Z\right)\right\}\\
+-\frac{4 n}{3 \tan \gamma} \frac{1}{x^5}\left(\frac{d Z}{d x}+m Z\right)
+-2 n \frac{n^2-\cos 2 \gamma}{\sin \gamma \cos \gamma} \frac{1}{x^2} Z=0, \ldots . .(162)
+\end{array}
+\]
+\todo[inline]{confirm that equation 163 is the third of triad of equations discussed
+in this section.}
+\[
+\begin{array}{c}
+\left(\frac{d X}{d x}+m X\right)+(2-\sigma) \frac{\cos \gamma}{x} X-2 n \frac{2-\sigma}{3} \frac{1}{x^2}
+\left(\frac{d^2 Y}{d x^2}+2 m \frac{d Y}{d x}+m^2 Y\right) \\
++ 2n \frac{8-\sigma}{3} \frac{1}{x^3} \left(\frac{d Y}{d x}+m Y\right)+
+\left( \frac{8 n^3}{3 \sin ^2 \gamma} -\frac{32}{3} n\right) \frac{Y}{x^4}+2 n Y \\
+-\frac{\sin \gamma}{6}
+\left\{\left(
+\frac{d^4 Z}{d x^4}+4 m \frac{d^3 Z}{d x^3}+
+6 m^2 \frac{d^2 Z}{d x^2}+4 m^3 \frac{d Z}{d x}+m^4 Z
+\right)\right. \\
+-\frac{2}{x}\left(\frac{d^3 Z}{d x^3}+3 m \frac{d^2 Z}{d x^2}+3 m^2 \frac{d Z}{d x}+m^3 Z\right)
+-\frac{1}{x^2}\left( \frac{d^2 Z}{d x^2} +2 m \frac{d Z}{d x}+m^2 Z\right)+\\
+\left.  -\frac{1}{x^2}\left( \frac{d^2 Z}{d x^2} +2 m \frac{d Z}{d x}+m^2 Z\right)+
+ \frac{9}{x^3}\left(\frac{d Z}{d x}+m Z\right)\right\} \\
++\frac{2 \sigma n^2}{3 \sin \gamma}
+\left\{\frac{1}{x^2}\left(\frac{d^2 Z}{d x^2}+2 m \frac{d Z}{d x}+m^2 Z\right)
+-\frac{1}{x^3}\left(\frac{d Z}{d x}+m Z\right)\right\}+\\
++\frac{4 n^2}{3 \sin \gamma} \frac{1}{x^3}\left(\frac{d Z}{d x}+m Z\right) +
+2 \frac{n^2-\cos^2 \gamma}{\sin \gamma} Z=0 .
+\end{array}\]
+
+\subsection{Solution of the equations.(c)}
+
+Ve wish tc obtain solutions of these equations in series proceeding by
+powers of \(x^{-1}\). write
+
+\[E=\frac{1}{x},\]
+
+issume for \(X, Y, Z\) expressions of the form
+
+\[
+\begin{aligned}
+X&=z^a\left(a_0+a_1 s+a_2 z^2+\ldots\right)\\
+Y&=z^b\left(b_0+b_1 z+b_2 z^2+\ldots\right)\\
+Z&=z^e\left(c_0+c_1 s+c_2 z^2+\ldots\right)
+\end{aligned}
+\]
+Then we have, for example,
+\[
+\frac{dZ}{dx} = -z^2 \frac{dZ}{dz}=-z^{c+1}
+(c_o c + c_1(c+1)z + c_2(c+2)z^2 +\ldots),\nonumber \\
+\]
+\[
+\frac{dZ^2}{dx^2} = -z^2 \frac{d}{dz}\frac{dZ}{dx}=
+\]
+\begin{equation}\label{eq164}
+-z^{c+2}
+(c_o c (c+1)+ c_1(c+1)(c+2)z + c_2(c+2)(c+3)z^2 + \ldots)
+\end{equation}
+and so on. We substitute the serial expressions for
+\({\{\frac{d^k}{dx^k}\}}_{k=0}^4 Z\) in the left-hand
+members of equations~\ref{eq161},\ref{eq162},\ref{eq163} and equate to
+zero the coefficients of the various powers of \(z\),
+beginning with the lowest.
+We thus obtain sufficient equations to determine
+\(m\), the exponents \(a\), \(b\), \(c\),
+and the coefficients \({\{a_k\}}_{k\geq 0}\),
+\({\{b_k\}}_{k\geq 0}\), \({\{c_k\}}_{k\geq 1}\),in terms of
+\(c_o\), which remains arbitrary.
+It will appear that there are four values of \(m\),
+and so there are four solutions of this type.
+If this process is carried out it will very
+soon appear that
+\(a=b=c=1/2\).  So it is simpler to assume the forms
+\begin{equation}\label{eq165}
+    (X,Y,Z)= z^{-1/2} \sum_{k \geq 0} (a_k, b_k, c_k ) z^k.
+\end{equation}
+
+We then have, for example,
+\begin{align*}
+\frac{dZ}{dx} &= 2^{-1} z^{\frac{1}{2} }
+(c_o - c_1 z - 3 c_2 z^2 - 5 c_3 z^3 \ldots),\\
+\frac{dZ^2}{dx^2} &= 2^{-2}z^{\frac{3}{2} }
+(-c_o + 3 c_1 z + 5!! ~c_2 z^2 + \frac{7!!}{3} c_3 z^3 + \ldots),\\
+\frac{dZ^3}{dx^3} &= 2^{-3} z^{\frac{5}{2} }
+(3c_o - 5!! ~c_1 z - 7!! ~c_2 z^2 + \frac{9!!}{3} c_3 z^3 + \ldots),\\
+\frac{dZ^4}{dx^4} &= 2^{-4}z^{\frac{7}{2} }
+(- 5!! ~c_o + 7!! ~c_1 z - 9!! ~c_2 z^2 + \frac{11!!}{3} c_3 z^3 +\ldots),\\
+\end{align*}
+The terms of lowest degree in the three
+equations are the terms containing \(z^{-1/2}\).
+Equating their coefficients to zero,
+we obtain the equations
+\begin{align}
+\frac{\sin \gamma }{2} m^2 a_o + \frac{1+ \sigma }{2}
+\tan(\gamma) m~b_o+ \left( n^2 \frac{1+ \sigma }{2 \cos(\gamma) }
+- \sigma \cos(\gamma) \right) m c_o & = 0 \nonumber \\
+\frac{1-\sigma }{4} m^2 a_o + \frac{\sin^2 \gamma }{\cos(\gamma) } m^2 b_o+
+\frac{1-\sigma }{4} n \tan(\gamma) m^2 c_o & = 0 \nonumber \\
+\sigma \cos(\gamma) m~a_o + 2 m~b_o+
+\left(
+-\frac{\sin \gamma}{6} + 2 \frac{n^2 - \cos^2 \gamma }{\sin \gamma }
+\right)c_o & = 0 \label{eq166}
+\end{align}
+yielding the results
+\begin{equation}\label{eq167}
+(a_o,b_o) = \left(\frac{2 \sigma }{m \tan(\gamma)}, -\frac{n}{\sin(\gamma)}\right) c_o,
+\end{equation}
+and the secular equation
+\begin{equation}\label{eq168}
+m^4 +12(1-\sigma^2) \cot^2(\gamma) =0.
+\end{equation}
+\todo[inline]{equation 169 is supposed to be equation 168} 
+
+The four complex values of \(m\) given by (168)
+are the same as occurred in the problem of
+the conical shell strained by lateral forces,
+which was discussed in Article 349. The
+present solution applies to the case of
+lateral forces, \(n=1\), as well as to conditions
+answering to greater values of \(n\).
+
+When \(m\) satisfies equation~(\ref{eq168}), and the left-hand
+members of equations (166) are multiplied in order by
+\setcounter{equation}{0}
+\begin{equation}\label{coefficient_equation_168}
+2 m \sigma \sin(\gamma),\quad
+4( 2 + \sigma )n,\quad
+-m^2 \sin(\gamma) \tan(\gamma),
+\end{equation}
+and added, the coefficients of \(a_o,b_o,c_o\) vanishes. This remark is
+important because the same thing would happen if we formed the equations
+like~(\ref{eq166}),
+containing no coefficients \(a_k\), \(b_k\), \(c_k\) of suffix greater than
+\(k\), by equating to zero the coefficients of \(z^{k-1/2}\),
+in equations~\ref{eq161},\ref{eq162},\ref{eq163}, and
+multiplied their left-hand members in order
+by the same three expressions~(\ref{coefficient_equation_168})
+then we should find that
+\(a_k\), \(b_k\), \(c_k\)
+would all disappear from the equation so formed. It is
+therefore convenient to form a new equation from
+equations~\ref{eq161},\ref{eq162},\ref{eq163} by multiplying
+\todo[inline]{Page header 352. EDGE-EFFECT. UNSYMMETRICAL CONDITIONS 611}
+\todo[inline]{The next equation is contains misprints}
+the left-hand members of these equations in order by
+\(2 \sigma m \sin \gamma, 4(2+\sigma) n\), and
+\(-m^2 \sin \gamma \tan \gamma\) and adding. We thus obtain the equation
+
+\[\begin{aligned}
+& \sigma m \sin ^2 \gamma\left\{\left(\frac{d^2 X}{d x^2}+2 m \frac{d X}{d x}+m^2 X\right)-\frac{1}{x}\left(\frac{d X}{d x}+m X\right)-\frac{3}{x^2} X\right\}-2 m n^2 \sigma(1-\sigma) \frac{X}{x^2} \\
+& -2 n^2(2+\sigma)\left\{\frac{1+\sigma}{x^2}\left(\frac{d X}{d x}+m X\right)+\frac{5-3 \sigma}{x^3} X\right\}-m^2 \sin ^2 \gamma\left\{\sigma\left(\frac{d X}{d x}+m X\right)+(2-\sigma) \frac{X}{x}\right\} \\
+& +2 \sigma m \sin \gamma\left[n \frac{1+\sigma}{2} \tan \gamma\left(\frac{d Y}{d x}+m Y\right)-n(3-\sigma) \tan \gamma \frac{Y}{x}\right. \\
+& 1-\sigma\left\{\begin{array}{c}
+3 \tan \gamma \\
+\left.\left.\frac{1}{x^4}\left(\frac{d Y}{d x}+m Y\right)-\frac{2}{x^6} Y\right\}\right]
+\end{array}\right. \\
+& \left.\left.+4(2+\sigma) n\left[\frac{1-\sigma \sin ^2 \gamma}{4}\right) \frac{\left(d^2 Y\right.}{\cos \gamma}+2 m \frac{d Y}{d x}+m^2 Y\right)+\frac{1}{x}\left(\frac{d Y}{d x}+m Y\right)-\frac{4}{x^2} Y\right\}-\frac{2 n^2}{\cos \gamma} \frac{Y}{x^2} \\
+& \left.+(1-\sigma) \cos \gamma\left\{\frac{1}{x^4}\left(\frac{d^2 Y}{d x^2}+2 m \frac{d Y}{d x}+m^2 Y\right)-\frac{3}{x^5}\left(\frac{d Y}{d x}+m Y\right)+\frac{4}{x^6} Y\right\}-\frac{8 n^3 \cos \gamma}{3 \sin ^2 \gamma} \frac{Y}{x^3}\right] \\
+& -m^2 \sin \gamma \tan \gamma\left[-2 n \frac{2-\sigma}{3} \frac{1}{x^2}\left(\frac{d^2 Y}{d x^2}+2 m \frac{d Y}{d x}+m^2 Y\right)+2 n \frac{8-\sigma}{3} \frac{1}{x^3}\left(\frac{d Y}{d x}+m Y\right)\right. \\
+& +2 \sigma m \sin \gamma\left[\left(n^2 \frac{1+\sigma}{2 \cos \gamma}-\sigma \cos \gamma\right)\left(\frac{d Z}{d x}+m Z\right)-\left(n^2 \frac{3-\sigma}{\cos ^2 \gamma}-\frac{32 n}{3}\right) \frac{Y}{x^4}+2 n Y\right] \\
+& +4(2+\sigma) n\left[\frac{1-\sigma}{4} n \tan \gamma\left\{\left(\frac{d^2 Z}{d x^2}+2 m \frac{d Z}{d x}+m^2 Z\right)+\frac{1}{x}\left(\frac{d Z}{d x}+m Z\right)-\frac{4}{x^2} Z\right\}\right. \\
+& -2 n n^2-\cos ^2 \gamma Z \\
+& \left.\sin \gamma \cos \gamma \frac{2 \sigma n}{x^2}-\frac{1}{3 \tan \gamma}\left\{\frac{d^2 Z}{x^4}+2 m \frac{d Z}{d x}+m^2 Z\right)-\frac{1}{x^6}\left(\frac{d Z}{d x}+m Z\right)\right\} \\
+& -m^2 \sin \gamma \tan \gamma\left[-\frac{\sin \gamma}{6}\left\{\left(\frac{d^4 Z}{d x^4}+4 m \frac{d^3 Z}{d x^3}+6 m^2 \frac{d^2 Z}{d x}+4 m^3 \frac{d Z}{d x}+m^4 Z\right)\right.\right. \\
+& \left.-\frac{2}{x}\left(\frac{d^3 Z}{d x^3}+3 m \frac{d^2 Z}{d x^2}+3 m^2 \frac{d Z}{d x}+m^3 Z\right)-\frac{1}{x^2}\left(\frac{d^2 Z}{d x^2}+2 m \frac{d Z}{d x}+m^2 Z\right)+\frac{9}{x^3}\left(\frac{d Z}{d x}+m Z\right)\right\} \\
+& +\frac{2 \sigma n^2}{3 \sin \gamma}\left\{\frac{1}{x^3}\left(\frac{d^2 Z}{d x^2}+2 m \frac{d Z}{d x}+m^2 Z\right)-\frac{1}{x^3}\left(\frac{d Z}{d x}+m Z\right)\right\}+3 \sin ^2 \frac{1}{x^3}\left(\frac{d Z}{d x}+m Z\right) \\
+& \left.+2 \frac{n^2-\cos 2}{d x} Z\right]=0
+\end{aligned} \]
+
+(169) In future we shall use equation (169) instead of equation (163). If from
+equations (161), (162), (169) we select the terms containing
+\(z^{\kappa-\frac{1}{2}}\), and equate them to zero, the first two will
+contain \(a_\kappa, b_\kappa, c_\kappa\), but the third will not contain
+any \(a\) 's, \(b\) 's or \(c\) 's with suffixes higher than
+\(\kappa-1\). For example, taking \(\kappa=1\), equation (169) will
+yield a new equation connecting \(a_0, b_0, c_0\), with which we shall
+deal presently, and equations (161) and (162) will yield two equations
+containing \(a_1, b_1, c_1\). Again, taking \(\kappa=2\), equation (169)
+will yield a new equation containing \(a_1, b_1, c_1\), and equations
+(161) and (162) will yield two equations containing \(a_2, b_2, c_2\).
+Thus the equations, by which \(a_k, b_k, c_k\) are to be determined, are
+obtained by equating to zero the coefficients of \(z^{x-i}\) in (161)
+and (162), and the coefficient of \(z^{k+\frac{1}{2}}\) in (169).
+
+612 CONICAL SHELL CH. XXIV A
+
+In particular by equating to zero the coefficient of \(z^{\frac{1}{2}}\)
+in equation (169) we obtain the equation
+
+\[\begin{array}{c}
+-\frac{1}{2} \sigma m^2 \sin ^2 \gamma \cdot a_0-m^2 \sin ^2 \gamma(2-\sigma) a_0+\frac{1}{2} \sigma(1+\sigma) m n \frac{\sin ^2 \gamma}{\cos \gamma} b_0+\\
+-2 \sigma(3-\sigma) m n \frac{\sin ^2 \gamma}{\cos \gamma} b_0 \\
+\quad+2(2+\sigma)(1-\sigma) m n \frac{\sin ^2 \gamma}{\cos \gamma} b_0+\frac{1}{2} \sigma m \sin \gamma\left(n^2 \frac{1+\sigma}{\cos \gamma}-2 \sigma \cos \gamma\right) c_0 \\
+\quad-2 \sigma m \sin \gamma\left(n^2 \frac{3-\sigma}{\cos \gamma}-2 \cos \gamma\right) c_0+2 m n^2(2+\sigma)(1-\sigma) \tan \gamma \cdot c_0=0 .
+\end{array}\]
+
+On substituting for \(a_0\) and \(b_0\) from equations (167) this
+equation becomes an identity. It may by observed that, if we had not
+assumed the exponents \(a, b, c\) to be equal to \(-\frac{1}{2}\), but
+had left them undetermined, it would still have been necessary that the
+coefficient of \(z^{e+1}\) in an equation formed in the same way as
+(169) should vanish identically, and this condition would have led to
+the determination of \(a, b\), and \(c\).
+
+We now equate to zero the coefficients of \(z^{\frac{1}{2}}\) in
+equations (161) and (162), obtaining the equations
+
+\[\begin{array}{c}
+\frac{\sin \gamma}{2} m^2 a_1+\frac{1+\sigma}{2} n \tan \gamma\left(m b_1+\frac{1}{2} b_0\right)-n(3-\sigma) \tan \gamma \cdot b_0+\\
++\left(n^2 \frac{1+\sigma}{2 \cos \gamma}-\sigma \cos \gamma\right)\left(m c_1+\frac{1}{2} c_0\right)
+-\left(n^2 \frac{3-\sigma}{\cos \gamma}-2 \cos \gamma\right) c_0=0
+\end{array}\]
+
+and
+
+\[\frac{1-\sigma}{4} \frac{\sin ^2 \gamma}{\cos \gamma}\left(m^2 b_1+2 m b_0\right)+\frac{1-\sigma}{4} n \tan \gamma\left(m^2 c_1+2 m c_0\right)=0,\]
+
+which, combined with (167), yield
+
+\[a_1=\frac{2 \sigma}{m \tan \gamma} c_1-\frac{4-\sigma}{m^2 \tan \gamma} c_0, \quad b_1=-\frac{n}{\sin \gamma} c_1 .\]
+
+We also equate to zero the coefficient of \(z^{\frac{3}{2}}\) in
+equation (169), obtaining the equation
+
+DMD: This looks wrong.  I do not want to touch it.
+
+\[\begin{aligned}
+& -\sigma m \sin ^2 \gamma\left(2 m a_1+\frac{15}{4} a_0\right) \cdot 2 n^2(2+\sigma)(1+\sigma) m a_0-2 n^2 \sigma(1-\sigma) m a_0 \\
+& -m^2 \sin ^2 \gamma\left\{-\frac{1}{2} \sigma a_1+(2-\sigma) a_1\right\} \\
+& \begin{array}{r}
+-\frac{1}{2} \sigma(1+\sigma) m n \frac{\sin ^2 \gamma}{\cos \gamma} b_1-2 \sigma(3-\sigma) m n \frac{\sin ^2 \gamma}{\cos \gamma} b_1-(2+\sigma)(1-\sigma) n \frac{\sin ^2 \gamma}{\cos \gamma} \frac{15}{4} b_0 \\
+-\frac{8 n^3(2+\sigma)}{\cos \gamma} b_0+2 n \frac{2-\sigma}{3} m^4 \sin ^2 \gamma b_0 \\
+\cos \gamma
+\end{array} \\
+& -\sigma m \sin \gamma\left(n^2 \frac{1+\sigma}{2 \cos \gamma}-\sigma \cos \gamma\right) c_1-2 \sigma m \sin \gamma\left(n^2 \frac{3-\sigma}{\cos \gamma}-2 \cos \gamma\right) \\
+& -(2+\sigma)(1-\sigma) n^2 \tan \gamma \frac{15}{4} c_0-8(2+\sigma) n^2 \frac{n^2-\cos { }^2 \gamma}{\sin \gamma \cos \gamma} c_0+\\
+& -m^4 \frac{\sin ^3 \gamma}{3 \cos \gamma}\left(2 m c_1+\frac{11}{4} c_0\right) \\
+& 2 \sigma n^2 m^4 \tan \gamma \cdot c_0=0,
+\end{aligned}\]
+
+and, on substituting from (167) and (170), this equation can be
+expressed as a relation between \(c_1\) and \(c_0\), which yields, after
+some reduction involving the use of (168),
+
+\[l_1=-\left(\frac{4 n^2}{\sin ^3 y}+\frac{19}{8}\right) \frac{c_0}{m} .\]
+
+From this value of \(c_1\) we find instead of (170)
+
+\[a_1=-\left(\frac{8 n^2 \sigma}{\sin ^2 \gamma}+4+\frac{15}{4} \sigma\right) \frac{c_0}{m^2 \tan \gamma}, \quad b_1=\left(\frac{4 n^2}{\sin ^3 \gamma}+\frac{19 n}{8 \sin \gamma}\right) \frac{c_0}{m} .\]

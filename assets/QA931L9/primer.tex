@@ -1,0 +1,89 @@
+% !BIB TS-program = biber
+\documentclass[11pt,a4paper,draft]{amsart}
+\usepackage{showframe}
+\usepackage[top=2cm,bottom=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[backend=biber,autocite=plain,backref=true]{biblatex}
+
+\input{NewCommands}
+
+\renewcommand{\ShowFrameColor}{\color{white}}
+
+\begin{document}
+\title{Primer}
+
+\section{What was Lame's contribution to orthogonal curvilinear coorindates?}
+
+For a transformation from Cartesian coordinates
+\(\vec{x}\)
+to curvilinear coordinates
+\(\vec{u}\)
+
+\[
+\vec{u} = \vec{u}(\vec{x}), \quad  \vec{x} = \vec{x}(vec{u})
+\]
+scale factors ( Lamé coefficients )
+\[
+ h_{i} = \norm{  x_{, u_i} }
+\]
+
+an differential displacement vector \(d\mathbf{r}\) in this system is expressed using these coefficients as:\(d\mathbf{r}=h_{1}du_{1}\^{\mathbf{e}}_{1}+h_{2}du_{2}\^{\mathbf{e}}_{2}+h_{3}du_{3}\^{\mathbf{e}}_{3}\)
+
+
+
+Differential Operators in Curvilinear Systems
+
+
+Lamé derived generalized vector calculus equations, allowing physicists to compute the gradient, divergence, and Laplacian without rewriting them from scratch for every new geometric system.
+
+The generalized Laplacian operator ∇² in terms of Lamé coefficients is written as:
+
+\(\nabla ^{2}\psi =\frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial }{\partial u_{1}}\left(\frac{h_{2}h_{3}}{h_{1}}\frac{\partial \psi }{\partial u_{1}}\right)+\frac{\partial }{\partial u_{2}}\left(\frac{h_{3}h_{1}}{h_{2}}\frac{\partial \psi }{\partial u_{2}}\right)+\frac{\partial }{\partial u_{3}}\left(\frac{h_{1}h_{2}}{h_{3}}\frac{\partial \psi }{\partial u_{3}}\right)\right]\)
+
+
+3. Lamé's Relations (Compatibility Equations)Because the scale factors \(h_{i}\)
+are derived from a common coordinate transformation, they cannot vary randomly. Lamé developed a set of non-linear, second-order partial differential equations—known as Lamé's Relations—that serve as the necessary and sufficient conditions for a set of three functions h₁, h₂, h₃ to represent a valid physical 3D Euclidean space.These compatibility conditions are split into two groups of three equations:
+
+\(\frac{\partial ^{2}h_{i}}{\partial u_{j}\partial u_{k}}=\frac{1}{h_{j}}\frac{\partial h_{i}}{\partial u_{j}}\frac{\partial h_{j}}{\partial u_{k}}+\frac{1}{h_{k}}\frac{\partial h_{i}}{\partial u_{k}}\frac{\partial h_{k}}{\partial u_{j}}\)
+
+\(\frac{\partial }{\partial u_{i}}\left(\frac{1}{h_{i}}\frac{\partial h_{j}}{\partial u_{i}}\right)+\frac{\partial }{\partial u_{j}}\left(\frac{1}{h_{j}}\frac{\partial h_{i}}{\partial u_{j}}\right)+\frac{1}{h_{k}^{2}}\frac{\partial h_{i}}{\partial u_{k}}\frac{\partial h_{j}}{\partial u_{k}}=0\)
+
+(where i, j, k are distinct indices from 1, 2, 3)
+
+4. Ellipsoidal Coordinates and Lamé FunctionsLamé introduced ellipsoidal coordinates (often called Lamé coordinates), which map space using confocal ellipsoids, hyperboloids of one sheet, and hyperboloids of two sheets. When he applied his curvilinear Laplacian to Laplace's equation (∇² ψ = 0) in this system, it resulted in a second-order linear differential equation now known as Lamé's Equation:
+
+\(\frac{d^{2}y}{dx^{2}}-[n(n+1)\wp (x)+B]y=0\)
+
+The solutions to this equation are Lamé functions (or ellipsoidal harmonics), which are essential for solving gravitational, electrical, and thermal potentials inside ellipsoidal bodies.
+
+
+If you want to dive deeper into his mathematics, let me know if you would like to:
+
+See a step-by-step derivation of a specific operator (like the divergence or gradient) using his scale factors.
+
+Explore how his scale factors apply to a common coordinate system like spherical or cylindrical coordinates.Look at the geometric properties of the ellipsoidal coordinate system he invented.
+
+3 sitesGabriel Lamé
+
+In fact this was not a passing interest, for Lamé made substantial contributions to this topic. Another example is his work on
+
+the...Wikipedia Influence of Global and Local Membrane Curvature on Mechanosensitive Ion Channels:
+
+A Finite Element Approach Feb 5, 2016 — where, A and B are Lamé parameters.
+They are quantities which relate a change in a curved length on the membrane surface to the co
+
+...MDPIGabriel LaméHe ( Lamé ) used them ( Curvilinear coordinates ) to
+transform Laplace's equation into ellipsoidal coordinates and so separate the...
+
+
+
+
+\end{document}
+
+It is well known that there exists
+an infinite number of sets of such surfaces, and, according to a
+celebrated theorem due to Dupin, the line of intersection of two
+surfaces belonging to different families of such a set is a line of
+curvature on each*.

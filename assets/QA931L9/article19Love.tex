@@ -1,0 +1,300 @@
+would not express the strain in the body correctly, and the terms of
+(27) that contain \(p, q, r\) would not represent a displacement
+possible in a rigid body. Bearing this restriction in mind, we conclude
+that, if the six components of strain are given, the corresponding
+displacement is arbitrary to the extent of an additional displacement of
+the type expressed by (27); but, if we impose 
+six independent conditions,
+such as that, at the origin, the displacement \((u, v, w)\) and the rotation
+\(\left(\varpi_x, \varpi_y, \varpi_z\right)\) vanish, or again that, at the
+same point
+\begin{equation}\label{eq:28}
+u=0,v=0,w=0, \frac{\partial u}{\partial z}=0,
+\frac{\partial v}{\partial z}=0, \frac{\partial v}{\partial x}=0,
+\end{equation}
+the expression for the displacement with given strains will be unique.
+The particular set of equations (\ref{eq:28}) indicate that one point of the body
+(the origin), one linear element of the body (that along the axis of
+\(z\) issuing from the origin) and one plane-element of the body (that
+in the plane of \(z, x\) containing the origin) retain their positions
+after the strain. It is manifestly possible, after straining a body in
+any way, to bring it back by translation and rotation so that a given
+point, a given linear element through the point and a given
+plane-element through the line shall recover their primitive positions.
+
+\section{Curvilinear orthogonal coordinates}
+For many problems it is convenient to use systems of curvilinear
+coordinates\footnote{The theory is due to Lamé. See his
+Leçons sur les coordonnées curvilignes, Paris, 1859.}
+instead of the ordinary Cartesian coordinates. These may be
+introduced as follows: Let \(f(x, y, z)=\alpha \), some constant,
+be the
+equation of a surface. If \(\alpha \) is allowed to vary we obtain a
+family of surfaces. In general one surface of the family will pass
+through a chosen point, and a neighbouring point will in general lie
+on
+a neighbouring surface of the family, so that \(\alpha \) is a function
+of \(x, y, z\), viz., the function denoted by \(f\). If
+\(\alpha+d \alpha \) is the parameter of that surface of the family which
+passes through \((x+d x, y+d y, z+d z)\), we have
+\[
+d \alpha=\frac{\partial f}{\partial x} d x+\frac{\partial f}{\partial y} d y+
+\frac{\partial f}{\partial z} d z=\frac{\partial \alpha}{\partial x} d x+
+\frac{\partial \alpha}{\partial y} d y+\frac{\partial \alpha}{\partial z} d z.
+\]
+
+If we have three independent families of surfaces given by the equations
+\[f_1(x, y, z)=\alpha, \quad f_2(x, y, z)=\beta, \quad f_3(x, y, z)=\gamma,\]
+so that in general one surface of each family passes through a chosen
+point, then a point may be determined by the values of
+\(\alpha, \beta, \gamma \) which belong to the surfaces that pass through
+it\footnote{The determination of the
+point may not be free from ambiguity, e.g., in elliptic coordinates, an
+ellipsoid and two confocal hyperboloids pass through any point, and they
+meet in seven other points. The ambiguity is removed if the region of
+space considered is suitably limited, e g., in the case of elliptic
+coordinates, if it is an octant bounded by principal planes.},
+and a neighbouring point will be determined by the neighbouring values
+\(\alpha+d \alpha, \beta+d \beta, \gamma+d \gamma \). Such quantities as
+\(\alpha, \beta, \gamma \) are called ``curvilinear coordinates'' of the
+point.
+
+The most convenient systems of curvilinear coordinates for applications
+to the theory of Elasticity are determined by families of surfaces which
+cut each other everywhere at right angles. In such a case we have a
+triply-orthogonal family of surfaces. It is well known that there exists
+an infinite number of sets of such surfaces, and, according to a
+celebrated theorem due to Dupin, the line of intersection of two
+surfaces belonging to different families of such a set is a line of
+curvature on each\footnote{Salmon, Geometry of three
+dimensions, 4th ed., p.269}. In what follows we shall take
+\(\alpha, \beta, \gamma \) to be the parameters of such a set of
+surfaces, so that the following relations hold:
+\[
+\langle \nabla \beta, \nabla \gamma \rangle =
+\langle \nabla \gamma, \nabla \alpha \rangle =
+\langle \nabla \alpha, \nabla \beta \rangle = 0.
+\]
+
+The length of the normal, \(d n_1\), to a surface of the family \(\alpha \)
+intercepted between the surfaces \(\alpha \) and \(\alpha+d \alpha \) is
+determined by the observation that the direction-cosines of the normal
+to \(\alpha \) at the point \((x, y, z)\) are
+\begin{equation}\label{eq:29}
+\frac{1}{h_1} \frac{\partial \alpha}{\partial x}, \quad \frac{1}{h_1}
+\frac{\partial \alpha}{\partial y}, \quad \frac{1}{h_1} \frac{\partial
+\alpha}{\partial z},
+\end{equation}
+where \(h_1\) is expressed by the first of equations (31) below. For, by
+projecting the line joining two neighbouring points on the normal to
+\(\alpha \), we obtain the equation
+\begin{equation}\label{eq:30}
+d n_1= \frac{1}{h_1}\left(\frac{\partial \alpha}{\partial x} d x+
+\frac{\partial \alpha}{\partial y} d y+
+\frac{\partial \alpha}{\partial z} d z\right)=\frac{d \alpha}{h_1}
+\end{equation}
+
+In like manner the elements \(d n_2, d n_3\) of the normals to \(\beta \)
+and \(\gamma \) are \(d \beta / h_2\) and \(d \gamma / h_3\), where
+\begin{equation}\label{eq:31}
+\left.\begin{array}{l}
+h_1^2={\left(\frac{\partial \alpha}{\partial x}\right)}^2+
+{\left(\frac{\partial \alpha}{\partial y}\right)}^2+
+{\left(\frac{\partial \alpha}{\partial z}\right)}^2,\\
+h_2^2=
+{\left(\frac{\partial \beta}{\partial x}\right)}^2+
+{\left(\frac{\partial \beta}{\partial y}\right)}^2+
+{\left(\frac{\partial \beta}{\partial z}\right)}^2,\\
+h_3^2=
+{\left(\frac{\partial \gamma}{\partial x}\right)}^2+
+{\left(\frac{\partial \gamma}{\partial y}\right)}^2+
+{\left(\frac{\partial \gamma}{\partial z}\right)}^2.
+\end{array}\right\}
+\end{equation}
+\todo[inline]{This is page 52. The
+printing of the third edition of this equation
+incorrectly replaces \(h_3^2\) with a second \(h_2^2\).
+The correct equation appears in the second and fourth editions,
+and also in every other printing of the third edition
+that I have checked.}
+
+The distance between two neighbouring points being
+\({\left(d n_1{ }^2+d n_2{ }^2+d n_3{ }^2\right)}^{\frac{1}{2}}\), we have
+the expression for the ``line-element'' \(d s\), i.e.\ the distance
+between the points \((\alpha, \beta, \gamma)\) and
+\((\alpha+d \alpha, \beta+d \beta, \gamma+d \gamma)\), in the form
+\[
+{(d s)}^2={\left(d \alpha / h_1\right)}^2+
+{\left(d \beta / h_2\right)}^2+{\left(d \gamma / h_3\right)}^2.
+\]
+In general \(h_1, h_2, h_3\) are regarded as functions of
+\(\alpha, \beta, \gamma \).
+
+\section[Curvilinear Strain]{Components of strain referred to curvilinear orthogonal coordinates}
+%\section{Components of strain referred to curvilinear orthogonal coordinates} %20
+
+\todo[inline]{Love put The next footnote in the section title.}
+
+Anchor\footnote{The method here given is due to Borchardt, J.  f. Math.
+(Crelle), Bd. 76 (1873).  Another method is given in the `Note on applications
+of moving axes' at the end of this book.}
+
+The length in the unstrained state of the line joining the points \((\alpha,
+\beta, \gamma)\) and \((\alpha+d \alpha, \beta+d \beta, \gamma+d \gamma)\) is
+given by (32); we seek the length in the strained state of the line joining the
+same pair of particles. Let \(u_a, u_\beta, u_\gamma \) be the projections of
+the displacement of any particle on the normals to the surfaces \(\alpha,
+\beta, \gamma \) that pass through its position in the unstrained state. When
+the displacement is small the coordinates of the point occupied by a particle
+are changed from \(\alpha, \beta, \gamma \) to
+\(\alpha+h_1 u_\alpha, \beta+h_2 u_\beta, \gamma+h_3 u_\gamma \). The
+\(\alpha \)-coordinate \((\alpha+d \alpha)\) of a neighbouring point is changed into
+\[
+\alpha+d \alpha+\left\{h_1 u_\alpha+d \alpha \frac{\partial}{\partial
+\alpha}\left(h_1 u_\alpha \right)+d \beta \frac{\partial}{\partial
+\beta}\left(h_1 u_\alpha \right)+d \gamma \frac{\partial}{\partial
+\gamma}\left(h_1 u_\alpha \right)\right\}.
+\]
+and similar changes are made in the \(\beta \) and \(\gamma \)-coordinates
+(\(\beta+d \beta \) and \(\gamma+d \gamma \)).  Again, the values of
+\( \{h_i\} \) at a displaced particle differ from those at its undisplaced
+position. For example, \(1 / h_1\) is changed into
+\[
+\frac{1}{h_1}+h_2 u_\alpha \frac{\partial}{\partial
+\alpha}\left(\frac{1}{h_1}\right)+h_2 u_\beta \frac{\partial}{\partial
+\beta}\left(\frac{1}{h_1}\right)+h_3 u_\gamma \frac{\partial}{\partial
+\gamma}\left(\frac{1}{h_1}\right).
+\]
+It follows that \(d \alpha / h_1\) must be replaced by
+\[
+\begin{aligned} {\left[ d \alpha
+\left(1+\frac{\partial}{\partial \alpha} \left(h_1 u_\alpha \right)\right)+
+d \beta \frac{\partial}{\partial \beta}\left(h_2 u_\alpha \right)+
+d \gamma \frac{\partial}{\partial \gamma}\left(h_1 u_\alpha \right)\right]}
+\times \\
+\times\left[ \frac{1}{h_1}+
+h_1 u_\alpha \frac{\partial}{\partial \alpha} \left(\frac{1}{h_1}\right)+
+h_2 u_\beta \frac{\partial}{\partial \beta}\left(\frac{1}{h_1}\right)+
+h_3 u_\gamma \frac{\partial}{\partial \gamma}\left(\frac{1}{h_1}\right)
+\right],
+\end{aligned}
+\]
+and, when products of quantities of the order \(u_a\) are neglected, this is
+\[
+\begin{aligned}
+\frac{d \alpha}{h_1}+d \alpha \left\{\frac{\partial u_\alpha}{\partial
+\alpha}+h_2 u_\beta \frac{\partial}{\partial
+\beta}\left(\frac{1}{h_1}\right)\right. & \left.+h_3 u_\gamma
+\frac{\partial}{\partial \gamma}\left(\frac{1}{h_1}\right)\right\} \\
+& +d \beta \frac{1}{h_1} \frac{\partial}{\partial \beta}\left(h_1
+u_\alpha \right)+d \gamma \frac{1}{h_1} \frac{\partial}{\partial
+\gamma}\left(h_1 u_\alpha \right) .
+\end{aligned}
+\]
+Similar changes must be made in \(d \beta / h_2\) and
+\(d \gamma / h_3\). The length of the line joining two particles in the
+strained state is found by forming the square root of the sum of the
+squares of the three expressions of the type (33). Let \(d s\) be the
+length of the linear element in the unstrained state, and let
+\(l, m, n\) be the direction-cosines of it referred to the normals to
+the surfaces \(\alpha, \beta, \gamma \) at a point, so that
+\(d \alpha / h_1=l d s, \cdots \). Also let \(d s(1+e)\) be the length of
+the corresponding linear element in the strained state. Then \(e\) is
+given by the equation
+\[
+\begin{aligned}
+{(1+e)}^2= & {\left[l\left\{1+h_1 \frac{\partial u_a}{\partial \alpha}+h_1 h_2
+u_\beta \frac{\partial}{\partial \beta}\left(\frac{1}{h_1}\right)+h_1 h_3
+u_\gamma \frac{\partial}{\partial
+\gamma}\left(\frac{1}{h_1}\right)\right\}\right.} \\
+& \left.+m \frac{h_2}{h_1} \frac{\partial}{\partial \beta}\left(h_1
+u_a\right)+n \frac{h_3}{h_1} \frac{\partial}{\partial \gamma}\left(h_1
+u_a\right)\right]^2+\cdots+\ldots .
+\end{aligned}
+\]
+Neglecting squares and products of \(u_\alpha, u_\beta, u_\gamma \), we
+may write the result in the form
+\[
+\varepsilon =
+\begin{bmatrix}
+e_{\alpha \alpha} & \frac{1}{2} e_{\alpha \beta} & \frac{1}{2} e_{\gamma \alpha}  \\
+\frac{1}{2} e_{\alpha \beta}  & e_{\beta \beta} & \frac{1}{2} e_{\beta \gamma}  \\
+\frac{1}{2} e_{\gamma \alpha}  & \frac{1}{2} e_{\beta \gamma} & e_{\gamma \gamma}
+\end{bmatrix}, \quad
+e=\begin{bmatrix} \ell & m & n \end{bmatrix}^T
+\varepsilon \begin{bmatrix} \ell & m & n \end{bmatrix},
+\]
+in which
+\[
+\left.\begin{array}{l}
+e_{a a}=h_1 \frac{\partial u_a}{\partial \alpha}+h_1 h_2 u_\beta
+\frac{\partial}{\partial \beta}\left(\frac{1}{h_1}\right)+h_3 h_1 u_\gamma
+\frac{\partial}{\partial \gamma}\left(\frac{1}{h_1}\right), \\
+e_{\beta \beta}=h_2 \frac{\partial u_\beta}{\partial \beta}+h_2 h_3 u_\gamma
+\frac{\partial}{\partial \gamma}\left(\frac{1}{h_2}\right)+h_1 h_2 u_\alpha
+\frac{\partial}{\partial \alpha}\left(\frac{1}{h_2}\right), \\
+e_{\gamma \gamma}=h_3 \frac{\partial u_\gamma}{\partial \gamma}+h_3 h_1
+u_\alpha \frac{\partial}{\partial \alpha}\left(\frac{1}{h_3}\right)+h_2 h_3
+u_\beta \frac{\partial}{\partial \beta}\left(\frac{1}{h_2}\right), \\
+e_{\beta \gamma}=\frac{h_2}{h_3} \frac{\partial}{\partial \beta}\left(h_3
+u_\gamma \right)+\frac{h_3}{h_2} \frac{\partial}{\partial \gamma}\left(h_2
+u_\beta \right), \\
+e_{\gamma \alpha}=\frac{h_3}{h_1} \frac{\partial}{\partial \gamma}\left(h_1
+u_\alpha \right)+\frac{h_1}{h_3} \frac{\partial}{\partial \alpha}\left(h_3
+u_\gamma \right), \\
+e_{\alpha \beta}=\frac{h_1}{h_2} \frac{\partial}{\partial \alpha}\left(h_2
+u_\beta \right)+\frac{h_2}{h_1} \frac{\partial}{\partial \beta}\left(h_1
+u_\alpha \right) .
+\end{array}\right\}
+\]
+\(\varepsilon \) is the strain referred to the orthogonal coordinates.
+In fact
+\(e_{\alpha \alpha}\) is the extension of a linear element which, in the
+unstrained state, lies along the normal to the surface \(\alpha \); and
+\(e_{\beta \gamma}\) is the cosine of the angle between the linear
+elements which, in the unstrained state, lie along the normals to the
+surfaces \(\beta \) and \(\gamma \).
+
+\section[Curvilinear Rotation]{Dilatation and Rotation referred to curvilinear orthogonal coordinates.}
+%\section{Dilatation and Rotation referred to curvilinear orthogonal coordinates.}% 21
+
+The results of Art. 15 can be utilized to express the cubical dilatation
+\(\Delta \), and the component rotations \(\varpi_a, \varpi_\beta, \varpi_\gamma \)
+about the normals to the three surfaces, in terms of the components
+\(u_\alpha, u_\beta, u_\gamma \) of the displacement.
+
+To obtain the expression for \(\Delta \) we form the surface integral of
+the normal component of the displacement\footnote{This method is due to Lord
+Kelvin. (Sir W. Thomson, Math.\ and Phys.  Papers, Vol. 1, p. 25. The date of
+the investigation is 1843.) }over the surface of an element of the body bounded
+by the three pairs of surfaces
+\((\alpha, \alpha+d \alpha),(\beta, \beta+d \beta),(\gamma, \gamma+d \gamma)\),
+the normal being drawn away from the interior of the element. The
+contributions of the faces of the element can be put down in such forms as
+\[
+\begin{aligned}
+& \text { contribution of } \quad a=-u_a \frac{d \beta}{h_2} \frac{d \gamma}{h_3} \\
+& \quad \text { " " } \quad a+d \alpha=u_a \frac{d \beta}{h_2}
+\frac{d \gamma}{h_3}+d \alpha \frac{\partial}{\partial \alpha}\left(u_a \frac{d
+\beta}{h_2} \frac{d \gamma}{h_3}\right),
+\end{aligned}
+\]
+and, on adding the six contributions, we obtain
+\[
+d a d \beta d \gamma \left\{\frac{\partial}{\partial \alpha}
+\left(\frac{u_a}{h_2 h_3}\right)+
+\frac{\partial}{\partial \beta}\left(\frac{u_\beta}{h_3 h_1}\right)+
+\frac{\partial}{\partial \gamma}\left(\frac{u_\gamma}{h_1 h_2}\right)\right\};
+\]
+this must be the same as \(\Delta d a d \beta d \gamma / h_1 h_2 h_2\).
+We therefore have
+\[
+\Delta=h_1 h_2 h_3\left\{
+\frac{\partial}{\partial \alpha}\left(\frac{u_a}{h_2 h_3}\right)+
+\frac{\partial}{\partial \beta}\left(\frac{u_\beta}{h_3 h_1}\right)+
+\frac{\partial}{\partial \gamma}\left(\frac{u_\gamma}{h_1 h_2}\right)
+\right\}.
+\]
+
+This result is the same as would be found by adding the expressions for
+\(e_{\alpha \alpha}\), \(e_{\beta \beta}\), \(e_{\gamma \gamma}\) in (36).
