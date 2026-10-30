@@ -1,0 +1,542 @@
+\section{Prologue}\label{prologue}
+
+I found a paper \cite{Woodhouse2024}; frf, matrices, \(\partial\).
+Prof. Woodhouse' publications might be more relevant that Rayleigh's book.
+
+\url{https://scholar.google.com/citations?user=2jBVQo4AAAAJ&hl=en}
+
+Also see \url{https://euphonics.org/}
+
+
+
+This document collects Gemini responses to prompts discussing prerequisities.
+
+My primary motivation for reading Theory of Sound is to learn the
+approximation for the first fundamental mode of structures \cite{Hodges1985}.
+The static deflection curve is the deformation of the structure under a uniform
+load, e.g., the force of gravity. Rayleigh's Method for estimating the
+fundamental frequency of a structure is to use the Rayleigh quotient
+corresponding to the static deflection curve.
+
+Another reason to reading Theory of Sound is that it defined the
+\emph{lingua franca} for a large proposition of the work related to
+acoustics and vibrations done in the early 20th century. Readers must
+know Rayleigh's notation `by heart'. Moreover Rayleigh assumed that his
+readers were familiar with the famous 17th and 19th century inventors
+and their intriguing inventions.
+
+Humans hear sounds in the range 20~Hz to 20,000~Hz. Decibels (dB) are a
+measure of wave amplitude, the displacement of particles from their
+resting position. Meters \(m\), seconds \(s\), A medium's density and
+elasticity determine the speed of sound.
+
+\begin{itemize}
+\item
+  air (at 20\(^\circ \)C): \(\sim \)343 \(m/s\)
+\item
+  water: \(\sim \)1,480 \(m/s\)
+\item
+  steel: \(\sim \)5,960 \(m/s\)
+\end{itemize}
+
+As far as I know, heat is the primary cause of variation in sound speed;
+temperature is inversely proportional to density.
+
+At a hard or soft boundary, or at the interface between a different
+medium, sound waves change at a
+
+\begin{itemize}
+\item
+  Reflection: Bouncing off a surface, creating echoes or reverberation.
+\item
+  Refraction: Bending as it passes between zones of different
+  temperatures or materials.
+\item
+  Diffraction: Bending around obstacles or spreading through openings.
+\item
+  Absorption: Losing energy as heat when hitting soft, porous materials.
+\end{itemize}
+
+Diffraction, e.g., Borda's mouthpiece, creates interesting
+singularities. The list of intriguing physical phenomena includes
+impedance, dispersion, sub-harmonics, Helmholtz's resonator and
+thermoacoustics.
+
+\section{Nomenclature}\label{nomenclature}
+One motivation for defining Rayleigh's notation is to understand the work of
+the other Rayleigh.
+\[(D_x u ) + {({D_x u})}^T =
+\begin{bmatrix}
+2e & c & b\\
+c & 2f & a\\
+b & a & 2g\\
+\end{bmatrix}.\]
+\[e=\frac{\partial u}{\partial x},\quad f=\frac{\partial v}{\partial y},\quad
+g=\frac{\partial w}{\partial z}\]
+\[a=\frac{\partial w}{\partial y}+\frac{\partial v}{\partial z},\quad
+b=\frac{\partial u}{\partial z}+\frac{\partial w}{\partial x},\quad
+c=\frac{\partial v}{\partial x}+\frac{\partial u}{\partial y}\]
+Dilatation (Volumetric Strain): \(\theta =e+f+g\)
+
+Stress (Internal Forces per Unit Area)
+
+To represent the internal forces acting across planes within a vibrating
+solid Rayleigh tracked the six components of the stress system using
+capital letters:
+
+Normal Stresses: Represented by \(P, Q, R\) (pulling or pushing
+perpendicular to the \(x, y, z\) planes).
+
+Tangential (Shear) Stresses: Represented by \(S, T, U\) (acting parallel
+to the faces of an infinitesimal cube).
+
+When writing the potential energy of a deformed solid (the Strain Energy
+Function, \(W\)), he linked these stresses directly to his strain
+components via Hooke's Law using the notation:
+
+\(P=\frac{\partial W}{\partial e},\quad Q=\frac{\partial W}{\partial f},\quad R=\frac{\partial W}{\partial g}\)
+
+\(S=\frac{\partial W}{\partial a},\quad T=\frac{\partial W}{\partial b},\quad U=\frac{\partial W}{\partial c}\)
+
+Body/External Forces: When expressing the equations of motion for an
+elastic solid body, Rayleigh denoted the external components of force
+acting per unit volume as \(X, Y, Z\).
+
+The Equations of Motion: \(\rho \) is the mass density of the material.
+Using his combined notation for stress and force components, Rayleigh
+wrote the foundational 3D elasto-dynamic equations as:
+\[\rho \ddot{u}=\rho X+
+\frac{\partial P}{\partial x}+
+\frac{\partial U}{\partial y}+
+\frac{\partial T}{\partial z}\]
+
+\begin{longtable}[]{@{}ccc@{}}
+\caption{Rayleigh elasticity notation and contemporary equivalents.}\label{tbl:nomenclature1}
+\tabularnewline%
+quantity & symbol & modern \\
+\midrule\noalign{}
+\endfirsthead%
+\toprule\noalign{}
+quantity & symbol & modern \\
+\midrule\noalign{}
+\endhead%
+\endlastfoot{}% chktxt 1
+displacement & \(u, v, w\) & \(u_1, u_2, u_3\) \\
+Normal Strain & \(e, f, g\) &
+\(\epsilon_{xx}, \epsilon_{yy}, \epsilon_{zz}\) \\
+Shear Strain & \(a, b, c\) &
+\(\gamma_{yz}, \gamma_{xz}, \gamma_{xy}\) \\
+Volumetric Strain & \(\theta = \Delta \) &
+\(\epsilon_{v}= \text{Tr}(\boldsymbol{\epsilon})\) \\
+Normal Stress & \(P, Q, R\) &
+\(\sigma_{xx}, \sigma_{yy}, \sigma_{zz}\) \\
+Shear Stress & \(S, T, U\) & \(\tau_{yz}, \tau_{xz}, \tau_{xy}\) \\
+External Body Force & \(X, Y, Z\) & \(\mathbf{f} = b_{i}\) \\
+Acoustic Pressure & \(p\) & \(p\), \(\Delta p\) \\
+\end{longtable}
+
+
+\begin{longtable}[]{@{}cc@{}}
+\caption{Notation}\label{tbl:notation}\tabularnewline%
+symbol & quantity modern \\
+\midrule\noalign{}
+\endfirsthead%
+\toprule\noalign{}
+symbol & quantity modern \\
+\midrule\noalign{}
+\endhead%
+\endlastfoot%
+\(T\) & kinetic energy \\
+\(V\) & Strain energy \\
+\(F\) & dissipation function \\
+\(\psi_k\) & generalized coordinate \(k\) \\
+\(y\), \(w\) & lateral displacement \\
+A & amplitude \(A \cos( p t - \epsilon)\) \\
+p & circular frequency \\
+\(\epsilon \) & phase angle \\
+\(\rho \) & mass density \\
+\(\omega \) & cross sectional area \\
+E & Young's \\
+I & inertia \\
+\(\kappa \) & radius of gyration \\
+\end{longtable}
+
+
+When writing the Strain Energy Function (W)---which measures the
+potential energy stored in an elastic body when it is deformed.
+
+Rayleigh formulated it using his strain components
+
+(e, f, g for normal strains and a, b, c for shear strains)
+
+alongside m and n:
+
+\(2W=(m+n)(e^{2}+f^{2}+g^{2})+2(m-n)(f g+g e+ef)+n(a^{2}+b^{2}+c^{2})\)
+
+Or in terms of the volumetric dilatation \(\theta = e + f + g\),
+
+\(2W=(m-n)\theta^{2}+2n(e^{2}+f^{2}+g^{2})+n(a^{2}+b^{2}+c^{2})\)
+
+\begin{longtable}[]{@{}ccc@{}}
+\caption{Rayleigh's notation (blanks are intentional).}\label{tbl:archaic}
+\tabularnewline%
+quantity & symbol & modern \\
+\midrule\noalign{}
+\endfirsthead%
+\toprule\noalign{}
+quantity & symbol & modern \\
+\midrule\noalign{}
+\endhead%
+\endlastfoot{}%
+                 &\(m\)& \(\lambda + \mu \)  \\
+shear modulus    &\(n\)& \(\mu = G\) \\
+bulk modulus     &     & \(K = \lambda + \frac{2}{3} \mu \) \\
+Poisson's ratio  &     & \(\nu = \frac{\lambda }{2 (\lambda + \mu )} \) \\
+\end{longtable}
+
+\section{Vocabulary Advance
+Organizer}\label{vocabulary-advance-organizer}
+
+\begin{longtable}[]{@{}ccc@{}}
+\caption{Inventors and their inventions by chapter.}\label{tbl:nomenclature3}\tabularnewline%
+Chapter & & dates, invention \\
+\midrule\noalign{}
+\endfirsthead%
+\toprule\noalign{}
+Chapter & & dates, invention \\
+\midrule\noalign{}
+\endhead%
+\endlastfoot%
+1 & Regnault & 1810--1878 \\
+1 & Cagniard de la Tour & 1819, siren \\
+2 & Wheatstone & 1827, kaleidophone \\
+3 & Scheibler & 1834, tonometer \\
+6 & Mersenne & 1588--1648, sonometer \\
+7 & Terquem & 1831--1887 Savart's son rauque \\
+9 & Bourget & 1822--1887 \\
+10 & Chladni, Mathieu & \\
+10 & Rudolph Koenig & 1832--1901 \\
+\end{longtable}
+
+Henri Victor Regnault (1810--1878) was a highly precise French chemist
+and physicist, famous for his meticulous empirical measurements of the
+physical properties of gases.
+
+\textbf{His Contribution}: Regnault conducted massive, definitive
+experiments on the velocity of sound in the atmosphere and inside long
+pipes (famously utilizing the newly constructed Paris water mains). He
+discovered that the speed of sound is not perfectly constant but varies
+slightly depending on the intensity (loudness) of the sound wave and the
+diameter of the tube it travels through.
+
+\textbf{In Theory of Sound}: Rayleigh cites Regnault's measurements to
+bridge the gap between idealized mathematical wave equations and the
+messy reality of friction, thermal conduction, and atmospheric pressure
+in real-world pipes.
+
+\textbf{The Siren of Baron Charles Cagniard de la Tour} Invented by
+French physicist Baron Charles Cagniard de la Tour in 1819, this device
+was the first mechanical instrument capable of measuring the exact
+absolute frequency (pitch) of a sound.
+
+\textbf{How it worked}: It consisted of a pressurized air chamber with a
+fixed metal disk (stator) on top, overlaid by a rotating metal disk
+(rotor). Both disks were punched with a series of regularly spaced
+holes.
+
+\textbf{The Physics}: Crucially, the holes were drilled at opposing,
+slanted angles. When air was forced upward from a bellows, it rushed
+through the holes and physically pushed the top disk, making it spin. As
+the disk spun, it rapidly cut off and opened the air stream, releasing
+regular, rapid \textit{puffs} of air that the human ear perceives as a musical
+tone.
+
+\textbf{Rayleigh's Use}: Gears on the spinning disk connected to a dial
+mechanism that precisely counted the number of rotations per second. By
+multiplying the rotations by the number of holes, scientists could
+calculate the exact frequency of the tone mathematically, providing an
+invaluable tool for calibrating early acoustics experiments.
+
+\textbf{The Mythological Name}:
+Cagniard de la Tour named the device a siren because it could produce
+sound underwater.
+
+\textbf{Kaleidophone} Invented by Sir Charles Wheatstone in 1827, the
+kaleidophone (literally \textit{beautiful sound-vessel}) was a device designed
+to visually demonstrate the paths of vibrating objects using the
+phenomenon of persistence of vision.
+
+\textbf{How it worked}: It consisted of a thin, elastic metal rod
+clamped firmly at one end. At the free upper end, a small, highly
+polished or silvered glass bead was attached to reflect a point of
+light.
+
+\textbf{Rayleigh's Context}: When the rod was bowed or struck, it
+vibrated transversely in two directions. Because the elasticity of the
+rod was usually slightly different in different directions, the bouncing
+point of light traced luminous, overlapping, and looping patterns in the
+air---known today as Lissajous curves. Rayleigh references it when
+discussing the compounding of two perpendicular, independent harmonic
+vibrations of varying frequencies.
+
+\textbf{Tonometer} Invented by Johann Heinrich Scheibler in 1834, the tonometer
+was a highly precise acoustic apparatus used as an absolute frequency
+analyzer and tuning standard before electronic measurement existed.
+
+\textbf{How it worked}: It consisted of a large, sequentially tuned set
+of precision tuning forks---often 56 or more---spanning exactly one
+octave. Each fork was meticulously filed down so that it was separated
+from the previous one by a tiny, identical interval (usually exactly 4
+Hz), creating an audible rhythmic beating sound when played together.
+
+\textbf{Rayleigh's Context}: By counting the exact number of beats per
+second generated between an unknown acoustic pitch and the closest
+tuning forks on the tonometer, scientists could mathematically calculate
+the absolute frequency of any sound with extreme accuracy. Rayleigh used
+these to study pure tones and verify the exact interference patterns of
+wave frequencies.
+
+Here are a few sentences guessing importance of Marin Mersenne
+(1588--1648), minimizing almost everything, and otherwise exaggerating: He was
+able to get a few hundred of Western Europe's best scientists to adopt
+of each others work. He created a clearing house for ideas, centered
+around Parisien scientists, and created or standardized Peer Review. In
+acoustics, he was among the first to experimentally measure the absolute
+speed of sound in air. Mersenne's Laws (1636) mathematically describe
+the behavior of vibrating strings. He proved how a string's frequency
+changes based on its length, cross-sectional diameter, tension, and
+material density. This work serves as Rayleigh's foundation for building
+the transverse string vibration equations.
+
+\textbf{Sonometer} Also historically known as a monochord, the sonometer is an
+ancient physics apparatus (dating back to Pythagoras) used to study the
+mathematical laws of vibrating strings.
+
+\textbf{How it worked}: It features a long, hollow wooden resonance box with one
+or more metal wires stretched tightly across it. The wires are anchored
+at one end, while the other end uses hanging weights or tuning pegs to
+meticulously control the tension. A movable wooden \textit{bridge} can be slid
+underneath the string to change its effective vibrating length without
+changing its tension.
+
+\textbf{Rayleigh's Context}: Plucking or bowing the string produces a clear tone.
+Rayleigh used the sonometer to experimentally prove that the frequency
+of a string is inversely proportional to its length, directly
+proportional to the square root of its tension, and inversely
+proportional to its mass density.
+
+\textbf{Son Rauque}
+Savart's \emph{son rauque} F{é}lix Savart's observed \emph{son rauque}
+during 1831 experiments on the longitudinal vibrations of solid
+cylindrical bars. The main tone of a bar is its longitudinal pitch.
+Alongside its main tone the bar unexpectedly emits a rough,
+lower-pitched note that is exactly one octave lower. In the 1850s Alfred
+Terquem (1831--1887) explained son rauque as an acoustic coupling
+effect. The deformation for a High frequency longitudinal
+stretch/compression forces a transverse (bending) vibration. This
+secondary bending wave acts as a sub-harmonic, vibrating at half the
+frequency.
+
+\textit{ Terquem collaborated with instrument makers like Rudolph Koenig}.
+Koenig manufactured Terquem's \emph{verges de laiton} adopted by
+the music education curriculum.
+
+P.S.  This might be an AI hallucination.
+I found no references to inventions of Terquem.
+Alfred Terquem was an experimental physicists.
+Koenig learning from Helmholtz to make H's apparatus',
+such as resonators.
+Then Koenig fabricated the sound flame, which was crucial.
+I did not look for Savart's son rauque or \emph{verges de laiton}.
+
+
+\textbf{J. Bourget} (1822--1887) fluids and solids, circular membrane vibration (1866),
+
+section to the vibrations of membranes. He explicitly quotes the
+collaborative experimental work of Bourget and Bernard, who tested how
+circular membranes react when physically blasted with acoustic notes
+from organ pipes.
+
+Chladni's plates or diagrams? Mathieu?
+
+Rudolph Koenig (1832--1901) transformed acoustics from a theoretical branch of
+math into a precise experimental science.  He invented the manometric flame
+apparatus which visualized sound waves using gas flames.  Also, he perfected
+the construction of ultra-precise tuning forks and tonometers.  Rayleigh relied
+on a manometric flame apparatus in his experiments.  Rayleigh cites Koenig's
+empirical data on interferents between subtle overtones, and changes of pitch
+in tuning forks near a resonant cavity,
+
+\section{Torsional Vibration}\label{torsional-vibration}
+
+When a uniform, circular bar or shaft experiences twisting along its
+longitudinal axis, it undergoes torsional vibration.
+
+
+\begin{longtable}[]{@{}cc@{}}
+\tabularnewline%
+quantity & symbol \\
+\midrule\noalign{}
+\endfirsthead%
+\toprule\noalign{}
+quantity & symbol \\
+\midrule\noalign{}
+\endhead%
+\endlastfoot{}%
+axial position & \(x\)  \\
+ angle of twist & \(\theta (x,t)\) \\
+torsional wave velocity & \(c = \sqrt{\frac{G}{\rho}}\) \\
+\end{longtable}
+
+Torsional vibrations share an the mathematical structure with
+axial/longitudinal vibrations, with \(\theta\) instead of \(u\).
+Assuming a circular cross-section, e.g., cross-sections remain perfectly
+planar, the governing partial differential equation is a standard
+one-dimensional wave equation:
+\[
+\ddot{\theta}=\frac{G}{\rho }\theta_{,xx}.
+\]
+In the same bar, the ratio between longitudinal and torsional wave speeds
+\(\sqrt{2(1+\mu)}\).
+
+\section{Thermoacoustics}\label{thermoacoustics}
+
+Pieter Rijke discovered the Rijke Tube (Rye-kuh, 1859).
+Singing flames and the Rijke tube phenomenon
+are two variations of thermoacoustics (turning heat into sound).
+Both rely on a physics principle known as the Rayleigh Criterion, which
+states that if heat is added to a gas at the moment of highest
+compression (maximum pressure), the acoustic vibration will be
+amplified.
+
+The Singing Flame (Higgins' Flame, 1777)
+
+Setup: A small gas flame (originally hydrogen) is placed inside a larger
+vertical glass or metal tube open at both ends.
+
+The Mechanism: The heat from the flame causes air to expand and rush up
+the tube. This airflow naturally triggers a weak, native acoustic
+standing wave inside the pipe. The pressure changes of this wave force
+the flame to flicker violently. Because the flame fluctuates in perfect
+synchronization with the air pressure, it releases bursts of heat at
+exactly the right moments to amplify the sound wave, causing the pipe to
+loudly \textit{sing}.
+
+The Rijke Tube (1859), Dutch physicist Pieter Rijke
+
+Setup: Instead of an open flame inside the pipe, a fine metal wire mesh
+is placed inside the lower half of a vertical tube.
+
+The Mechanism: The mesh is heated with a burner until it is red-hot. The
+burner is then removed.
+
+The Result: Convection draws cold air into the bottom of the tube. As
+this air passes up through the hot mesh, the mesh transfers heat to the
+air in periodic pulses that sync with the pipe's natural resonant
+frequency, creating an incredibly loud, deep, foghorn-like roar without
+any active flame present.
+
+In short: A singing flame uses an active, oscillating chemical reaction
+to generate thermoacoustic sound, whereas a Rijke tube uses a static,
+pre-heated metal element combined with buoyant convection to achieve the
+exact same acoustic amplification.
+
+\section{Appendix}\label{appendix}
+
+The discovery of sub-harmonics in fluids, Faraday waves, motivated the
+discovery of acoustic sub-harmonics. Amazing discussion of Faraday
+waves, and related period states.
+
+Professor Ratul Dasgupta, Introduction to Interfacial Waves, Lectures
+\( 1,2, \dots 52, \ldots \)
+
+\url{https://www.youtube.com/watch?v=VJ-Me2Q3tdg}
+
+\url{https://www.youtube.com/watch?v=J6i4izpfEtw}
+
+\url{https://www.youtube.com/watch?v=2BOGnDg9NX8}
+
+dead link: \url{https://nptel.ac.in/course.html}
+
+More vocabulary.
+
+\begin{itemize}
+\item
+  aliquot: an `aliquot part' of an integer is an exact divisor or
+  submultiple.
+\item
+  gutta-percha: thermoplastic latex sap.
+\item
+  gutta-percha tube: a hollow pipe used for communication by sound
+  (stethoscopes until 1950)
+\item
+  diapson: sound made by a pipe organ when a chord is held.
+\item
+  Faulhorn: a mountain in the Alps
+\item cateris paribus: all other things being equal
+\item concord: a harmonious, stable combination of notes that sounds complete
+and at rest to the ear.
+\item ex hypothesi: according to the hypothesis proposed
+\item Leyden : capacitor
+\end{itemize}
+
+Article 19. The sound is like the howl of a wolf, and is called the wolf
+interval.
+
+Capacitance is the shunt capacitance per unit length.
+Conductance represents the imperfect insulation between wires, where a tiny
+amount of current \textit{leaks} through the dielectric material.
+
+contemporary RGLC parameters,  \( j = \sqrt{-1} \)
+
+\begin{tabular}{cc}
+\(\Omega \) & Ohm \\
+\(H\) &  Henry  \\
+\(F\) &  Farad  \\
+\(R\) & \(\Omega/m\)  \\
+\(G\) &  Leakage-Conductance \\
+ &  Conductance (S/m) \\
+\(L\) &  inductance \(H/m\) \\
+\(C\) & permittance \(F/m\) \\
+ & capacitance  \\
+\(S\) & Siemen \\
+\end{tabular}
+
+I do not know what notation Rayleigh used.
+
+Voltage Drop and Current Leakage equations,
+\[
+\frac{\partial}{\partial x}
+\begin{bmatrix} V \\ I \end{bmatrix}
++
+\frac{\partial}{\partial t}
+\begin{bmatrix}
+0 & L \\
+C & 0
+\end{bmatrix}
+\begin{bmatrix} V \\ I \end{bmatrix} = -
+\begin{bmatrix}
+0 & R \\
+V & 0
+\end{bmatrix}
+\begin{bmatrix} V \\ I \end{bmatrix}
+\]
+
+Impedance
+\[
+Z_{0}(\omega) =\sqrt{\frac{R+j\omega L}{G+j\omega C}}
+\]
+
+The L in LCR meter refers to an inductometer.
+
+Vocabulary:
+hundred weight (cwt), 112 lbs (force) =  1 hundred weight
+
+\[\vec{x} = r( t - \sin t, 1 - \cos t)^T \tag{cycloid} \]
+\[\vec{x} = ( r t - d \sin t, r - d \cos t)^T \tag{trochoid} \]
+curtate \(d < r \) , or prolate \(d > r \) .
+
+aeolian harp, determinental, determinate, extensible, isochronism (constant period),
+Germansilver (Schlage keys), crispation, perigee, lycopodium powder (Chladni)
+
+Smee cell  - a type of battery  circa 1900

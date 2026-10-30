@@ -1,0 +1,70 @@
+440 hz,              880 hz
+"1"   = 440 hz,       "2" = 880 hz
+
+ 1   2    3    4    5     6     7      8
+Do  Re   Mi   Fa   Sol    La    Si    Do
+c   d    e    f     g     a     b     c'   ???
+
+
+"Transposition",  ratios are constant 
+
+g:=3/2, c'/f = g/c  ->  f=4/3
+
+c  d  e  f  g  a  b  c' d'  e' f' g'
+
+d'/g = g/c,   d = 9/8
+
+Temperment.
+ratios involving a * comma are constant.
+a, comma tbd.
+a comma = "a" = "5th of d"
+d'/"a" = f/c,    "a" = c d'/f = 27/16 
+replace "a" by a=5/3,   comma = 81/80
+
+
+1:"e":3/2 = "e":3/2:b
+g/"e" = "e"/c,   "e" = sqrt(g/c) = 1.22
+replace "e" by e=5/4,   comma = 1.02
+I guess that  e=1.22 is less harmonious.
+
+Make b proportional to the simplified e
+to preserved the chord
+      1:e:g = g:b:d'   -> b=15/8
+
+ 1   2    3    4    5     6     7      8
+Do  Re   Mi   Fa   Sol    La    Si    Do
+c   d    e    f     g     a     b     c'
+1 9/8  5/4   4/3  3/2    5/3   15/8   2 
+
+
+"Minor third"   d# = 6/5
+"Minor sixth"   g# = 8/5 
+
+
+equal tempered scale, 2^(0:12)/12
+"looks like powers of  2^(1/12), add 5 notes,  sharps.
+1   2  3   4   5  6   7   8  9   10  11   12    13 14
+c  c#  d  d#   e  f  f#   g  g#  a   a#   b     c' c'#
+c    1
+c#   1.06
+d    1.12  (1.11)
+d#   1.19  (1.2)
+e    1.26  (1.25)
+f    1.33
+f#   1.41
+g    1.50
+g#   1.58  (1.6)
+a    1.68  (1.66)
+a#   1.78
+b    1.89  (1.88)
+c'   2
+e:   1.22 < 1.25 < 1.26 = 2^(4/12)
+a:   5/4 <  2^(9/12) < 27/16 
+     
+
+Tne pairs of notes (e,f) and (b,c) are much
+closer together than the other pairs.
+
+
+
+

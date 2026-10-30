@@ -1,0 +1,1635 @@
+%\chapter{Vibrations of Membranes}\label{vibrations-of-membranes}
+193. The theoretical membrane is a perfectly flexible and infinitely thin
+lamina of solid matter, of uniform material and thickness, which is stretched
+in all directions by a tension so great as to remain sensibly unaltered
+during the vibrations and displacements contemplated. If an imaginary line be
+drawn across the membrane in any direction, the mutual action between the two
+portions separated by an element of the line is proportional to the length of
+the element and perpendicular to its direction. If the force in question be
+\(T_1 ds\), \(T_1\) may be called the \textit{tension of the membrane}, it is
+a quantity of one dimension in mass and \(-2\) in time.
+
+The principal problem in connection with this subject is the investigation of
+the transverse vibrations of membranes of different shapes, whose boundaries
+are fixed. Other questions indeed may be proposed, but they are of
+comparatively little interest ; and, moreover, the methods proper for solving
+them will be sufficiently illustrated in other parts of this work. We may
+therefore proceed at once to the consideration of a membrane stretched over
+the area included within a fixed, closed, plane boundary.
+
+% LaTeX page 175
+\setcounter{equation}{0}
+194. Taking the plane of the boundary as that of \(x y\), let \(w\)
+denote the small displacement therefrom of any point \(P\)
+of the membrane. Round \(P\) take a small area \(S\),
+and consider the forces acting upon it parallel to \(z\).
+The resolved part of the tension is expressed by
+\[ T_1 \int \frac{\del w}{\del n} ds,\]
+where \(ds\) denotes an element of the boundary of \(S\), and \(d \vec{n}\) an
+element of the normal to the curve drawn outwards. This is balanced by
+the reaction against acceleration measured by \(\rho S \ddot{y} \),
+\(\rho\), being a symbol of one dimension in mass and \(-2\) in length
+denoting the superficial density. Now by Green's theorem, if
+\[
+\Grad = \left(\frac{\del}{\del x}, \frac{\del}{\del y} \right), \quad
+\Lap = \frac{\del^2}{\del x^2} + \frac{\del^2}{\del y^2},
+\]
+\[\int \frac{\del w}{\del n}ds=\iint_D \Lap w \, dS \approx \Lap w \,|S|\]
+ultimately, and thus the equation of motion is (1)
+\begin{equation} \ddot{w} = \frac{T_1}{\rho} \Lap w.\end{equation}
+
+The condition to be satisfied at the boundary is of course \(w=0\).
+
+The differential equation may also be investigated from the expression for the potential energy, which is found by multiplying the tension by the superficial stretching.  The altered area is
+\[ \iint \sqrt{ 1 + {\norm{\Grad w}}^2} \, dx \, dy ;\]
+from which V is easily found by an integration by parts, and thus
+\begin{equation}
+V=\frac{T_1}{2} \iint {\norm{\Grad w}}^2 \, dx \, dy;
+\end{equation}
+from which \(\delta V\) is easily found by an integration by parts.
+
+If we write
+\(T_1/\rho = c^2\),
+then \(c\) is of the nature of a velocity, and the
+differential equation is
+\begin{equation}\label{equation194_3} \ddot{w} = c^2 \Lap w.\end{equation}
+
+\setcounter{equation}{0}
+\section{Levy solution part 1, 195}
+
+195. We shall now suppose that the boundary of the membrane is the rectangle
+formed by the coordinate axes and the lines \(x=a\),\(y=b\). For every point
+within the area, equation~(\ref{equation194_3}) is satisfied, and for every
+point on the boundary \(w=0\).
+
+A particular integral is evidently
+\begin{align}
+w&=\sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right) \cos(pt),
+p^2 &= c^2 \pi^2 \left(\frac{m^2}{a^2} + \frac{n^2}{b^2} \right),
+\end{align}
+and \(m\) and \(n\) are integers; and from this the general solution may be derived. Thus (3)
+\begin{equation}
+w=\sum_{m,n \geq 1}
+\sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right)
+(A_{mn} \cos(pt) + B_{mn} \sin(pt)).
+\end{equation}
+
+That this result is really general may be proved \textit{a posteriori}, by
+shewing that it may be adapted to express arbitrary initial circumstances.
+
+Whatever function of the coordinates \(w\) may be, it
+can be expressed for \(0 \leq x \leq a\) by the series
+\[\sum_m Y_m \sin \left(\frac{m \pi x}{a}\right),\]
+where the coefficients \({\{ Y_m \}}_{m \geq 1}\) are independent of \(x\).
+Again whatever function of \(y\) and any one of the coefficients \(Y_m\) be,
+it can be expanded, \(0 \leq y \leq b\) in the series
+\[ \sum_n C_n \sin \left(\frac{n \pi y}{b}\right),\]
+\({\{ C_n \}}_{n \geq 1}\) are constants.
+From this we conclude that any function of
+\(x\) and \(y\) can be expressed within the limits of the rectangle by the
+double series
+\[
+\sum_{m,n \geq 1} A_{mn}
+\sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right)
+\]
+and therefore that the expression for \(w\) in (3) can be adapted to
+arbitrary initial values of \(w\) and \(\dot{w}\).
+For the rectangle \(D = [0,a] \times [0,b]\),
+\begin{equation}
+(A_{mn}, B_{mn}) = \frac{4}{ab} \iint_D \left(w_o, \frac{ \dot{w}_o }{p} \right)
+\sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right) \, dx \, dy
+\end{equation}
+
+The character of the normal functions of a given rectangle,
+\[
+\sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right)
+\]
+as depending on \(m\) and \(n\), is easily understood. If
+\(m\) and \(n\) be both unity, \(w\)
+retains the same sign over the whole of the rectangle, vanishing at
+the edge only; but in any other case there are nodal lines running
+parallel to the axes of coordinates. The number of the nodal lines
+parallel to \(x\) is \(n-1\), their equations being
+\[ y=k b/n,\quad 1 \leq k < n.\]
+
+In the same way the equations of the nodal lines parallel to
+\(y\) are
+\[ x = k a/m, \quad 1 \leq k < m,\]
+being \(m-1\), in number. The nodal system divides the
+rectangle into mn equal parts, in each of which the numerical value of
+\(w\) is repeated.
+
+%\[ w = \sum_{m,n \geq 1}
+% \sin \left(\frac{m \pi x}{a}\right) \sin \left(\frac{n \pi y}{b}\right)
+% V=\frac{T_1}{2} \iint {\norm{\Grad w}}^2 \, dx \, dy;
+%\iint_D f(x,y) \, dx \, dy
+% xxxx
+
+\setcounter{equation}{0}
+\section{Levy solution part 2, 196}
+196. The expression for w in terms of the normal functions is
+
+\[w= Xz nq sin \sin(Y) (1),\]
+where c, etc. are the normal coordinates. We proceed to form the
+expression for V in terms of c,,: We have
+
+\[we) = 0 254.7 00s Ms \sin()\]
+
+\[\sin()= \cos(ay)\]
+
+In integrating these expressions over the area of the rectangle the
+products of the normal coordinates disappear, and we find
+
+(2),
+the summation being extended to all integral values of m and n.
+
+The expression for the kinetic energy is proved in the same way to be
+pab
+team (3), from which we deduce as the normal equation of motion
+
+(4).
+
+In this equation
+
+apo. mre. mry ,= "f Zin (5 dx dy (5),
+if Z dx dy denote the transverse force acting on the element dx dy.
+
+Let us suppose that the initial condition is one of rest under the
+operation of a constant force Z, such as may be supposed to arise from
+gaseous pressure. At the time c=0, the impressed force is removed, and
+the membrane left to itself. Initially the equation of equilibrium is
+
+\(c () = ab \Phi\) (6)
+whence () o is to be found. The position of the system at time t is then
+given by
+
+(7),
+in conjunction with (1).
+
+In order to express \(\Phi\) , we have merely to substitute for Z its value
+in (5), or in this case simply to remove Z from under the integral sign.
+Thus
+
+\(\Phi = Z () () dx dy\)
+
+= Z a b (1 - (mr) (1 - (nz).
+
+We conclude that \(\Phi\) vanishes, unless m and n are both odd, and that
+then
+
+\(\Phi = 4ab/() Z.\)
+
+Accordingly, m and n being both odd,= (8),
+
+where p 2 = (9).
+
+This is an example of (8), Article 101.
+
+If the membrane, previously at rest in its position of equilibrium, be
+set in motion by a blow applied at the point , the solution is
+
+= 4/abp (2) (8) fd dy (pt)(10).
+
+[As an example of forced vibrations, suppose that a harmonic
+force acts at the centre. Unless \(m\) and \(n\) are both odd,
+\( \Phi_{mn} = 0\), and in the case reserved
+\[ \Phi_{mn} = \pm Z_1 \cos (qt) \]
+(11), and in the case reserved
+where
+\( Z_1\)
+is the whole force acting at time \(t\), and
+\(\pm\) represents
+\( \sin (m \pi/2) \sin (n \pi/2)\). From (4) and (9) we have
+\[ \phi_{mn} = \pm 4 Z_1 \cos (qt).  \]
+(12) In the case of a square membrane, \(p\) is a symmetrical function
+of \(m\) and \(n\).  When \(m\) and \(n\) are unequal, the terms occur in pairs,
+such as
+\[ \left( \sin (m \pi x/a) \sin (n \pi y/a) + \sin (n \pi x/a) \sin (m \pi y/a) \right),\]
+a combination symmetrical as between x and y. The vibration is
+of course similarly related as well to the four sides as to the four
+comers of the square.
+
+In the neighbourhood of the centre, where the force is applied,
+the series loses its convergency, and the displacement w tends to
+become (logarithmically) infinite.]
+
+\setcounter{equation}{0}
+\section{Degenerate modes of square membranes, 197}
+
+197. The frequency of the natural vibrations is found by ascribing
+different integral values to m and n in the expression
+
+(1).
+
+For a given mode of vibration the pitch falls when either side of the
+rectangle is increased. In the case of the gravest mode, when m=1, n=1,
+additions to the shorter side are the more effective; and when the form
+is very elongated, additions to the longer side are almost without
+effect.
+
+When a2 and b2 are incommensurable, no two pairs of values of m and n
+can give the same frequency, and each fundamental mode of vibration has
+its own characteristic period. But when a2 and b2 are commensurable, two
+or more fundamental modes may have the same periodic time, and may then
+coexist in any proportions, while the motion still retains its simple
+harmonic character. In such cases the specification of the period does
+not completely determine the type. The full consideration of the problem
+now presenting itself requires the aid of the theory of numbers; but it
+will be sufficient for the purposes of this work to consider a few of
+the simpler cases, which arise when the membrane is square. The reader
+will find fuller information in Riemann's lectures on partial
+differential equations.
+
+If a=),
+
+The lowest tone is found by putting m and n equal to unity, which gives
+only one fundamental mode :
+
+W = (BID) (Pb os (3).
+
+Next suppose that one of the numbers m, n is equal to 2, and the other
+to unity. In this way two distinct types of vibration are obtained,
+whose periods are the same. If the two vibrations be synchronous in
+phase, the whole motion is expressed by
+
+w= C (2) (724) D (2) (2H) (pt. (4);
+so that, although every part vibrates synchronously with a harmonic
+motion, the type of vibration is to some extent arbitrary,
+
+Four particular cases may be especially noted. First, if D=0, (5),
+which indicates a vibration with one node along the line x= 4a.
+Similarly if C=0, we have a node parallel to the other pair of edges.
+Next, however, suppose that C and D are finite and equal, then w is
+proportional to
+
+\[\sin(27)  x  + \sin(2) \sin(2),\]
+which may be put into the form
+
+\[2 \sin(7) \sin(7) \cos(8) ,\]
+
+This expression vanishes, when \(\sin(7) =0,\) or \(\sin(24) =0\) or
+again, when
+
+\[\cos()+ \cos(4) =0,\]
+
+The first two equations give the edges, which were originally
+assumed to be nodal; while the third gives y+ a= a, representing one
+diagonal of the square. - In the fourth case, when C=-D, we obtain for
+the nodal lines, the edges of the square together with the diagonal y=.
+The figures represent the four cases.
+
+Fig. 32, D=0. C+D=0.
+ANY
+
+[Frequency (referred to gravest) = 1‘58.]
+
+For other relative values of C and D the interior nodal line is curved,
+but is always analytically expressed by
+
+and may be easily constructed with the help of a table of logarithmic
+cosines.
+
+[Frequency = 2 00.]
+
+
+The next case in order of pitch occurs when m=2, n=2, The values of m
+and n being equal, no alteration is caused by their interchange, while
+no other pair of values gives the same frequency of vibration. The only
+type to be considered is accordingly
+
+\[w = \sin(m) \sin(m) \cos(pt),\]
+whose nodes, determined by the equation
+
+\[n = \sin(7) \cos(t)\]
+are (in addition to the edges) the straight lines a= ta y=te. Fig. 33,
+
+The next case which we shall consider is obtained by ascribing to m, n
+the values 3, 1, and 1, 3 successively. We have
+
+w= C (a) ()+ D () (zu) (pt). The nodes are given by () (7Y) 0 (4c08' -
+1) + D 4 008 - -i=0, a or, if we reject the first two factors, which
+correspond to the edges, (4 (t) + D (4 (Y 1)= 0 (7).
+
+If C=0,we have y=a, y=
+
+If D=0, x=fa, o=.
+
+If C=-D () = + (74, a a whence, y=X,
+
+which represent the two diagonals. Lastly, if C= D, the equation of the
+node is (e) + (a) =b or 1+ (7) + (2) = H (B),
+
+Fig. 84. C+D=0.
+
+= () on
+
+[Frequency = 2 24.]
+
+In case (4) when z2=a, y=4a, or Za; and similarly when =a, w= a, or Z.
+Thus one half of each of the lines joining the middle points of opposite
+edges is intercepted by the curve.
+
+[The diameters of the nodal curve parallel to the sides of the
+square are thus equal to fa- Those measured along the diagonals
+are sensibly smaller, equal to f . a, or 471 a.]
+
+
+It should be noticed that in whatever ratio to one another C and D may
+be taken, the nodal curve always passes through the four points of
+intersection of the nodal lines of the first two cases, C=0, D=0. If the
+vibrations of these cases be compounded with corresponding phases, it is
+evident that in the shaded compartments of Fig. (35) the directions of
+displacement
+
+Fig. 35. Ki
+
+
+are the same, and that therefore no part of the nodal curve is to be
+found there; whatever the ratio of amplitudes, the curve must be drawn
+through the unshaded portions, When on the other hand the phases are
+opposed, the nodal curve will pass exclusively through the shaded
+portions.
+
+When m=3, n=3, the nodes are the straight lines parallel to the edges
+shewn in Fig. (36).
+
+Fig. 36.
+
+
+The last case
+m=2, n=3. The nodal system is
+
+[Frequency - 3.OO.]
+
+C (2) gin 27Y 4 D (27) gin 27Y - 0 a a a a
+or, if the factors corresponding to the edges be rejected, o(4 (t) (7Y)
++ D = (4 (t)) (9).
+
+If C or vanish, we fall back on the nodal systems of the component
+vibrations, consisting of straight lines parallel to the edges. If C=D,
+our equation may be written
+
+( (7 +-cos wy) (4 008 = a 008 TH 1) = 0. (10),
+
+of which the first factor represents the diagonal y+a=a, and the second
+a hyperbolic curve.
+
+If C=- D, we obtain the same figure relatively to the other diagonal'.
+
+\setcounter{equation}{0}
+\section{Maybe more Degenerate modes of qquare membranes, 198}
+
+198. The pitch of the natural modes of a square membrane, which is
+nearly, but not quite uniform, may be investigated by the genera method
+of Article 90.
+
+We will suppose in the first place that m and n are equal. In this case,
+when the pitch of a uniform membrane is given, the mode of its vibration
+is completely determined. If we now conceive a variation of density to
+ensue, the natural' type of vibration is in general modified, but the
+period may: be calculated approximately without allowance for the change
+of type.
+
+Dangling\footnote{ Lame, Crelle, sur V élasticité, p. 129.}
+
+We have T= 4 o. + p) Pant (a) () = dx dy
+
+yq sf 9 Mme . 2 mTy = Down +f () () dx dy of which the second term is
+the increment of 7' due to 8p. Hence
+if w cc (pt), and P denote the value of p previously to variation,
+we have Pot Pmt=1-4 al. = (MO ( dr dy(V),
+where Pam = 2mm , and c=T7,+p, For example, if there be a small load M
+attached to the middle of the square,
+(2),
+in which (4m) vanishes, if m be even, and is equal to unity, if m be
+odd. In the former case the centre is on the nodal line of the unloaded
+membrane, and thus the addition of the load produces no result.
+
+When, however, m and n are unequal, the problem, though remaining
+subject to the same general principles, presents a peculiarity different
+from anything we have hitherto met with. The natural type for the
+unloaded membrane corresponding to a specified period is now to some
+extent arbitrary; but the introduction of the load will in general
+remove the indeterminate element. In attempting to calculate the period
+on the assumption of the undisturbed type, the question will arise how
+the selection of the undisturbed type is to be made, seeing that there
+are an indefinite number, which in the uniform condition of the membrane
+give identical periods. The answer is that those types must be chosen
+which differ infinitely little from the actual types assumed under the
+operation of the load, and such a type will be known by the criterion of
+its making the period calculated from it a maximum or minimum.
+
+As a simple example, let us suppose that a small load M-is attached to
+the membrane at a point lying on the line 2 = 4a, and that we wish to
+know what periods are to be substituted for the two equal periods of the
+unloaded membrane, found by making
+
+m=1,n=2, or m=2,n=1. It is clear that the normal types to be chosen, are
+those whose nodes are represented in the first two cases of Fig. (82).
+In the first case the increase in the period due to the load is zero,
+which is the least that it can be; and in the second case the increase
+is the greatest possible. If 8 be the ordinate of M, the kinetic energy
+is altered in the ratio
+
+2 2 fs : boy O (t)228, and thus pat: Pte 1 eM int BOE (3)
+
+
+while Pu' = P,; =P a The ratio characteristic of the interval between
+the two natural ' tones of the loaded membrane is thus approximately
+
+1 a n t TE ca (4), ap a
+
+If 8 = fa, neither period is affected by the load.
+
+As another example, the case, where the values of m and n are 3 and 1,
+considered in Article 197, may be referred to. With a load in the
+middle, the two normal types to be selected are those corresponding to
+the last two cases of Fig. (84), in the former of which the load has no
+effect on the period.
+
+The problem of determining the vibration of a square membrane which
+carries a relatively heavy load is more difficult, and we shall not
+attempt its solution. But it may be worth while to recall to memory the
+fact that the actual period is greater than any that can be calculated
+from a hypothetical type, which differs from the actual one.
+
+199. The preceding theory of square membranes includes a good deal more
+than was at first intended. Whenever in a vibrating system certain parts
+remain at rest, they may be supposed to be absolutely fixed, and we thus
+obtain solutions of other questions than those originally proposed. For
+example, in the present case, wherever a diagonal of the square is
+nodal, we obtain a solution applicable to a membrane whose fixed
+boundary is an isosceles right-angled triangle. Moreover, any mode of
+vibration possible to the triangle corresponds to some natural mode of
+the square, as may be seen by supposing two triangles put together, the
+vibrations being equal and opposite at points which are the images of
+each other in the common hypotenuse. Under these circumstances it is
+evident that the hypotenuse would remain at rest without constraint, and
+therefore the vibration in question is included among those of which a
+complete square is capable.
+
+The frequency of the gravest tone of the triangle is found by putting m
+=1, n=2 in the formula
+
+(1),
+
+0/5
+
+and is therefore equal to Sa
+
+The next tone occurs, when m=3,n=1. In this case
+
+p ct0 Foo (2), Fig. 37
+
+as might also be seen by noticing that the triangle divides itself into
+two, Fig. (87), whose sides are less than those of the whole triangle in
+the ratio 72 : 1.
+
+For the theory of the vibrations of a membrane whose boundary is in the
+form of an equilateral triangle, the reader is referred to Lamé's
+`Lecons sur l'élasticité'' It is proved that the frequency of the
+gravest tone is c+h, where h is the height of the triangle, which is the
+same as the frequency of the gravest tone of a square whose diagonal is h.
+
+% Many articles refer back to this one.
+200. When the fixed boundary of the membrane is circular, the first step
+towards a solution of the problem is the expression of the general
+differential equation in polar coordinates. This may be effected
+analytically; but it is simpler to form the polar equation de novo by
+considering the forces which act on the polar element of area rd dr. As
+in Article 194 the force of restitution acting on a small area of the
+membrane is . dw d (dw d (dw
+
+- 7, 92 de=- 1,15, (Ge 748) ar-+ 5 (Sy ar) as Pw idw 1dw =- 1, .(Te + et
+a apt and thus, if 7, + p =c' as before, the equation of motion is fw
+(dw idw idw ene sts ae (1).
+
+The subsidiary condition to be satisfied at the boundary is that w=0,
+when r=a.
+
+In order to investigate the normal component vibrations we have now to
+assume that w is a harmonic function of the time. Thus, if wo (pt-e),
+and for the sake of brevity we write p+c=k, the differential equation
+appears in the form (2), in which is the reciprocal of a linear
+quantity, Now whatever may be the nature of w as a function of r and 0,
+it can be expanded in Fourier's series w = w, + w (8+a) + w (2) (8 +4,)
++(8),
+
+in which w,, w,, etc. are functions of r, but not of 8. The result of
+substituting from (3) in (2) may be written iw, , 1 dw, n 2 oe ode + e
+Ty) wa (m (0+ a,)=0,
+
+the summation extending to all integral values of n If we multiply this
+equation by (4), and integrate with respect to 8 between the limits 0
+and 27, we see that each term must vanish separately, and we thus obtain
+to determine w, as a function of r
+
+Pu, Ldv, (e-3)w, = (A),
+
+in which it is a matter of indifference whether the factor (n)(0 +4,) be
+supposed to be included in w, or not.
+
+The solution of (4) involves two distinct functions of 1, each
+multiplied by an arbitrary constant. But one of these functions becomes
+infinite when r vanishes, and the corresponding particular solution must
+be excluded as not satisfying the prescribed conditions at the origin of
+coordinates. This point may be illustrated by a reference to the simpler
+equation derived from (4) by making and n vanish, when the solution in
+question reduces to w=log r, which, however, does not at the origin
+satisfy \(\Grad 2 w =0\), as may be seen from the value of da,
+integrated round a small circle with the origin for centre. In like
+manner the complete integral of (4) is too general for our present
+purpose, since it covers the case in which the centre of the membrane is
+subjected to an external force.
+
+[transcribers note.  The discussion of Bessel's functions (see DLMF)
+in section 200 only is condensed.]
+
+The other function of 1, which satisfies (4), is the Bessel's function
+of the first kind and the nth order, denoted by \(J_n(r)\).
+The Frobenius method applied to Bessel's equation is a way to derive the
+series expansion of \(J_n(z)\) about \(z=0\).
+Next the recursion relations for \(J_n(z)\) and \( d J_n/dz\) can be derived.
+Bessel's integrals are the original form.
+From the integral form, it is evident that
+\(J_n\),
+and its differential coefficients with respect to \(z\) are always less than unity.
+\todo[inline]{what is a differential coefficient with respect to \(z\) ?}
+
+The series expansion about \(\infty\) is related to the asymptotic expansions
+of the Bessel functions.  And the form of these expansions suggests the
+spherical Bessel functions, which can be written using Rayleigh's formulas
+(see A and S).
+
+201. In accordance with the notation for Bessel's functions the
+expression for a normal component vibration may therefore be written
+w=PJ,(r) (n) (pt+e) and the boundary condition requires that FT (40) =0.
+(2),
+an equation whose roots give the admissible values of , and therefore of
+
+The complete expression for w is obtained by combining the particular
+solutions embodied in (1) with all admissible values of and n, and is
+necessarily general enough to cover any initial circumstances that may
+be imagined. We conclude that any function of r and may be expanded
+within the limits of the circle r=a in the series
+
+\[w= Z fp \cos(n) + \sin(n)\]
+
+(3). For every integral value of n there are a series of values of ,
+given by (2); and for each of these the constants c and are arbitrary.
+
+The determination of the constants is effected in the usual way. Since
+the energy of the motion is equal to
+
+bp a (4),
+
+and when expressed by means of the normal coordinates can only involve
+their squares, it follows that the product of any two of the terms in
+(3) vanishes, when integrated over the area of the circle. Thus, if we
+multiply (3) by J, (r) (n), and integrate, we find
+
+=c (J, (er) (nd) r dr dO
+
+= b.0 i F, (e0) (5)
+
+by which c is determined. The corresponding formula for is obtained by
+writing (n for (n), A method of evaluating the integral on the right
+will be given presently. Since c and each contain two terms, one varying
+as (pt) and the other as (pt), it is now evident how the solution may be
+adapted so as to agree with arbitrary initial values of w and w.
+
+
+202. Let us now examine more particularly the character of the
+fundamental vibrations. If n=0, w is a function of r only, that is to
+say, the motion is symmetrical with respect to the centre of the
+membrane. The nodes, if any, are the concentric circles, whose equation
+is
+
+J, (r) Oe (1).
+
+When n has an integral value different from zero, w is a function of 6
+as well as of r, and the equation of the nodal system takes the form
+
+FT, (eer) (2) (8 - a) =0... (2).
+
+The nodal system is thus divisible into two parts, the first consisting
+of the concentric circles represented by
+
+A (29 ed (8), and the second of the diameters Tv B= at (2M +1) Fr (4),
+
+where m is an integer. These diameters are in number, and are ranged
+uniformly round the centre; in other respects their position is
+arbitrary. The radii of the circular nodes will be investigated further
+on.
+
+203. The important integral formula s, (er) Jy (xr) rir = 0 (1),
+
+where x and ' are different roots of S,, (KA) =0 (Q),
+
+may be verified analytically by means of the differential equations
+satisfied by J, (r), J,(r); but it is both simpler and more instructive
+to begin with the more general problem, where the boundary of the
+membrane is not restricted to be circular,
+
+The variational equation of motion is
+
+V + w w dx dy =0 (3)
+
+where
+
+V= (1/2) T1 dx dy (4),
+
+and therefore
+
+V (1/2) T1 dx dy (5),
+
+In these equations w refers to the actual motion, and w to a
+hypothetical displacement consistent with the conditions to which the
+system is subjected. Let us now suppose that the system is executing one
+of its normal component vibrations, so that w = u, and
+
+u + p2 u = 0 (6),
+
+while w is proportional to another normal function v.
+
+Since x =p/c, we get from (3)
+
+uv dx dy =f e a + dy (7).
+
+The integral on the right is symmetrical with respect to u and v, and
+thus
+
+de dy = 0 (8)
+
+where bears the same relation to v that bears to u.
+
+Accordingly, if the normal vibrations represented by u and v have
+different periods,
+
+u v dx dy =0 (9).
+
+In obtaining this result, we have made no assumption as to the boundary
+conditions beyond what is implied in the absence of reactions against
+acceleration, which, if they existed, would appear in the fundamental
+equation (3).
+
+If in (8) we suppose ' = , the equation is satisfied identically, and we
+cannot infer the value of u2 dx dy. In order to evaluate this integral
+we must follow a rather different course.
+
+If u and v be functions satisfying within a certain contour the
+equations \(u+ u=0, v+ \kappa' 2 v=0\), we have
+
+(10),
+
+by Green's theorem. Let us now suppose that v is derived from u by
+slightly varying , so that
+\[ v = u + (du/d \kappa) \kappa, \kappa' = + \kappa,\]
+substituting in (10), we find (11);
+
+or, if u vanish on the boundary, (12).
+
+For the application to a circular area of radius r, we have
+\(
+u=\cos n J,
+\)
+
+(r)
+\( v=\cos(n) J\),
+(r) and thus from (10) on substitution of polar
+coordinates and integration with respect to 0,
+
+(x2) F, (er) J, (2) r dr =rJ, (er) J, ('r) - rd, (e r) = ar dy (xr)
+(14). Accordingly, if 4 f (dr) 2 T(r) = 2S, (ur) : Ta (er) dr uo dr
+ose'' and ' be different, J (eer) T(x) r dr=0 (15),
+
+an equation first proved by Fourier for the case when
+
+Again from (12)
+
+dashes denoting differentiation with respect to r. Now
+
+and thus (16).
+
+This result is general; but if, as in the application to membranes with
+fixed boundaries,
+
+then (17).
+
+204. We may use the result just arrived at to simplify the expressions
+for T and V. From
+
+we find
+
+whence is derived the normal equation of motion
+
+and a similar equation for . The value of ,, is to be found from the
+consideration that etc, denotes the work done by the impressed forces
+during a hypothetical displacement c; so that if Z be the impressed
+force, reckoned per unit of area,
+
+o= I ZI, Kg) C08 20 1dr dO (5).
+
+These expressions and equations do not apply to the case n= 0, when c
+and are amalgamated. We then have (6), (7). As an example, let us
+suppose that the initial velocities are zero, and the initial
+configuration that assumed under the influence of a constant pressure 7;
+thus .
+
+Now by the differential equation, ,
+
+and thus (8);
+
+Substituting this in (7), we see that the initial value of c,, is
+
+For values of n other than zero, and the initial value of c vanish. The
+state of the system at time c is expressed by
+\[P =  \cos(P)\]
+(10),
+\[ W = Zag Ty Wel,\]
+(11), the summation extending to all the admissible values of
+
+As an example of forced vibrations, we may suppose that Z, still
+constant with respect to space, varies as a harmonic function of the
+time. This may be taken to represent roughly the circumstances of a
+small membrane set in vibration by a train of aerial waves. If Z=cos gt,
+we find, nearly as before,
+
+J(r)
+
+The forced vibration is of course independent of 8. It will be seen
+that, while none of the symmetrical normal components are missing, their
+relative importance may vary greatly, especially if there be a near
+approach in value between g and one of the series of quantities p,- df
+the approach be very close, the effect of dissipative forces must be
+included.
+
+Special problems, 327, 204
+
+[Again, suppose that the force is applied locally at the centre.
+By (5) \( \sum \cos(y)\) (13),
+if \( Z \cos(qt)\) denote the whole force at time t. From (7)
+\[ Z \cos(qt) = pTru. \]
+(14) and w is then given by (11). The series is convergent, unless
+r = 0.
+But this problem would be more naturally attacked by including
+in the solutions of (4 § :J0) the second Bessel's function §341.
+In this method k=qC and the ratio of constants by which the
+two functions of r are multiplied is determined by the boundary
+condition. When a coincides with one of the values of
+\todo[inline]{missing}
+the second function disappears from the solution.]
+
+
+
+205. The pitches of the various simple tones and the radii of the nodal
+circles depend on the roots of the equation J, (xa) = J, (2) = 0.
+
+If these (exclusive of zero) taken in order of magnitude be called z,'',
+2,'' 2,0 Bl cc , then the admissible values of p
+are to be found by multiplying the quantities z, by c+a. The particular
+solution may then be written
+
+\[w= (2 r) A \cos(n) + B \sin(n) \cos(a)\]
+
+(1), The lowest tone of the group n corresponds to z,"; and since in
+this case J, (") does not vanish for any value of r less than a,
+there is no interior nodal circle. If we put s =2, J, will vanish, when
+r ,'' a = 2," ; 2 that is, when r=a 28 , n
+which is the radius of the one interior nodal circle. Similarly if we
+take the root z,", we obtain a vibration with s-1 nodal circles
+(exclusive of the boundary) whose radii are
+
+All the roots of the equation J, (xa) = =0 are real. For, if possible,
+let xa = A+ ip be a root; then Ka=A- tp is also
+1 root, and thus by (14) Article 203, .
+
+I J, (xr) J, (tr) r dr = 0.
+
+Now Jd, (r), J, ('r) are conjugate complex quantities, whose product is
+necessarily positive ; so that the above equation requires that either
+or w vanish. That cannot vanish appears from the consideration that if a
+were a pure imaginary, each term of the ascending series for J, would be
+positive, and therefore the sum of the series incapable of vanishing. We
+conclude that p=0, or that is real'. The same result might be arrived at
+from the consideration that only circular functions of the time can
+enter into the analytical expression for a normal component vibration.
+
+Dangling
+\footnote{ Riemann, p. 260,}
+
+
+The equation J, (2) =0 has no equal roots (except zero). From equations
+(7) and (8) Article 200 we get
+I= 2S. Tuy
+whence we see that if J,, J,' vanished for the same value of z, J would
+also vanish for that value. But in virtue of (8) Article 200 this would
+require that all the functions J, vanish for the value
+of z in question.
+\footnote{Bourget, `\,`Mémoire sur le mouvement vibratoire des membranes
+circulaires,'' Ann, de l' école normale, t. XIX., 1866.
+In one passage M. Bourget implies that he
+has proved that no two Bessels functions of integral order can have the same root,
+but 1 cannot find that he has done so. The theorem, however, is probably true
+in the case of functions whose orders differ by 1 or 2, it may be easily
+proved from the formulas of § 200.}
+
+206. The actual values of z, may be found by interpolation from Hansen's
+tables so far as these extend; or formulae may be calculated from the
+descending series by the method of successive approximation, expressing
+the roots directly. For the important case of the symmetrical vibrations
+(n =0), the values of z, may be found from the following, given by Stokes
+\footnote{Camb. Phil. Trans. Vol. IX. On the numerical calculation of a class
+of definite integrals and infinite series,;
+[In accordance with the calculation of Prof. McMahon
+the numerator of the last term in (2) has been altered from '245885
+to -245270.]}
+
+\todo[inline]{ smudged, exponent of zo }
+\[ \frac{z_o^{s}}{\pi} =  s - 0.25 + 0.050661/(4s-1)
+-0.053041/(4s-1)^3 +  0.262051/(4s-1)^5  \ldots \]
+(1).  For n= 1, the formula is
+\[ \frac{z_1^{s}}{\pi} =  s - 0.25 - 0.151982/(4s-1)
++ 0.015399/(4s-1)^3 -  0.245270/(4s-1)^5  \ldots \]
+The latter series is convergent enough, even for the first root,
+corresponding tos=1. The series (1) will suffice for values of s greater
+than unity; but the first root must be calculated independently. The
+accompanying table (A) is taken from Stokes' paper, with a slight
+difference of notation.
+
+It will be seen either from the formulae, or the table, that the
+difference of successive roots of high order is approximately 7. This is
+true for all values of n, as is evident from the descending series (10)
+Article 200.
+
+page 329, pdf page 343
+[The general formula, analogous to (1) and (2), for the roots of
+Jn (z) has been investigated by Prof. McMahon. If ni = 4n', and
+a = i7r(2M - 1 +4)
+(-3).
+we have
+7 1 - 1 4 (m - 1) (7 - 31)
+ 8a 3 (Haf
+32 0ft - 1)(83™‘ - 982i + 3779)
+15(8(1) ‘ ‘
+(4).
+This formula may be applied not only to integral values of n as in
+(1) and (2), but also when n is fractional. The cases of n = and
+w = are considered in 207.]
+
+Frequencies of the different simple tones and of the radii of the nodal circles
+
+
+Table B includes the values of z, which satisfy J, (2), for n =
+0, 1,... 5, s=1, 2,... 9.
+
+
+TABLE A, = for J,(e)=0. Diff for J,(2)=0. Diff
+
+7655 ; ' 1:2197 1:7571 . 2-2330 2-7546 ; 3:2383 37534 . 4-2411 47527 ;
+5-2428 57522 ; 6-2439 67519 ; 7:2448 7-7516 ; 8-2454 8-7514 ; 9-24.59
+9-7513 . 10-2463
+
+10-7512 ; 11-2466 11-7511 12-2469
+
+When n is considerable the calculation of the earlier roots becomes
+troublesome. For very high values of n, z approximates to a ratio of
+equality, as may be seen from the consideration that the pitch of the
+gravest tone of a very acute sector must tend to coincide with that of a
+long parallel strip, whose width is equal to the greatest width of the sector.
+
+206. - NODAL FIGURES. 275
+
+The figures represent the more important normal modes of vibration, and
+the numbers affixed give the frequency referred to 18-2
+the gravest as unity, together with the radii of the circular nodes
+expressed as fractions of the radius of the membrane. In the case of six
+nodal diameters the frequency stated is the result of a rough
+calculation by myself.
+
+The tones corresponding to the various fundamental modes of the circular
+membrane do not belong to a harmonic scale, but there are one or two
+approximately harmonic relations which may be worth notice. Thus
+
+x 1594 = 2125 = 2:136 nearly, S x 1594 = 2657 = 2653 nearly, 2 x
+1594 = 3:188 = 3156 nearly ;
+
+so that the four gravest modes with nodal diameters only would give a
+consonant chord.
+
+The area of the membrane is divided into segments by the nodal system in
+such a manner that the sign of the vibration changes whenever a node is
+crossed. In those modes of vibration which have nodal diameters there is
+evidently no displacement of the centre of inertia of the membrane. In
+the case of symmetrical vibrations the displacement of the centre of
+inertia is proportional to
+
+i J, (r) r dr = - a (r) +2 Jy (rt r dr = - J, (xa),
+
+an expression which does not vanish for any of the admissible values of
+, since J, (z) and J, (z) cannot vanish simultaneously. In all the
+symmetrical modes there is therefore a displacement of the centre of
+inertia of the membrane.
+
+207. Hitherto we have supposed the circular area of the membrane to be
+complete, and the circumference only to be fixed; but it is evident that
+our theory virtually includes the solution of other problems, for
+example, some cases of a membrane bounded by two concentric circles. The
+complete theory for a membrane in the form of a ring requires the second
+Bessel's function.
+
+207. FIXED RADIUS. 277
+
+The problem of the membrane in the form of a semi-circle may be regarded
+as already solved, since any mode of vibration of which the semi-circle
+is capable must be applicable to the
+complete circle also. In order to see this, it is only necessary to
+attribute to any point in the complementary semi-circle the opposite
+motion to that which obtains at its optical image in the bounding
+diameter. This line will then require no constraint to keep it nodal.
+Similar considerations apply to any sector
+whose angle is an aliquot part of two right angles.
+
+When the opening of the sector is arbitrary, the problem may be solved
+in terms of Bessel's functions of fractional order. If the fixed radii
+are = 0, 0 = 8, the particular solution is
+
+vn
+
+w= PJ. (r) sin (pt-e) 6 (1), a B
+
+where v is an integer. We see that if 8 be an aliquot part of 7, v1 + B
+is integral, and the solution is included among those already used for
+the complete circle.
+
+An interesting case is when 8 = 27, which corresponds to the problem of
+a complete circle, of which the radius 6=0 is constrained to be nodal.
+
+Fig. 38.
+
+We have w=PJ,, (xr) (v0 (pt-e).
+
+When is even, this gives, as might be expected, modes of vibration
+possible without the constraint; but, when v is odd, new modes make
+their appearance. In fact, in the latter case the descending series for
+J terminates, so that the solution is expressible in finite terms. Thus,
+when y=1,
+
+w= PD'' gin 36 (pt-c) (2). Jer The values of are given by
+
+(xa=0, or ca=mr.
+
+Thus the circular nodes divide the fixed radius into equal parts, and
+the series of tones form a harmonic scale. In the case of the gravest
+mode, the whole of the membrane is at any moment deflected on the same
+side of its equilibrium position. It is remarkable that the application
+of the constraint to the radius 6 =0 makes the problem easier than
+before.
+
+If we take y= 3, the solution is
+
+w= PT (A (rr) (86 (pt-e) (3). Fig. 39. In this case the nodal
+radii are
+
+and the possible tones are given by the equation CAN HD KO ves ces (4).
+To calculate the roots of
+\( \tan(a)\) we may assume \(a=(m+)r--y=X--y\), where y
+is a positive quantity, which is small when z is large. Substituting
+this, we find \( cot(y)= X-y\), whence
+
+=1.1444 This equation is to be solved by successive approximation. It
+will readily be found that 13 146
+
+3 = Yi. y=X +5 +7 Xt +g Xt
+
+
+so that the roots of \(\tan(a)\) are given by
+
+(5), where X=m+4.
+
+In the first quadrant there is no root after zero since \(\tan(x 2\), and in
+the second quadrant there is none because the signs of and \(\tan(x)\) are
+opposite. The first root after zero is thus in the third quadrant,
+corresponding to m=1. Even in this case the series converges:
+sufficiently to give the value of the root with considerable accuracy,
+while for higher values of m it is all that could be desired. The actual
+values of a : mare 14303, 24590, 3:4709, 44747, 54818, 64844, etc.
+
+208. The effect on the periods of a slight inequality in the density of
+the circular membrane may be investigated by the general method
+Article 90, of which several examples have already been given. It will
+be sufficient here to consider the case of a small load M attached to
+the membrane at a point whose radius vector is 7'.
+
+We will take first the symmetrical types (n= 0), which may still be
+supposed to apply notwithstanding the presence of M. The kinetic energy
+T is (6) Article 204 altered from
+
+and therefore (1)
+
+where P denotes the value of p, when there is no load.
+
+The unsymmetrical normal types are not fully determinate for the
+unloaded membrane; but for the present purpose they must be taken so as
+to make the resulting periods a maximum or minimum, that is to say, so
+that the effect of the load is the greatest and least possible. Now,
+since a load can never raise the pitch, it is clear that the influence
+of the load is the least possible, viz. zero, when the type is such that
+a nodal diameter (it is indifferent which) passes through the point at
+which the load is attached. The unloaded membrane must be supposed to
+have two coincident periods, of which one is unaltered by the addition of the
+load. The other type is to be chosen, so that the alteration of period
+is as-great as possible, which will evidently be the case when the
+radius vector 7' bisects the angle between two adjacent nodal diameters.
+Thus, if r' correspond to 6 = 0, we are to take w= Pan In (Kat) 008 08 ;
+so that (2) Article 204 vi = t pr a" Pn J,'' (mn) + + Mu P J, (Ka) The
+altered p is therefore given by 1 2M TE ant)) p r a J, (Ka) ae e
+
+Of course, if r' be such that the load lies on one of the nodal circles,
+neither period is affected.
+
+Pn Pag =
+
+For example, let M be at the centre of the membrane. J, (0) vanishes,
+except when n=0; and J,(0)=1. It is only the symmetrical vibrations
+whose pitch is influenced by a central load, and for them by (1)
+
+Pad: Pal - (8). By (6) Article 200 SI (e) =-J, (2)
+
+so that the application of the formula requires only a knowledge of the
+values of J, (z), when J, (2) vanishes, Article 200. For the gravest
+mode the value Of Ty (Hg a) j is `51903'. When x,, is considerable,
+
+FT (High) = 2+ Whey approximately ; so that for the higher components
+the influence of the load in altering the pitch increases,
+
+The influence of a small irregularity in disturbing the nodal system may
+be calculated from the formulae of Article 90. The most obvious effect
+is the breaking up of nodal diameters into curves of hyperbolic form due
+to the introduction of subsidiary symmetrical vibrations. In many cases
+the disturbance is favoured by close agreement between some of the
+natural periods.
+
+209. We will next investigate how the natural vibrations of a uniform
+membrane are affected by a slight departure from the exact circular
+form.
+
+Dangling
+\footnote{The succeeding values are approximately 841, 271, 232, 206, -187, etc.}
+
+Whatever may be the nature of the boundary, w satisfies the equation
+
+(1),
+
+where is a constant to be determined. By Fourier's theorem may be
+expanded in the series
+\[wo = w + w \cos(0 +4) + 0, \cos(2 A+ a) + + w, \cos(n)+4) + 0,\]
+where w,, w,, etc. are functions of r only, Substituting in (1), we see
+that w, must satisfy
+
+dw, 1 dw, n ete art (Pp) a0 of which the solution is . J, (xr); for, as
+in Article 200, the other function of r cannot appear.
+
+The general expression for w may thus be written y= AT, (er) +d, (er)
+(A, 008 0+ B, (0) +... +, (xr) (A (n)+ B, (0) + ... (2). For all points
+on the boundary w is to vanish a In the case of a nearly circular
+membrane the radius vector is
+nearly constant. We may take r=a+6r, dr being a small function of 86.
+Hence the boundary condition is
+
+0=A, J, (xa) + cdr J,' (1a) + 2.0008 + J, (a) + 8r J,' (xa) A (nO + B,
+(n6 Ti(8),
+
+which is to hold good for all values of 0.
+
+Let us consider first those modes of vibration which are nearly
+symmetrical, for which therefore approximately
+
+w= A,J, (kr).
+
+All the remaining coefficients are small relatively to 4,, since the
+type of vibration can only differ a little from what it would
+
+a ns
+
+be, were the boundary an exact circle. Hence if the squares of the small
+quantities be omitted, (3) becomes
+
+A, J, (wa) + 8r J, (wa) + J, (wa) A (0 + B, (6) +... +d, (xa) A (nO + B,
+(n6 +...=0 (4).
+
+If we integrate this equation with respect to 0 between the limits 0 and
+27, we obtain
+
+J, (wa) + J,' (1a) =0,
+
+or Jca+ ef" or Fh -9 (5),
+which shews that the pitch of the vibration is approximately the same as
+if the radius vector had uniformly its mean value.
+
+This result allows us to form a rough estimate of the pitch of any
+membrane whose boundary is not extravagantly elongated. If o denote the
+area, so that po is the mass of the whole membrane, the frequency of the
+gravest tone is approximately
+
+[A numerical error is here corrected.]
+
+
+In order to investigate the altered type of vibration, we may
+multiply (4) by (n), or (n), and then integrate as before. Thus
+
+2
+
+A, J. (xa) i , KBr (nd dd +A, J,(ca) =0
+
+A, J,' (xa) ih cor (nO dO +B, J,,(xa) =0
+which determine the ratios A,:.A, and B,: A,.
+
+If r = 6r, + 6r, +... Or, + be Fourier's expansion, the final
+expression for w may be written, (8)
+
+When the vibration is not approximately symmetrical, the question
+becomes more complicated. The normal modes for the truly circular
+membrane are to some extent indeterminate, but the
+irregularity in the boundary will, in general, remove the
+indeterminateness. The position of the nodal diameters must be taken, so
+that the resulting periods may have maximum or minimum values. Let us,
+however, suppose that the approximate type is
+W= Ay AS, (1) (VO. (9),
+and afterwards investigate how the initial line must be taken in order
+that this form may hold good.
+
+
+All the remaining coefficients being treated as small in comparison with
+A,, we get from (4)
+
+A,J, (xa) +... + ALA, (ua) + J,' (xa) (v) + B,J, (wa) (vO + + J,
+(a) A (nO + B (nO +... =0. (10). - Multiplying by (v) and
+integrating, wd, (xa) + ed, a dr (d)d = 0, 0 or
+
+J, xa + w Br (t) =0, 0
+which shews that the effective radius of the membrane is
+
+The ratios of A, and B, to A, may be found as-before by integrating
+equation (10) after multiplication by (7), (0).
+
+But the point of greatest interest is the pitch. The initial line is to
+be so taken as to make the expression (11) a maximum or minimum. If we
+refer to a line fixed in space by putting -a instead of 8, we have to
+consider the dependence on a of the quantity
+
+oe i dr (v) (6 - a) de, 0 which may also be written
+
+(t) ya i or (v) +2 (va) (vi) i br (v6) (v8)
+
++ (yz i br sin'' VOD (12),
+
+and is of the form
+
+A (va) + 2B (va) (va) + Cain' va,
+
+A, B, C being independent of a. There are accordingly two admissible
+positions for the nodal diameters, one of which makes the period a
+maximum, and the other a minimum. The diameters of one set bisect the
+angles between the diameters of the other set.
+
+There are, however, cases where the normal modes remain indeterminate,
+which happens when the expression (12) is independent of a. This is the
+case when 6r is constant, or when 6r is proportional to (v6). For
+example, if Sr were proportional to (26), or in other words the boundary
+were slightly elliptical, the nodal system corresponding to n=2 (that
+consisting of a pair of perpendicular diameters) would be arbitrary in
+position, at least to this order of approximation. But the single
+diameter, corresponding to n=1, must coincide with one of the principal
+axes of the ellipse, and the periods will be different for the two axes.
+
+210. We have seen that the gravest tone of a membrane, whose boundary is
+approximately circular, is nearly the same as that of a mechanically
+similar membrane in the form of a circle of the same mean radius or
+area. If the area of a membrane be given, there must evidently be some
+form of boundary for which the pitch (of the principal tone) is the
+gravest possible, and this form can be no other than the circle. In the
+case of approximate circularity an analytical demonstration may be
+given, of which the following is an outline.
+
+The general value of w being
+\[ w= A J, (er) +... 4d, (r) (A (n)+ B ) + \]
+(1), in which for the present purpose the coefficients \(A\), \(B, \ldots\)
+are small relatively to A,, we find from the condition that w vanishes when
+r=a+36r,
+
+A, J, (wa) + A, Jy (xa) 8r + 8A,'' (a). (Sr) + , +2 J, (wa) + WJ,' (xa)
+dr + 4 (nd) + B (n6) =0... (2). Hence, if br = 2, 008 + 8, (6)+... +a
+(n) + 8, (n) + (3),
+
+we obtain on integration with respect to from 0 to 2z r,
+
+from which we see, as before, that if the squares of the small
+quantities be neglected, J, (xa) =0, or that to this order of
+approximation the mean radius is also the effective radius. In order to
+obtain a closer approximation we first determine A, : A, and B,: A, by
+multiplying (2) by (n), (n), and then integrating between the limits 0
+and 27. Thus
+
+AJ,=-Ka,AJ', BW, =-KB, Ad 0 . (5). Substituting these values in (4), we
+get . J,(ea) = 423 a Ge +B) aye -10, (6). Since J, satisfies the
+fundamental equation Fe FE TAT, = V ()
+
+and in the present case J,=0 approximately, we may replace
+
+J.'' by -= 2. Equation (6) then becomes
+
+J, (0a) = hit I, mic +00 p+ 1 zat - ...(8). Let us now suppose that a +
+da is the equivalent radius of the membrane, so that I, (a+ da) =J, (xa)
++ J, (xa) eda =0. Then by (8) we find
+
+da=- Ge +8 fe +s (9).
+
+Again, if a +da' be the radius of the truly circular membrane of equal
+area,
+
+dal = 2-3" (a8 + Bg) (10) 5
+
+= 4 n=l
+
+so that ; iy 2 2 J,' (xa) ae . +B. 1 + 0a eat ose (11). The question is
+now as to the sign of the right-hand member. If n=1, and z be written
+for xa, J, (2) J, (2) vanishes approximately by (7), since in general
+J,=-J,, and in the present case J,(z)=0 nearly. Thus da' -da=0, as
+should evidently be the case, since the term in question represents
+merely
+
+a displacement of the circle without an alteration in the form of the
+boundary. When n= 2, (8) Article 200,
+
+from which and (7) we find that, when J, = 0, (12), whence 2 (13),
+
+which is positive, since z=2,
+
+We have still to prove that
+
+is positive for integral values of n greater than 2, when z= 2-404. For
+this purpose we may avail ourselves of a theorem given in Riemann's
+Partielle Differential gleichungen, to the effect that neither J, nor
+J,' has a root (other than zero) less than n The differential equation
+for J, may be put into the form
+
+J = 0;
+
+while initially Jn, and J'n, (as well as d Jn/d log z ) are positive.
+Accordingly begins by increasing and does not cease to do so before z =
+n, from which it is clear that within the range z= 0 to z=n, neither Jn,
+nor \(J_n^{'}\) can vanish. And since J, and J,' are both positive until
+z = n, it follows that, when n is an integer greater than 2404, da' - da
+is positive. We conclude that, unless a,, ,, a, all vanish, da' is
+greater than da, which shews that in the case of any membrane of
+approximately circular outline, the circle of equal area exceeds the
+circle of equal pitch.
+
+We have seen that a good estimate of the pitch of an approximately
+circular membrane may be obtained from its area alone, but by means of
+equation (9) a still closer approximation may be effected. We will apply
+this method to the case of an ellipse,
+
+-whose semi-axis major is and eccentricity e.
+
+The polar equation of the boundary is r=R l--fei-Get 4+ fe (26) + (14);
+so that in the notation of this section a=R(1-je-Ge), a=feR. Accordingly
+by (9)
+
+for tan
+
+or by (12), since R =2 = 2404, 2779 Thus the radius of the circle of
+equal pitch is
+
+in which the term containing e should be correct.
+
+The result may also be expressed in terms of e and the area o.
+
+We have R= /Z( 1+ i dt ae),
+
+o 3779 , a+da=y/ (1-27) ... (16),
+
+from which we see how small is the influence of a moderate eccentricity,
+when the area is given.
+
+and thus
+
+211. When the fixed boundary of a membrane is neither straight nor
+circular, the problem of determining its vibrations presents
+difficulties which in genera could not be overcome without the
+introduction of functions not hitherto discussed or tabulated. A partial
+exception must be made in favour of an elliptic boundary ; but for the
+purposes of this treatise the importance of the problem is scarcely
+sufficient to warrant the introduction of complicated analysis. The
+reader is therefore referred to the original investigation of M.
+Mathieu
+\footnote{Liouville, XIII, 1868; Cours de physique mathematique, 1873, p. 122.}
+
+[The method depends upon the use of conjugate functions. If
+\[ x  +  i y =  e \cos ( \xi  + i \eta ) \]
+(1), then the level sets of constant \(\eta \) are confocal ellipses,
+and of \(\xi\) are confocal hyperbolas.  In terms of \(\xi\), \(\eta\)
+the fundamental equation
+(V + k ) a = 0 becomes
+J + k' (cash - cos f)=0 (2),
+where k' = ke.
+The solution of (2) may be found in the form
+H = (3),
+in which S is a function of f only, and H ,a function of 77 only, provided
+\[ \frac{d^2}{d \eta^2} \Xi  + (k^{\prime 2} \cosh^2 \xi -a ) \Xi = 0 \]
+(4).
+\[ \frac{d^2}{d \eta^2} H  + (k^{\prime 2} \cosh^2 \xi -a ) H = 0 \]
+(5), \(a\) being an arbitrary constant.
+\footnote{Pockels Uber die partielle Differential gliechung \(\Delta u+k^2u=0\), p 114}
+Michell
+\footnote{Messinger of Mathematics, vol. XIX. p. 86, 1890.}
+has shewn that the elliptic transformation (1) is the
+only one which yields an equation capable of satisfaction in the form (3).]
+
+Soluble cases may be invented by means of the general solution
+
+w=A,J,(r)++ (A (nd + B, (n6) J, (ar) + 000 For example we might take
+w= J, (xr) -dd, (xr) (8)
+and attaching different values to A, trace the various forms of boundary
+to which the solution will then apply.
+
+Useful information may sometimes be obtained from the theorem of Article 88,
+which allows us to prove that any contraction of the fixed boundary
+of a vibrating membrane must cause an elevation of pitch, because the
+new state of things may be conceived to differ from the old merely by
+the introduction of an additional constraint. Springs, without inertia,
+are supposed to urge the line of the proposed boundary towards its
+equilibrium position, and gradually to become stiffer. At each step the
+vibrations become more rapid, until they approach a limit, corresponding
+to infinite stiffness of the springs and absolute fixity of their points
+of application. It is not necessary that the part cut off should have
+the same density as the rest, or even any density at all.
+
+
+For instance, the pitch of a regular polygon is intermediate between
+those of the inscribed and circumscribed circles. Closer limits would
+however be obtained by substituting for the circumscribed circle that of
+equal area according to the result of Article 210. In the case of the
+hexagon, the ratio of the radius of the circle of equal area to that of
+the circle inscribed is 1-050, so that the mean
+of the two limits cannot differ from the truth by so much as 24 per
+cent, In the same way we might conclude that the sector of a circle of
+60 is a graver form than the equilateral triangle obtained by
+substituting the chord for the arc of the circle. ,
+
+
+The following table giving the relative frequency in certain calculable
+cases for the gravest tone of membranes under similar mechanical
+conditions and of equal area (c), shews the effect of a greater or less
+departure from the circular form.
+
+\begin{tabular}{lr}
+Circle & a = 4.261  \\
+Square & S V2.7 = 4.443\\
+Quadrant of a circle & 5.135/2 r = 4.551\\
+Sector of a circle 60 degrees  & 6.379 Jt = 4.616\\
+Rectangle \( 3 \times 2\) &   4.616\\
+Equilateral triangle & 2 pi tan 30 degrees = 4.774\\
+Semicircle &  3.832  = 4.803\\
+Rectangle \( 2 \times 1\) &  \\
+Right-angled isosceles  & pi 5/2 = 4.967\\
+Rectangle 3 X 1 & pi = 5.736\\
+\end{tabular}
+
+For instance, if a square and a circle have the same area, the
+former is the more acute in the ratio 4.443 : 4.261
+
+For the circle the absolute frequency is
+\[(2 \pi)^{-1} \times \sqrt{\pi}/\sqrt{\sigma},\]
+where \( c=\sqrt{T_1}/\sqrt{\rho}\).
+
+In the ease of similar forms the frequency is inversely as the linear
+dimension.
+
+[From the principle that an extension of boundary is always
+accompanied by a fall of pitch, we may infer that the gravest
+mode of a membrane of any shape, and of any variable density, is
+devoid of internal nodal lines.]
+
+212. The theory of the free vibrations of a membrane was first
+successfully considered by Poisson\footnote{Mém, de l' Académie, t. VIII. 1829}
+His theory in the case of the
+rectangle left little to be desired, but his treatment
+of the circular membrane was restricted to the symmetrical vibrations.
+Kirchhoff's solution of the similar, but much more difficult, problem of
+the circular plate was published in 1850, and Clebsch's Theory of
+Elasticity (1862) gives the general theory of the circular membrane
+including the effects of stiffness and of rotatory inertia. It will
+therefore be seen that there was not much left to be done in 1866;
+nevertheless the memoir of Bourget already referred to contains a useful
+discussion of the problem accompanied by very complete numerical
+results, the whole of which however were not new.
+
+213.  Observations of M. Bourget.
+In his experimental investigations M. Bourget made use of various
+materials, of which paper proved to be as good as any, The paper is
+immersed in water, and after removal of the superfluous moisture by
+blotting paper is placed upon a frame of wood whose edges have been
+previously coated with glue. The contraction of the paper in drying
+produces the necessary tension, but many failures may be met with before
+a satisfactory result is obtained. Even a well stretched membrane
+requires considerable precautions in use, being liable to great
+variations in pitch in consequence of the varying moisture of the
+atmosphere. The vibrations are excited by organ-pipes, of which it is
+necessary to have a series proceeding by small intervals of pitch, and
+they are made evident to the eye by means of a little sand scattered on
+the membrane. If the vibration be sufficiently vigorous, the sand
+accumulates on the nodal lines, whose form is thus defined with more or
+less precision. Any inequality in the tension shews itself by the
+circles becoming elliptic.
+
+The principal results of experiment are the following:
+
+A circular membrane cannot vibrate in unison with every sound. It can
+only place itself in unison with sounds more acute than that heard when
+the membrane is gently tapped.
+
+As theory indicates, these possible sounds are separated by less'' and
+less intervals, the higher they become.
+
+The nodal lines are only formed distinctly in response to certain
+definite sounds. A little above or below confusion ensues, and when the
+pitch of the pipe is decidedly altered, the membrane remains unmoved.
+There is not, as Savart supposed, a continuous transition from one
+system of nodal lines to another.
+
+[The reader who wishes to pursue the subject from a mathematical point of
+view is referred to an excellent discussion by Pockels (Leipzig, 1891) of the
+differential equation 0.]
+
+
+The nodal lines are circles or diameters or combinations of circles and
+diameters, as theory requires. However, when the number of diameters
+exceeds two, the sand tends to heap itself confusedly towards the middle
+of the membrane, and the nodes are not well defined. ;
+
+The same general laws were verified by MM. Bernard and Bourget in the
+case of square membranes'; and these authors consider that the results
+of theory are decisively established in opposition to the views of
+Savart, who held that a membrane was capable of responding to any sound,
+no matter what its pitch might be. But I must here remark that the
+distinction between forced and free vibrations does not seem to have
+been sufficiently borne in mind. When a membrane is set in motion by
+aerial waves having their origin in an organ-pipe, the vibration is
+properly speaking forced. Theory asserts, not that the membrane is only
+capable of vibrating with certain defined frequencies, but that it is
+only capable of so vibrating freely. When however the period of the
+force is not approximately equal to one of the natural periods, the
+resulting vibration may be insensible.
+
+In Savart's experiments the sound of the pipe was two or three octaves
+higher than the gravest tone of the membrane, and was accordingly never
+far from unison with one of the series of over tones. MM. Bourget and
+Bernard made the experiment under more favourable conditions. When they
+sounded a pipe somewhat lower in pitch than the gravest tone of the
+membrane, the sand remained at rest, but was thrown into vehement
+vibration as unison was approached. So soon as the pipe was decidedly
+higher than the membrane, the sand returned again to rest. A
+modification of the experiment was made by first tuning a pipe about a
+third higher than the membrane when in its natural condition. The
+membrane was then heated until its tension had increased sufficiently to
+bring the pitch above that of the pipe. During the process of cooling
+the pitch gradually fell, and the point of coincidence manifested itself
+by the violent motion of the sand, which at the beginning and end of the
+experiment was sensibly at rest.
+
+Dangling\footnote{ Ann. de Chimie, UX. 449-479, 1860.}
+
+M. Bourget found a good agreement between theory and observation with
+respect to the radii of the circular nodes, though the test was not very
+precise, in consequence of the sensible width of
+the bands cf sand; but the relative pitch of the various simple tones
+deviated considerably from the theoretical estimates. The committee of
+the French Academy appointed to report on M. Bourget's memoir suggest as
+the explanation the want of perfect fixity of the boundary. It should
+also be remembered that the theory proceeds on the supposition of
+perfect flexibility-a condition of things not at all closely approached
+by an ordinary membrane stretched with a comparatively small force. But
+perhaps the most important disturbing cause is the resistance of the
+air, which acts with much greater force on a membrane than on a string
+or bar in consequence of the large surface exposed. The gravest mode of
+vibration, during which the displacement is at all points in the same
+direction, might be affected very differently from the higher modes,
+which would not require so great a transference of air from one side to
+the other.
+
+
+[In the case of kettle-drums the matter is further complicated by the
+action of the shell, which limits the motion of the air upon one side of
+the membrane. From the fact that kettle-drums are struck, not in the
+centre, but at a point about midway between the centre and edge, we may
+infer that the vibrations which it is desired to excite are not of the
+symmetrical class. The sound i ; indeed but little affected when the
+central point is touched with the finger. Under these circumstances
+the principal vibration (1) is that with one nodal diameter and no nodal
+circle, and to this corresponds the greater part of the sound obtained
+in the normal use of the instrument. Other tones, however, are audible,
+which correspond with vibrations characterized (2) by two nodal
+diameters and no nodal circle, (3) by three nodal diameters and no nodal
+circles, (4) by one nodal diameter and one nodal circle. By observation
+with resonators upon a large kettle-drum of 25 inches diameter the pitch
+of (2) was found to be about a fifth above (1 ), that of (3) about a
+major seventh above (1), and that of (4) a little higher again, forming
+an imperfect octave with the principal tone. For the corresponding modes
+of a uniform perfectly flexible membrane vibrating in exactly the
+theoretical intervals are those represented by the ratios 1'34, 1'66, 1
+83 respectively 1-000 : 1-049 : 1175.
+In membranes of this kind the tension is due to
+capillarity, and is independent of the thickness of the film.
+\footnote{The vibrations of soap films have been investigated by Melde. The
+frequencies for surfaces of equal area in the form of the Circle, the
+square and the equilateral triangle, were found to be J Phil Mag., vol.
+IVI., p. 160, 1879. Pogg. Ann., 159, p. 275, 1876. Akustik, p. 131,}
+]
+
+\section{Forced vibrations}\label{sect:213a}
+213 a.
+The forced vibrations of square and circular
+membranes have been further experimentally studied by
+Elsas \footnote{Nova Acta der Ksl. Leop. Carol. Deutschen Akademie, Bd. XLV. Nr. 1.  Halle, 1882.},
+who has confirmed the
+conclusions of Savart as to the responsiveness of a membrane to sounds
+of arbitrary pitch. In these experiments the vibrations of a fork were
+communicated to the membrane by means of a light thread, attached
+normally at the centre ; and the position of the nodal curves and of the
+maxima of disturbance was traced in the usual manner by sand and
+lycopodium. A series of figures accompanies the memoir, shewing the
+effect of sounds of progressively rising pitch.
+
+In many instances the curves found do not exhibit the symmetries demanded by
+the supposed conditions.  Thus in the case of the square membrane all the
+curves should be similarly related to the four corners, and in the case of the
+circular membrane all the curves should be circles.
+The explanation is probably be sought in the difficulty of
+attaining equality of tension. If there be any irregularity, the effect
+will be to introduce modes of vibration which should not appear, as
+having nodes at the point of excitation, and this especially when there
+is a near agreement of periods. Or again, an irregularity may operate to
+disturb the balance between two modes of theoretically identical pitch,
+which should be excited to the same degree. Indeed the passage through
+such a point of isochronism may be expected to be highly unstable in the
+absence of moderate dissipative forces.
+
+The theoretical solution of these questions has already (§§ 19C, 204)
+been given, but would need much further development for an accurate
+determination of the nodal curves relating to periods not included among
+the natural periods. But the general course of the phenomenon can be
+traced without difficulty.
+
+If the imposed frequency be less than the lowest natural frequency, the
+vibration is devoid of (internal) nodes. For a nodal line, if it
+existed, being of necessity either endless or terminated at the boundary
+\footnote{Otherwise the extremity would have to remain at rest under the action
+of component tensions from the surrounding parts which are all in one direction.},
+would divide the membrane into two parts. Of these one part would be
+vibrating freely with a frequency less than the lowest natural to the
+whole membrane, an impossible condition of things (§211). The absence of
+nodal curves under the above-mentioned conditions is one of the
+conclusions drawn by Elsas from his observations.
+
+As the frequency of the imposed vibration rises through the lowest
+natural frequency, a nodal curve manifests itself round the point of
+excitation, and gradually extends. The course of things is most easily
+followed in the case of the circular membrane, excited at the centre.
+The nodal curves are then of necessity also circles, and it is evident
+that the first appearance of al nodal circle can take place only at the
+centre. Otherwise there would be a circular annulus of finite internal
+diameter, vibrating freely with a frequency only infinitesimally higher
+than that of the entire circle. At first sight indeed it might appear
+that even an infinitely small nodal circle would entail a finite,
+elevation of pitch, but a consideration of the solution (§ 204) as
+expressed by a combination of Bessel's functions of the first and second
+kinds, shews that this is not the case. At the point of isochronism the
+second function disappears, and immediately afterwards re-enters with an
+infinitely small coefficient. But inasmuch as this function is itself
+infinite when r = 0, a nodal circle of vanishing radius is possible.
+Accordingly the fixation of the centre of a vibrating circular
+membrane does not alter the pitch, a conclusion which may be extended
+to the fixation of any number of detached points of a membrane of any
+shape.
+
+The effect of gradually increasing frequency upon the nodal system of a
+circular membrane may be thus summarized. Below the first proper tone
+there is no internal node. As this point is reached, the mode of
+vibration identifies itself with the corresponding free mode, and then
+an infinitely small nodal circle manifests itself. As the frequency
+further increases, this circle expands, until when the second proper
+tone is reached, it coincides with the nodal circle of the free
+vibration of this frequency. Another infinitely small circle now
+appears, and it as well as the first, continually expands, until they
+coincide with the nodal system of a free vibration in the third proper
+tone. This process continues as the pitch rises, every circle moving
+continually outward . At each coincidence with a natural frequency the
+nodal system identifies itself with that of the free vibration, and a
+new circle begins to form itself at the centre.
+
+The behaviour of a square membrane is of course more difficult to follow
+in detail. The transition from Fig. (34) case (4), corresponding to in =
+3, = 1, and m = 1, w = 3, to Fig. (36) where vi = 3, = 3, can be
+traced in Elsas a curves through such forms as Fig. 39 a.

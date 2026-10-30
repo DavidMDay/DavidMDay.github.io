@@ -1,0 +1,45 @@
+
+
+g then Ctrl-G
+
+Harmonic         ?     ?        Fret
+  1                              0
+  2  1/2                        12
+  3  1/3  3/2 = 5th = 7.02       7
+  4  1/4  4/3 = 4th = 4.98       5
+  5  1/5  5/4 =  3+ = 3.863      4
+  6  1/6  6/5 =  3- = 3.156      3
+3+ = major 3,  
+3- = minor 3
+
+frequency(c) = 2 frequency(C)
+
+     1     2     3     4     5     6     7     8
+     1     2     3    4th   5th    6     7    8th
+     C     D     E     F     G     A     B     c
+        
+       1,2,4   equivalence class
+       1/4, 1/2,  1,  2,  4
+
+c=2,G=3/2,C=1,     
+
+  c/G = 4/3,   up(G,4) = c,
+   G/C = c/F       
+         F = 4/3
+
+frequency(4/3) -> T = 3/4 ~= 5/8, 5th G  
+
+
+
+   note.   Hz.   frequency,   wavelength  circular frequency
+          cos(wt), radians,  w T = 2 pi,  
+          T = 2 pi/w, f = 1/T
+       normalize about some note
+    2^(6/12) = 1.414
+    2^(5/12) = 1.335
+    2^(4/12) = 1.260
+8th ,  5th ,  4th, major 3,  minor 3
+
+2nd harmonic:   +1 octave 
+
+

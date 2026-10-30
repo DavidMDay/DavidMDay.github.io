@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper,draft]{book}
+\input{LocalPackages}
+\usepackage{graphicx}
+%\usepackage{hyperref} % inactive in draft mode
+\input{LocalCommands}
+\addbibresource{rayleigh.bib}
+\raggedbottom
+
+\title{Scans of Theory of Sound 1 to LaTeX}
+\begin{document} \author{DMD} \maketitle
+\date{}
+
+\frontmatter
+%\setcounter{page}{4}
+\tableofcontents
+%\chapter*{Preface}
+%\section{Original Preface} % section 0.1
+%\input{preface}
+%\section*{Original Contents} % section 0.2
+%\input{original_contents}
+\mainmatter
+
+\chapter{Introduction}\label{introduction}
+\input{introduction}
+
+\chapter{Transverse Vibrations of Strings}
+\label{transverse-vibrations-of-strings}
+\input{strings}
+
+\chapter{Longitudinal and Torsional Vibrations of Bars}
+\label{longitudinal-and-torsional-vibrations-of-bars}
+\input{bars}
+
+\chapter{Vibrations of Membranes}\label{vibrations-of-membranes}
+\input{membranes}
+
+\chapter{Vibrations of Plates}\label{vibrations-of-plates}
+\input{plates}
+
+\chapter{Curved Plates or Shells}
+\input{shells}
+\chapter{Electrical Vibrations} \section{235 i}
+\input{piezoelectric}
+%\chapter{APPENDIX.  On Progressive Waves.} % 476-480
+\end{document}

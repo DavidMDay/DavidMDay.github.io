@@ -1,0 +1,86 @@
+\documentclass[11pt, a4paper]{amsart}
+\input{LocalPackages}
+\input{LocalCommands}
+%\raggedbottom
+\addbibresource{rayleigh.bib}
+
+\title{Primer for Theory of Sound 1}
+\author{David checking Gemini}
+\date{}
+
+\begin{document}
+
+This document contains miscellaneous text that I find helpful.  It begins with
+my notes on Rayleigh's 1881 article on plates and shells.  Backround
+information about the historical context follows.  The last section contains my
+notes on plates as described in Sound.
+
+\input{scanRayleigh1881}
+\maketitle
+
+\input{historical_introduction}
+
+%\input{plates}
+
+\section{My notes on Rayleigh's description of plates}
+What is the strain energy of bending in the theory of elastic plates?
+
+Theorem.
+
+isotropic elastic material, E, nu, L, G,...
+infinitesimal strain, e, plane stress,
+eo := e(1:2,1:2),
+\[
+to := \trace(eo),
+\]
+  do := |eo|,.
+  U = (1/2)  E /(1-nu nu)  int  ( to to - 2 (1-nu) do ) dA
+
+Lemmas.
+A.
+\[
+{\tr(H)}^2 = H:H + 2 |H|  \rightarrow  to to = eo : eo + 2 do
+\]
+
+B.  (L + 2G)/(L+G) =  2 (1-nu)
+C.  2G = E /(1+nu)
+
+Proof of Theorem.  U = 1/2 int s:e dA.
+so = s(1:2,1:2),  s = diag(so,0), e = diag(eo,e330),
+
+\[
+   \sigma = \lambda \tr (e) I + 2 G  e
+\]
+\begin{verbatim}
+   so = L trace(e) I + 2 G eo
+to = I : eo,  L trace(e) + 2 G e33 = 0,  e33 =  - to  L/(L+2 G)
+trace(e) = to + e33 = to ( 1 - L/(L+2G)) = to  2G/(L+2G)
+so =  to (2 LG)/(L+2G)  I + 2 G eo
+\end{verbatim}
+
+\begin{verbatim}
+s:e = so : eo = to to  2 LG/(L+2G) +  2G  (eo:eo) +
+     2 G ( to to  L/(L+2G) +    eo:eo  )
+     2 G ( to to  L/(L+2G) +    to to - 2 do   )
+     4 G ( to to  (L+G)/(L+2G)  -  do   )
+    = 4 G (L+G)/(L+2G)  ( to to - (L+2G)/(L+G) do )
+  = 2 G /(1-nu)   ( to to - 2 (1-nu)(do )
+  = E /(1-nu nu)   ( to to - 2 (1-nu)(do )
+end of proof.
+\end{verbatim}
+
+
+Kirchhoff - Love,  eo(x,y,z) = - z Hess(w),
+\[
+\int_{-h/2}{h/2} z^2 dz = (2/3) (h/2)^3 = h^3/12
+\]
+Something like that.  Sometimes  [-h,h],
+
+J. Strutt explains in terms of
+Hess(w),  eigenvalues  1/p1 and 1/p2,
+\[
+U = c ( 1/p1^2 + 1/p2^2 + f /p1 p2 ),  0 < f < 1.
+\]
+That is consistent.
+\printbibliography[heading=bibintoc,title={References}]
+\end{document}

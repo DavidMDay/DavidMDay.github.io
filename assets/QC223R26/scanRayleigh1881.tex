@@ -1,0 +1,116 @@
+\section{Collected Works page 551},
+%WHEN \cite{rayleigh1902scientific, rayleigh1881}
+
+With bibtex related,
+does this work\cite{Rayleigh1881,ScientificPapersVol1,RayleighSoundVol1Ed2}
+%or this\cite{Rayleigh1881,RayleighSoundVol1Ed2}
+%or is it\cite{ScientificPapersVol1,RayleighSoundVol1Ed2}
+
+When a thin sheet of matter is subjected to stress, the force which it opposes
+to extension is great in comparison with that which it apposes to bending.
+Under ordinary circumstances, the deformation takes place approximately as if
+the sheet were inextensible as a whole, a condition which in a remarkable
+degree facilitates calculation, though (it need scarcely be said even bending
+implies an extension of all but the central layers.
+The inextensibility postulated refers properly to the central layer, which is
+spoken of as a surface.
+We will commence with the case of a surface naturally spherical, and
+investigate what kind of deformation it admits of, under the condition that no
+line traced upon the surface is altered in length. The radius of the sphere
+being \(a\), let the point whose natural coordinates are \(a\), \(\theta\), \(\phi\)
+be displaced to the position
+\[ (a + \delta r, \theta + \delta\theta, \phi + \delta \phi),\]
+ where \((\delta r,\delta \theta,\delta \phi)\) is to be treated as small.
+\[
+M(a,\theta) =
+\begin{bmatrix}
+a^2 & 0
+0  & a^2 \sin^2(\theta)
+\end{bmatrix}
+\]
+Since the element of arc \(ds\) is of the same length after displacement as
+\[
+\norm{ds}^2 = (d\theta, d \phi) M [d\theta; d \phi ]
+\]
+I am just making up some notation here;  why not \(x\) ?
+\[
+x^T = (d\theta + d \delta \theta, \phi + d \delta \phi ),
+\]
+Inextensibility means
+\[
+\norm{ds}^2 = x^T  M(a +  \delta r,\theta + \delta\theta) x
+\]
+Rayleigh includes the addition term \( (d \delta r)^2 \); I do not see
+where this comes from; I will just assume that it is \(0\), and see
+how far I get.
+
+
+What is \(x\)?
+\[
+\Grad = (\frac{\del}{\del \theta}, \frac{\del}{\del \phi}),
+\]
+\[
+df = (\Grad f)  [d \theta; d \phi],
+\]
+\[
+x^T = (d\theta + d \delta \theta, d \phi + d \delta \phi ),
+\]
+\begin{align}
+d\theta + d \delta \theta = ((1,0) +\Grad (\delta \theta)) [d \theta; d \phi] \\
+d \phi + d \delta \phi  = ((0,1) + \Grad (\delta \phi)) [d \theta; d \phi]
+\end{align}
+\[
+x = \left( I +
+D \begin{matrix}
+d\theta &
+d \phi
+\end{matrix} \right)
+\begin{matrix}
+d\theta &
+d \phi
+\end{matrix}
+\]
+\[
+= (\frac{\del f}{\del \theta}, \frac{\del f}{\del \phi}
+(\frac{\del f}{\del \theta}, \frac{\del f}{\del \phi}
+\]
+\[ d f = \frac{\del f}{\del \theta} d \theta  + d f = \frac{\del f}{\del \theta} d \theta \]
+\[ d \delta \theta =(\Grad \delta \theta )[d \theta;d \phi]
+\frac{ \del \delta \theta }{ \del \theta } d \theta
+\]
+
+\begin{verbatim}
+= (d\theta, d \phi) M(a +  \delta r,\theta + \delta\theta) [d\theta; d \phi ]
+, \phi + d \delta \phi ).
+ + d \delta ):,
+ + d \delta \theta) + (d \delta r) + (a + \delta r) sin' (\theta + \delta\theta)
+(d \phi + d \delta ):,
+
+= (a + \delta r)
+(d\theta + d \delta \theta) + (d \delta r) +
+(a + \delta r) sin' (\theta + \delta\theta)
+(\phi + d \delta \phi ):,
+\end{verbatim}
+before, we have
+
+
+This is raw text from an old ocr scanner.
+\begin{verbatim}
+= (a + \delta r) (d\theta + d \delta \theta) +
+(d \delta r) +
+(a + \delta r) sin' (\theta + \delta\theta) (2\phi + d \delta ):,
+
+or, retaining only the first power of \delta r, \delta\theta, \delta\phi,
+
+
+ + ir (de) + ir sin e (d theta) +
+a sin \theta cos \theta \delta\theta (d)* +
+a sin* \theta dd = \theta.
+\end{verbatim}
+Now
+\[
+= (a + \delta r) (d\theta +
+d \delta \theta) + (d \delta r) +
+(a + \delta r) sin' (\theta + \delta\theta) (2\phi + d \delta ):,
+\]
+just write e for delta ?
