@@ -1,0 +1,290 @@
+
+%Points to check:
+%Item 6 (Weyl): The reference as transcribed (“28, 271 (1926)”) looks off. As far as I know, the first part of Weyl’s paper is in Math. Z. vol. 23, p. 271, dated 1925, and parts II and III are in vol. 24 (1926). I keyed the first one Weyl1925, so confirm against the original page. There is also a short Nachtrag in vol. 24 (p. 789) if the notes cite it.
+%Item 8 (Coxeter in “Wey1”): This is a cross-reference to your Weyl entry, so it needs no separate entry. “Wey1” is probably “Weyl” with a digit one in place of the l. In the text you can write \cite[p.~186]{Weyl1934}. Weyl is presumably citing a Coxeter paper there (likely on reflection groups), but I can’t say which, so look at p. 186 of the IAS notes.
+%Item 10 (Cartan): I filled in what I believe is vol. 41, pp. 53–96, so the “53” in your notes is likely the starting page. Please check this.
+%Item 11 (Casimir): The notes have “34, 34, 844”, which looks like a duplicated volume number. I used vol. 34, p. 844.
+%Item 14 (Racah, Lincei): The notes have 108–115, but I vaguely recall the paper being shorter, so check the page range. The two URL fragments are joined, and the /mode/2up suffix is dropped. The url field needs the url or hyperref package.
+%Item 25 (Racah, RMP 21, 494): I couldn’t confirm the title, so I left a placeholder. The DTC in your commented key may be a clue, but I wouldn’t guess from it.
+%Item 26 (Jahn): “rf-shell” looks like a transcription slip for a single letter (probably d or f), so check the original title.
+%Reprints: For Condon and Shortley I keyed the original (1935) and noted the 1964 reprint you cite. This differs from the Lie entry, where I used the reprint year, so pick one convention and apply it throughout.
+%Biographical dates: I left the lifespan dates (Condon, Shortley, Jahn, van der Waerden, Coxeter) out of the entries, since they don’t belong in BibTeX fields. They could go in a note if you want them.
+
+% --- Lectures, 2,3,...  ---
+
+@string{j-MATH-ANN  = "Math. Annalen."}
+@string{j-PROC-RSA  = "Proc. Roy. Soc. London A"}
+@string{PR          = {Physical Review}}
+@string{RMP         = {Reviews of Modern Physics}}
+@string{j-REV-MOD-PHYS ={Reviews of Modern Physics}}
+@string{ROPP        = {Reports on Progress in Physics}}
+
+
+% items 6, first part
+@article{Weyl1925,
+  author  = {Weyl, Hermann},
+  title   = {Theorie der Darstellung kontinuierlicher halbeinfacher Gruppen durch lineare Transformationen. I},
+  journal = {Mathematische Zeitschrift},
+  volume  = {23},
+  pages   = {271--309},
+  year    = {1925},
+  note    = {Cited in the notes as vol.~28, 1926}
+}
+
+% item 6, second part
+@article{Weyl1926a,
+  author  = {Weyl, Hermann},
+  title   = {Theorie der Darstellung kontinuierlicher halbeinfacher Gruppen durch lineare Transformationen. II},
+  journal = {Mathematische Zeitschrift},
+  volume  = {24},
+  pages   = {328--376},
+  year    = {1926}
+}
+
+% item 6, third part
+@article{Weyl1926b,
+  author  = {Weyl, Hermann},
+  title   = {Theorie der Darstellung kontinuierlicher halbeinfacher Gruppen durch lineare Transformationen. III},
+  journal = {Mathematische Zeitschrift},
+  volume  = {24},
+  pages   = {377--395},
+  year    = {1926}
+}
+
+% item 7
+@article{vanderWaerden1933,
+  author  = {van der Waerden, B. L.},
+  title   = {Die Klassifikation der einfachen {L}ieschen Gruppen},
+  journal = {Mathematische Zeitschrift},
+  volume  = {37},
+  pages   = {446--462},
+  year    = {1933}
+}
+
+% item 8 is a cross-reference to Weyl1934 (p. 186); see note below
+
+% item 9
+@book{Coxeter1973,
+  author    = {Coxeter, H. S. M.},
+  title     = {Regular Polytopes},
+  edition   = {3rd},
+  publisher = {Dover Publications},
+  address   = {New York},
+  year      = {1973},
+  note      = {Call number QA691 C68 1973}
+}
+
+% --- Lecture 3 ---
+
+% item 10
+@article{Cartan1913,
+  author  = {Cartan, {\'E}lie},
+  title   = {Les groupes projectifs qui ne laissent invariante aucune multiplicit{\'e} plane},
+  journal = {Bulletin de la Soci{\'e}t{\'e} Math{\'e}matique de France},
+  volume  = {41},
+  pages   = {53--96},
+  year    = {1913},
+  note    = {Cited in the notes as 53 (1913)}
+}
+
+% item 11
+@article{Casimir1931,
+  author  = {Casimir, H. B. G.},
+  title   = {{\"U}ber die Konstruktion einer zu den irreduziblen Darstellungen halbeinfacher kontinuierlicher Gruppen geh{\"o}rigen Differentialgleichung},
+  journal = {Proceedings of the Koninklijke Akademie van Wetenschappen te Amsterdam},
+  volume  = {34},
+  pages   = {844--846},
+  year    = {1931}
+}
+
+% item 12
+@article{Casimir1935,
+  author  = {Casimir, H. B. G. and van der Waerden, B. L.},
+  title   = {Algebraischer Beweis der vollst{\"a}ndigen Reduzibilit{\"a}t der Darstellungen halbeinfacher {L}iescher Gruppen},
+  journal = j-MATH-ANN,
+  volume  = {111},
+  pages   = {1--12},
+  year    = {1935},
+  url     = {http://eudml.org/doc/159753},
+  note    = {Algebraic proof of the complete reducibility of representations of semisimple Lie groups}
+}
+
+% item 13
+@book{Weyl1939,
+  author    = {Weyl, Hermann},
+  title     = {The Classical Groups: Their Invariants and Representations},
+  publisher = {Princeton University Press},
+  address   = {Princeton},
+  year      = {1939},
+  lcc       = {QA171 W45 1939},
+}
+
+% item 14
+@article{Racah1950a,
+  author  = {Racah, Giulio},
+  title   = {Sulla caratterizzazione delle rappresentazioni irreducibili dei gruppi semisemplici di {L}ie},
+  journal = {Rendiconti della Accademia Nazionale dei Lincei},
+  series  = {Serie VIII},
+  volume  = {8},
+  number  = {2},
+  pages   = {108--115},
+  year    = {1950},
+  url     = {https://archive.org/details/rendiconti-lincei-matematica-e-applicazioni_1950_8_series-8},
+  note    = {Nota presentata dal Socio U. Amaldi, fasc. 2, febbraio 1950}
+}
+
+% --- Lecture 4 ---
+
+% item 15
+@book{Condon1935,
+  author    = {Condon, Edward U. and Shortley, George H.},
+  title     = {The Theory of Atomic Spectra},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {1935},
+  note      = {Reprint 1964. Call number QC454 A8 C65 1964}
+}
+
+% item 16
+@book{Weyl:1950:GTQ,
+  author    = {Weyl, Hermann},
+  title     = {The Theory of Groups and Quantum Mechanics},
+  publisher = {Dover Publications},
+  address   = {New York},
+  year      = {1950},
+  note      = {Translated from the 2nd German edition (1931) by H. P. Robertson}
+}
+
+% item 17
+@article{Eckart1930,
+  author      = {Eckart, Carl},
+  title       = {The Application of Group Theory to the Quantum Dynamics of Monatomic Systems},
+  journal     = j-REV-MOD-PHYS,
+  volume      = {2},
+  pages       = {305--380},
+  year        = {1930}
+  number      = {3},
+  month       = jul,
+  DOI         = {https://doi.org/10.1103/RevModPhys.2.305},
+  journal-URL = {http://rmp.aps.org/browse},
+} 
+
+% item 18
+@book{Wigner1931,
+  author    = {Wigner, Eugene P.},
+  title     = {Gruppentheorie und ihre Anwendung auf die Quantenmechanik der Atomspektren},
+  publisher = {Vieweg},
+  address   = {Braunschweig},
+  year      = {1931}
+}
+
+% item 19
+@book{vanderWaerden1974,
+  author    = {van der Waerden, B. L.},
+  title     = {Group Theory and Quantum Mechanics},
+  publisher = {Springer-Verlag},
+  address   = {Berlin},
+  year      = {1974},
+  note      = {Call number QC174.17 G7 W313}
+}
+
+% item 20
+@article{Racah1942a,
+  author  = {Racah, Giulio},
+  title   = {Theory of Complex Spectra. {I}},
+  journal = PR,
+  volume  = {61},
+  pages   = {186--197},
+  year    = {1942},
+  doi     = {10.1103/PhysRev.61.186}
+}
+
+% item 21
+@article{Racah1942b,
+  author  = {Racah, Giulio},
+  title   = {Theory of Complex Spectra. {II}},
+  journal = PR,
+  volume  = {62},
+  pages   = {438--462},
+  year    = {1942},
+  doi     = {10.1103/PhysRev.62.438}
+}
+
+% item 22
+@article{Racah1943,
+  author  = {Racah, Giulio},
+  title   = {Theory of Complex Spectra. {III}},
+  journal = PR,
+  volume  = {63},
+  pages   = {367--382},
+  year    = {1943},
+  doi     = {10.1103/PhysRev.63.367}
+}
+
+% item 23
+@article{Racah1949a,
+  author  = {Racah, Giulio},
+  title   = {Theory of Complex Spectra. {IV}},
+  journal = PR,
+  volume  = {76},
+  pages   = {1352--1365},
+  year    = {1949},
+  doi     = {10.1103/PhysRev.76.1352}
+}
+
+% item 24
+@article{Wigner1941,
+  author  = {Wigner, Eugene P. and Feenberg, Eugene},
+  title   = {Symmetry Properties of Nuclear Levels},
+  journal = ROPP,
+  volume  = {8},
+  number  = {1}, 
+    month = {jan},
+  pages   = {274--317},
+  year    = {1941},
+  doi     = {10.1088/0034-4885/8/1/313},
+  note    = {Review containing references to all earlier theoretical papers on nuclear spectroscopy},
+ lcc      = {QC3 P47}
+}
+
+} 
+
+
+% item 25
+@article{Racah1949b,
+  author      = {Racah, Giulio},
+  title       = {On the Decomposition of Tensors by Contraction},
+  journal     = j-REV-MOD-PHYS,
+  volume      = {21},
+  pages       = {494--496},
+  year        = {1949}
+  number      = {3},
+  month       = jul,
+  DOI         = "https://doi.org/10.1103/RevModPhys.21.494",
+  note        = "Special issue in honor of Albert Einstein on his 70th birthday.",
+  journal-URL = "http://rmp.aps.org/browse",
+}
+
+
+% item 26
+@article{Jahn1950,
+  author  = {Jahn, H. A.},
+  title   = {Theoretical Studies in Nuclear Structure. {I}. Enumeration and Classification of the States Arising from the Filling of the Nuclear rf-Shell},
+  journal = j-PROC-RSA,
+  volume  = {201},
+  pages   = {516--544},
+  year    = {1950}
+}
+
+% --- Lecture 6 ---
+
+% item 27
+@article{Racah1950b,
+  author  = {Racah, Giulio},
+  title   = {On the Calculation of Nuclear Levels},
+  journal = {Helvetica Physica Acta},
+  volume  = {23},
+  number  = {Supplementum III},
+  pages   = {229--232},
+  year    = {1950}
+}

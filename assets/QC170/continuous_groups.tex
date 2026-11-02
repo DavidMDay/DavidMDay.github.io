@@ -1,0 +1,285 @@
+%\section{General Notions on Continuous Groups}
+%\subsection{Continuous Groups and Infinitesimal Groups}
+
+We start with a set of \(n\) variables \(x_0^i\), \(i=1 \ldots n\), which may be
+regarded as coordinates of a point in a certain space. Consider now the set of equations
+\begin{equation}\label{eq:1}
+x^i=f^i\left(x_0^1, \ldots, x_0^n ; a^1, \ldots, a^r\right) \quad(i=1 \ldots n),
+\end{equation}
+in which the \(a^\rho\) appear as a set of \(r\) independent parameters.
+Omitting indices, we shall write this and similar relations in the form
+\[
+x=f\left(x_0 ; a\right) \quad \text { or } \quad x=S_a x_0 \tag{1'}
+\]
+
+These equations define a set \(S\) of transformations, depending on the
+parameters \(a\), which map the point \(x_0\) onto \(x\). We shall assume
+that the \(f^i\) have all the required derivatives, and that the \(f^i\) depend
+\underline{essentially}
+on the parameters, i.e., that no two transformations with different
+parameters are the same for all values of \(x_0\), so that \(r\) is the
+smallest number of parameters needed to specify the transformations completely
+and uniquely.
+
+
+The set of transformations \(f\) is said to form a group if it obeys the
+following two conditions:
+\begin{itemize}
+\item [i)]
+The result of performing successively any two transformations of the set is
+another transformation belonging to this set. Formally, if
+\(x=f\left(x_0 ; a\right)\) and \(x^{\prime}=f(x ; b)\)
+then there exists a set of parameters \(c^\rho\)
+\begin{equation}\label{eq:2}
+c^\rho=\varphi^\rho(a ; b)
+\end{equation}
+such that
+\begin{equation}\label{eq:3}
+x^{\prime}=f(x ; b)=f\left(f(x_0; a) ; b\right)=f(x_0 ; c)=f(x_0 ; \varphi(a ; b)).
+\end{equation}
+\item [ii)]
+Corresponding to every transformation there exists a unique inverse, which also
+belongs to the set: Given equation (\ref{eq:1}) there exists a set of
+parameters \(\bar{a}\) such that \(x_0=f(x ;\bar{a})\).
+\end{itemize}
+
+The uniqueness of \(\bar{a}\) is guaranteed if the Jacobian of the transformation does not vanish:
+\begin{equation}\label{eq:4}
+\left|\frac{\partial f}{\partial x_0}\right| \neq 0
+\end{equation}
+
+Transforming \(x_0\) onto \(x\) and then inversely \(x\) back to \(x_0\), we
+obtain according to i) a transformation which belongs to the group and is
+characterized by the set of parameters \(a_0\). Since the transformation
+depends on the parameters in an essential way, the \(a\) so constructed cannot
+depend on the particular value of the parameters from which we started. The
+transformation \(f(x, a_0)\) is called the identity.
+
+Since it imposes no restriction, we shall take:
+\[
+a_0^\rho=\textcolor{red}{0} \quad (\rho=1 \ldots r). \quad 
+\]
+\(r\) is called the \underline{order} of the group. (Note that this usage is
+different from that found in the theory of finite groups.)
+
+We also remind the reader of the following definitions: A mapping of one group
+onto another is said to be \underline{homomorphic} or a
+\underline{homomorphism} if it preserves the operation of group multiplication.
+We call such a mapping an \underline{isomorphism} if, in addition, the
+correspondence between elements of the two groups is one-to-one.  Since the
+combination law of the transformations (\ref{eq:1}) is given in terms of the
+parameters \(a\), there can be transformations corresponding to different
+values of \(n\) which are homomorphic or even isomorphic.
+
+A group of linear transformations which is homomorphic with a given group is called a
+\underline{representation} of this group.
+
+The fundamental idea of Sophus Lie's theory of continuous groups~\cite{Lie1893} is to consider
+not the whole of a group, but that part of it which lies near the identity,
+consisting of the so-called \underline{infinitesimal}
+\underline{transformations}. Thus, instead of the finite displacement of a
+point under a transformation, we consider the application of successive
+infinitesimal displacements - we think of a generalized velocity field
+describing the motion of a point from its original position \(x_0\) to its
+final position \(x\).
+\textcolor{blue}{The velocity field is independent of the parameters.}
+
+
+We have now two equivalent expressions for x:
+\begin{subequations}\label{eq:5}
+  \begin{align}
+x=f(x_0; a), \label{eq:5a} \\
+x=f(x; 0).  \label{eq:5b}
+  \end{align}
+\end{subequations}
+Corresponding to these we can represent in either of two ways a transformation,
+as a result of which the new components of \(x\) differ infinitesimally from
+the old ones - by differentiation of (\ref{eq:5a}) or by introducing a parameter
+of infinitesimal size in (5b):
+\[
+x+d x=f\left(x_0 ; a+d a\right) \quad \text{or} \quad
+x+d x=f\left(x; \delta a\right)
+\]
+or (employing the summation convention),
+\begin{equation}\label{eq:6}
+d x=\frac{\partial f\left(x_{0}; a\right)}{\partial a^\sigma} d{a}^\sigma
+\quad \text{or} \quad
+d x=\left(\frac{\partial f(x ; a)}{\partial a^\sigma}\right)_{a=0} \delta a^\sigma.
+\end{equation}
+The last may be written
+\begin{equation}\label{eq:7}
+d x^i=u_\sigma^i(x) \delta a^\sigma, \quad
+u_\sigma^i(x)=\left(\frac{\partial f^i(x; a)}{\partial a^\sigma}\right)_{a=0}
+\end{equation}
+which defines the ``velocity field'' \(u_\sigma^i(x)\) mentioned above.
+\textcolor{blue}{The velocity field is independent of the parameters.}
+In the notation of (\ref{eq:2}) we may write
+\[
+a+d a=\varphi(a ; \delta a) .
+\]
+Since it follows from (\ref{eq:2}) and (\ref{eq:5}) that \(\varphi(a ; 0)=a\), we have
+\[
+a+d a=a+\left(\frac{\partial \varphi(a ; b)}{\partial b^\tau}\right)_{b=0} \delta a^\tau .
+\]
+Thus, da is a linear combination of \(\delta a\) :
+\begin{equation}\label{eq:8}
+d a^\rho=\mu_\tau^\rho(a) \delta a^\tau, \quad \mu_\tau^\rho(a)=
+\left(\frac{\partial \varphi^\rho(a; b)}{\partial b^{\tau}}\right)_{b=0}
+\end{equation}
+
+Solving for \(\delta a\), we get
+\[
+\delta a^\sigma=\lambda_{\rho}^{\sigma} (a) ~~ d {a}^{\rho} \tag{8'}
+\]
+where
+\begin{equation}\label{eq:9}
+\lambda \mu=1, \qquad \text{i.e.}~~
+\lambda_{\rho}^\sigma \mu_\tau^\rho=\delta_\tau^\sigma.
+\end{equation}
+From (6), (7) and (8') we get the first fundamental formula:
+\[
+\frac{\partial x^i}{\partial a^{\rho}} = u^i_{\tau}(x) \lambda^{\tau}_{\rho} (a) \tag{A}
+\]
+If \(u\) is to represent the velocity field of a transformation (\ref{eq:1}), equation
+(A) must be completely integrable, i.e. it must be capable of admitting
+solutions with \(n\) arbitrary constants \(x_0\). The integrability condition
+\[
+\frac{\partial^2 x^i}{\partial a^{\sigma} \partial a^{\rho}}=
+\frac{\partial^2 x^i}{\partial a^{\rho} \partial a^{\sigma}}
+\]
+\textcolor{blue}{
+\[
+\frac{\partial^2 x^i}{\partial a^{\sigma} \partial a^{\rho}}=
+\left( \frac{\partial}{\partial a^{\sigma}} u^i_{\nu} \right) \lambda^{\nu}_{\rho}+
+u^i_{\nu} \frac{\partial \lambda^{\nu}_{\rho}}{\partial a^{\sigma}} 
+\]
+\[
+\frac{\partial u^i_{\nu} }{\partial a^{\sigma}}  =
+\frac{\partial u^i_{\nu} }{\partial x^{j}} 
+\frac{\partial x^{j}}{\partial a^{\sigma}}, \quad
+\frac{\partial x^j}{\partial a^{\sigma}} = 
+u^j_{\tau} \lambda^{\tau}_{\sigma}
+\]
+\[
+\frac{\partial u^i_{\nu} }{\partial a^{\sigma}} \lambda^{\nu}_{\rho}=
+\frac{\partial u^i_{\nu} }{\partial x^{j}} 
+u^j_{\tau} \lambda^{\tau}_{\sigma}
+ \lambda^{\nu}_{\rho}
+\]
+}
+becomes
+\textcolor{red}{
+\[
+\left( u_{\kappa}^j \frac{\partial u^i_{\nu}}{\partial x^j}-
+u^j_{\nu} \frac{\partial u_{\kappa}^i}{\partial x^j}\right)
+\lambda_{\sigma}^{\kappa} \lambda^{\nu}_{\rho} +
+u^i_{\nu} \left( \frac{\partial \lambda_\sigma^\nu}{\partial a^{\rho}}-
+\frac{\partial \lambda_{\rho}^{\nu}}{\partial a^{\sigma}} \right)=0.
+\]
+}
+and, using (\ref{eq:9}),
+\textcolor{blue}{
+\[
+d_{\kappa \nu}^{i} := 
+u_{\kappa}^j \frac{\partial u^i_{\nu}}{\partial x^j}-
+u^j_{\nu} \frac{\partial u_{\kappa}^i}{\partial x^j}, \quad
+e^{\tau}_{\rho  \sigma} := 
+\frac{\partial \lambda_{\rho}^{\nu}}{\partial a^{\sigma}} -
+ \frac{\partial \lambda_\sigma^\nu}{\partial a^{\rho}}
+\]
+\[
+\lambda^{\nu}_{\rho} \mu^{\rho}_{q} =\delta^{\nu}_{q}, \quad
+\lambda^{\kappa}_{\sigma} \mu^{\sigma}_{m} =\delta^{\kappa}_{m}, \quad
+d_{\kappa \nu}^{i} \lambda_{\sigma}^{\kappa}
+\lambda^{\nu}_{\rho} \mu^{\sigma}_{m} \mu^{\rho}_{q} = d_{q m}^{i} =
+u^i_{\tau} e^{\tau}_{\rho  \sigma} \mu^{\sigma}_{m} \mu^{\rho}_{q} 
+\]
+}
+this gives \textcolor{blue}{equation B1,}
+\begin{equation}\label{eq:10}
+u_{\kappa}^j \frac{\partial u^i_{\nu}}{\partial x^j}-
+u^j_{\nu} \frac{\partial u_{\kappa}^i}{\partial x^j} =
+c_{\kappa \nu}^{\tau}(a)  u_{\tau}^{i}
+\end{equation}
+where
+\begin{equation}\label{eq:11}
+c_{\kappa \nu}^{\tau}(a) = \left(
+\frac{\partial \lambda^{\tau}_{\rho}}{\partial a^{^\sigma}}-
+\frac{\partial \lambda_{\sigma}^{\tau}}{\partial a^\rho}
+\right)
+\mu_{\kappa}^\rho \mu_{\nu}^{\sigma}.
+\end{equation}
+Since \(u\) is independent of \(a\), differentiation of (10) by \(a^{\rho}\) gives
+\[
+\frac{\partial c_{x \nu}^\tau(a)}{\partial a^{\rho}} u_\tau^i=0 .
+\]
+But the a's have been assumed essential, so that by (7) the u's are
+linearly independent, hence the c's are independent of \(a\).  From (\ref{eq:11})
+\[
+\frac{\partial \lambda_{\rho}^{\tau}}{\partial a^{\sigma}} -
+ \frac{\partial \lambda_\sigma^\tau}{\partial a^{\rho}} =
+c_{\kappa \nu}^{\tau} \lambda_\rho^{\kappa} \lambda_\sigma^\nu. \tag{B2}
+\]
+(B1) is a necessary condition on the velocity field if the latter is to
+generate a group, and (B2) is a corresponding restriction on the manner in which
+the a's combine.
+
+An infinitesimal transformation on the \(x\) induces on any function \(F(x)\) a variation
+\begin{equation}\label{eq:12}
+d F(x)=\frac{\partial F}{\partial x^i} d x^i=
+\delta a^\sigma u_\sigma^i \frac{\partial F}{\partial x^i} \equiv \delta a^\sigma x_\sigma F
+\end{equation}
+where
+\begin{equation}\label{eq:13}
+x_\sigma=u_\sigma^i(x) \frac{\partial}{\partial x^i}
+\end{equation}
+(\ref{eq:12}) shows that every infinitesimal transformation of \(F(x)\) is generated by
+a linear combination of the operators \(X\) which are called the infinitesimal
+operators of the group \(S\). From \(\left(B_1\right)\) it follows that they
+satisfy the relation
+\begin{equation}\label{eq:14}
+x_\rho x_\sigma-x_\sigma x_\rho \equiv\left[x_\rho x_\sigma\right]=c_{\rho \sigma}^\tau x_\tau .
+\end{equation}
+Evidently
+\[
+c_{\rho \sigma}{ }^\tau=-c_{\sigma \rho}{ }^\tau .
+\tag{C1}
+\]
+Substituting (14) into the Jacobi identity
+\[
+\left[\left[X_\rho X_\sigma\right] X_\tau\right]+
+\left[\left[X_\sigma X_\tau\right] X_\rho\right]+
+\left[\left[X_\tau X_\rho\right] X_\sigma\right]=0
+\]
+we get
+\[
+c_{p \sigma}{ }^\mu c_{\mu \tau}{ }^\nu+c_{\sigma \tau}^\mu c_{\mu p}^\nu+c_{\tau \rho}{ }^\mu c_{\mu \sigma}{ }^\nu=0.
+\tag{C2}
+\]
+We have shown that equations (c) are implied if the \(f^i\) form a group. That the converse to this statement holds is the content of the three fundamental theorems of Lie~\cite{Lie1893}, which we shall not prove. They state that
+\begin{itemize}
+\item[I.] If there exist \(f^i=x^i\) satisfying (A) then they form a group.
+\item[II.] If there exist u's satisfying \(\left(B_1\right)\), then there exist \(\lambda\) 's, determined within isomorphism, which satisfy \(\left(B_2\right)\), so that equation (A) is integrable.
+\item[III.] For every set of o's satisfying (C), there exist u's satisfying \(\left(B_1\right)\).
+\end{itemize}
+We shall write an infinitesimal transformation of the group \(S\) in the form
+\[
+S_a=1+\delta a^\sigma X_\sigma,
+\]
+where \(\delta a^\sigma\) is an infinitesimal quantity defined to be of
+the first order. If we combine two such transformations, we get
+\[
+S_a S_b= \left(1+\delta a^{\rho} X_\rho\right)\left(1+\delta a^{\sigma} X_{\sigma}\right)=
+1+\delta a^{\rho} X_{\rho}+\delta a^{\sigma} X_{\sigma},
+\]
+where the first non-vanishing infinitesimal terms have been retained.
+Thus, to the operation of multiplication in \(S\) corresponds addition in the
+infinitesimal group of \(S\). If the first order quantities vanish, we have to
+consider quantities of higher order. But the second theorem of Lie implies that
+in this connection we need never go beyond the second order of infinitesimals -
+i.e. we have only to worry about commutators, which are expressions of the form
+\(S_a S_b S_a^{-1} S_b^{-1}\), and to ask that the corresponding infinitesimal
+operator of the second order,
+\[\delta a^{\rho} \delta b^\sigma\left[X_\rho X_\sigma\right]
+\]
+be contained in the linear manifold of infinitesimal operators.

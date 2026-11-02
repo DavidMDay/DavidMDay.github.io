@@ -1,0 +1,205 @@
+Page 11, pdfpage 15
+\begin{itemize}
+\item[a)]
+A group is
+\underline{Abelian} if all its elements commute. It follows from the correspondence
+between commutators and square brackets that for an Abelian group all
+square brackets, and consequently all structure constants, vanish:
+\begin{equation}\label{eq:20}
+c^{\tau}_{\rho \sigma} =0
+\end{equation}
+\item[b)]
+A
+\underline{subgroup} of a group \(S\) is a subset of elements of \(S\) which
+satisfies the group postulates. Thus, if \(X_1, X_2, \ldots, X_p\) are the
+infinitesimal operators of a subgroup, the structure constant's of the
+group must satisfy the relations
+\begin{equation}\label{eq:21}
+c_{\rho \sigma}^\tau=0 \quad \rho, \sigma \leq p, \quad p < \tau.
+\end{equation}
+\item[c)]
+An \underline{invariant} \underline{subgroup}, \(H\), of a group \(S\) is
+a subgroup of \(S\) which contains all the
+conjugates (images) of its elements. Thus, with \(S_n\), it contains \(S_x
+S_n S_x^{-1}\) for any \(S_x\) in \(S\). If so, it, also contains the
+commutator \(\mathrm{S}_{\mathrm{x}} \mathrm{S}_{\mathrm{n}}
+\mathrm{S}_{\mathrm{x}}^{-1} \mathrm{~S}_{\mathrm{n}}^{-1}\). Thus, the
+square bracket connecting an infinitesimal element of \(H\) with any
+infinitesimal element of \(S\) must belong to \(H\). If \(X_1, X_2,
+\ldots, X_p\) are the infinitesimal operators of an invariant subgroup of
+\(S\), the structure constants of \(S\) must satisfy
+\begin{equation}\label{eq:22}
+c_{\rho \sigma}^\tau=0 \quad \rho \leq p, \quad p < \tau.
+\end{equation}
+\item[d)]
+A group is \underline{simple}
+if it has no invariant subgroups besides the unit element.
+\item[e)] A group is \underline{semi-simple}
+if it has no Abelian invariant subgroups besides the
+unit element.
+\end{itemize}
+Page 12 pdfpagae 16
+
+The distinction between groups which have Abelian invariant subgroups and
+those which do not have such subgroups is important, because Abelian
+subgroups, though apparently easiest to deal with, can actually be most
+troublesome from the point of view of representations, as the following
+example will show:
+
+We consider the group of rectilinear motions in one dimension, in which the transformation \(x!=x+a\) followed by \(x^{\prime \prime}=x^{\prime}+b\) is equivalent to \(x^{\prime \prime}=x+a+b\). This group can be represented by square matrices of the second rank, in terms of which the composition law just given would read
+\[
+\begin{bmatrix}
+1 & a \\
+0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & b \\
+0 & 1
+\end{bmatrix}=
+\begin{bmatrix}
+1 & a+b \\
+0 & 1
+\end{bmatrix}
+\]
+However, none of the matrices of this particular representation can be
+brought to diagonal form by a similarity transformation. This peculiar
+behavior is closely related to the Abelian property. Indeed, as we shall
+show later, semi-simple groups never exhibit it. Moreover, the physical
+applications in which we shall be interested will require the use only of
+semi-simple groups. We shall therefore from this point on restrict
+ourselves to the study of semi-simple groups. To this end, we must have a
+criterion for their identification.
+
+Such a criterion can be formulated very simply in terms of a symmetrical
+tensor of the second rank which we construct from the
+\(c_{\rho \sigma}^\tau\):
+\begin{equation}\label{eq:23}
+g_{\rho \sigma}=c_\rho \lambda^\mu c_{\sigma \cdot \mu} \lambda .
+\end{equation}
+
+Page 13, pdf page 17
+
+If the group is sami-simple, then necessarily,
+\begin{equation}\label{eq:24}
+\det g_{\rho \tau} \ne  0
+\end{equation}
+For suppose it possesses an Abelian invariant subgroup, the indices of whose
+elements are denoted by \(\bar{\rho}, \bar{\sigma}, \ldots\). Then,
+\[
+\begin{aligned}
+g_\rho & =c_\rho \mu^\mu c_{\bar{\sigma}} \lambda & & \\
+& =c_\rho{ }^\mu c_\sigma \bar{\lambda} & & \text { by (22) } \\
+& =c_\rho \bar{\mu}^{\prime} c_{\bar{\sigma} \bar{\mu}} \bar{\lambda} & & \text { by (22) } \\
+& =0, & & \text { by (20), }
+\end{aligned}
+\]
+That the condition (\ref{eq:24}) is sufficient as well as necessary has been shown by Cartan
+%\cite{Cartan1894}
+.
+
+
+We can use the tensor \(g_{\mu \nu}\) to define a relation of orthogonality
+between contravariant vectors or to form new tensors by lowering of indices. As
+an example,
+\begin{equation}\label{eq:25}
+c_{\rho \sigma \lambda}=c_{\rho \sigma}^{\tau} g_{\tau \lambda}
+\end{equation}
+and this new tensor is totally antisymmetric, for by (23),
+\[
+\begin{array}{rlr}
+c_{\rho \sigma \lambda} & =c_{\rho \sigma} \tau_\sigma{ }_{\tau \dot{\mu}}^\nu c_{\lambda \nu}^\mu, & \\
+& =-c_{\sigma \mu} \tau_\tau c^\nu c_{\lambda \nu}^\mu-c_\mu c_{\tau \sigma} c_\tau c_{\lambda \nu}^\mu & \text { by }\left(c_2\right) \\
+& =c_\sigma \tau_\sigma c_{\rho \tau}^\nu c_{\lambda \nu}{ }^\mu+{ }_{\mu \rho} c_\mu c_{\tau \sigma}{ }^\nu c_{\nu \lambda}^\mu & \text { by }\left(c_1\right) .
+\end{array}
+\]
+The last line has the desiréd property, since it is invariant under cyclic permutation of the indices and is, by construction, skew in \(\rho\) and \(\sigma\).
+
+Page 14
+
+If the group \(S\) is semi-simple, then Cartan's criterion (24) implies that we
+can form from \(g_{\rho \sigma}\) the reciprocal tensor \(g^{\rho \sigma}\)
+which can be used to raise indices and define orthogonality between covariant vectors.
+
+\textcolor{blue}{
+I can not longer ignore the fact that I am lost.
+Guess.  \(L_i\) is a rotation about the \(i\)th axis. 
+\[
+L_3= \begin{bmatrix}
+0 & -1 & 0 \\
+1 & 0  & 0\\
+0 & 0  & 1
+\end{bmatrix},
+P = \begin{bmatrix}
+0 & 1 & 0 \\
+0 & 0 & 1\\
+1 & 0 & 0
+\end{bmatrix},
+\]
+\(L_{i+1}=P^T L_i P\).  I am making mistakes everywhere, but
+I do not think that fixing them will salvage this approach.
+\[
+[L_1 L_2] = \begin{bmatrix}
+o & -1 & 1 \\
+1 & o  & 1 \\
+1 & 1  & o 
+\end{bmatrix}
+[L_2 L_3] = \begin{bmatrix}
+o & 1 & 1 \\
+1 & o  & -1 \\
+1 & 1  & o 
+\end{bmatrix}
+[L_3 L_1] = \begin{bmatrix}
+o & 1 & -1 \\
+1 & o  & 1 \\
+1 & 1  & o 
+\end{bmatrix}.
+\]
+This is not right in more ways that I can imagine.  \(k=i+2\),
+\[
+[L_i L_{i+1}] = L_{k} + e_k a_k' + a_k e_k',  a_k= (1,1,1) - e_k 3/2
+\]
+Oops.
+\[
+[L_3 L_1] = -L_2 +c e_2' + e_2 c', c=(1/2,1,1)
+\]
+What if \(L_i\) is a skew matrix?
+cross(x,u) = S(x) u, \(S(x) = L_i x^{i}\)
+\[
+S(x) = 
+\begin{bmatrix}
+ o &-z & y\\
+ z & o &-x\\
+-y & x & o
+\end{bmatrix}
+\]
+\(S(u)=L_j u^{j}\), \(S(x)S(u) = u x' - <x,u> I\)
+\( L_i L_j x^i  u^j\)
+}
+
+As an example of the foregoing we consider the group of rigid motions in three
+dimensions, consisting of rotations and translations. The infinitesimal
+rotations are generated by operators \(L_j(j=1,2,3)\) satisfying
+\[
+\left[L_1 L_2\right]=i L_3 \text { etc }
+\]
+and the infinitesimal displacements by operators \(P_1=L_4, P_2=L_5, P_3=L_6\) which commute among themselves but which satisfy
+\[
+\left[L_1 L_5\right]=i L_6 \text { etc. }
+\]
+so that the only non-vanishing structure constents are
+\[
+c_{12}{ }^3=c_{23}{ }^1=c_{15}{ }^6=c_{26}{ }^4=c_{34}{ }^5=c_{31}{ }^2=c_{61}{ }^5=c_{42}{ }^6=c_{53}{ }^4=1
+\]
+plus a corresponding list given by \(\left(C_1\right)\). For the \(g_{\rho \sigma}\) we find
+\[
+g_{11}=g_{22}=g_{33}=4, g_{44}=g_{55}=g_{66}=0, g_{\rho \sigma}=0 \quad(\rho \neq \sigma) .
+\]
+
+The determinant det \(g_{\rho \sigma}\) vanishes, as required by Cartan's
+criterion, since the translations form an Abelian invariant subgroup,
+
+If we consider only the group of three-dimensional rotations, defined by (26),
+we find that it is simple and that the metric tensor is
+\[
+g_{\rho \sigma}=2 \delta_{\rho \sigma}
+\]

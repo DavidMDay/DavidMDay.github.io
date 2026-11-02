@@ -1,0 +1,109 @@
+%\section{Parameter Groups and Adjoint Groups.}
+On comparing (8) with (7), we see that a close formal analogy exists between
+the functions \(\mu\) and \(u_0\) In fact, the \(\varphi(a, b)\) of (2) which
+connect the parameters according to the composition law of the group may
+themselves be considered as defining a group in the same way as does (1'),
+\[
+{a^{\prime}}^{\rho}=\varphi^{\rho}(a ; b)
+\]
+This relation can be regarded as a mapping of the a onto the a' according to a
+transformation whose parameter is b. We shall prove that these transformations
+form a group \(P_1\), which is isomorphic with \(S\) and is called the \underline{first}
+\underline{parameter} \underline{group}. Indeed, if \(a=\varphi(a ; b)\) and \(a^{\prime
+\prime}=\varphi(a ; ; c)\) then
+\[
+a^{\prime \prime}=\varphi(\varphi(a ; b) ; c)=\varphi(a ; \varphi(b ; c))
+\]
+where the last equality follows from the associative property of the
+transformations \(f^i\). We thus see that the law of composition is the same
+for the first parameter group and the original group of transformations \(f^i\).
+
+The analogous group of transformations on the argument \(b\) of \(\varphi(a ;
+b)\) is called the \underline{second} \underline{parameter} \underline{group}
+second paramete\(P_2\). \(P_2\) is anti-isomorphic with \(S\),
+that is, it is isomorphic when the factors are taken in the reverse
+order. But since \((x y)^{-1}=y^{-1} x^{-1}\) and since a group contains
+\(x^{-1}\) if it contains \(x\), the two are in fact isomorphic. Let a (or c)
+be a transformation belonging to the first (or second) parameter group. Let the
+operation of \(P_1\) transform \(b\) into \(b:=\varphi(b, a)\) and let the
+operation of \(P_2\) transform \(b^{\prime}\) into
+\(b^{\prime \prime}=\varphi\left(c, b^{\prime}\right)\). Then it is clear that
+\[
+b^{\prime \prime}=\varphi\left(c, b^{\prime}\right)=
+\varphi(c, \varphi(b, a))=\varphi(\varphi(c, b), a),
+\]
+hence every element of \(P_1\) commutes with every element of \(P_2\).
+The \(\mu^{\prime} s\) are the velocity field of \(P_1\) (see equation (\ref{eq:8})),
+and they define the infinitesimal operator
+\begin{equation}\label{eq:15}
+A_\tau=\mu_\tau^{\rho} (a) \frac{\partial}{\partial a^{\rho}} .
+\end{equation}
+Correspondingly, in \(\mathrm{P}_2\)
+\begin{equation}\label{eq:16}
+B_\tau={\overline{\mu}}^{\rho}_{\tau} (b) \frac{\partial}{\partial b^{\rho}}
+\end{equation}
+
+Another operation which it is useful to consider is conjugation: Given an
+element \(S_a\) of \(S\), to every element \(S_b\) of the group. there
+corresponds an element \(S_b=S_a S_b S_a^{-1}\). The operation
+\(b \rightarrow b^{\prime}\) is a faithful mapping of the group onto itself which depends on
+\(S_a\) and which is called conjugation of \(S\) by \(S_a\). Consider now the
+set of conjugations obtained by letting \(S_a\) run through all the elements of
+\(S\). These conjugations themselves constitute a group of transformations,
+parametrized by the parameters of \(S_a\), but not in general isomorphic with
+\(S\). It is easily seen that isomorphism between \(S\) and the group of
+conjugations holds if and only if the identity is the only element of \(S\)
+that commutes with all elements of \(S_o\).
+
+If we regard the relation \(x^{\prime}=S_a x\) as a coordinate transformation,
+it is well known that the effect of operating with \(S_b\) on a function of
+\(x^{\prime}\) is given in terms of \(x\) by the operation of the conjugate
+of \(S_b\) by \(S_a\) acting on the same function of \(x\) :
+\[
+S_b x^{\prime}=S_a S_b x=\left(S_b x\right)^{\prime}.
+\]
+The conjugation gives the change in the parameters of an operation if this
+operation is considered in the new system of coordinates \(x^8\). The advantage
+of the group of conjugations over the parameter group is that the conjugate
+element \(S_a S_e S_a^{-1}\) is infinitesimal if \(S_e\) is infinitesimal,
+irrespective of the magnitude of \(S_a\).
+
+If in the first system of coordinates \(S_e\) is expressed by
+\(S_e=1+\varepsilon e^\rho X_\rho\), then, after the transformation with
+\(S_a\) the same transformation \(S_e\) will be expressed by
+\(1+\varepsilon_6{ }^{\prime} \rho_\rho^{\prime}\), and hence
+\begin{equation}\label{eq:17}
+e^{\prime} P_{X_p}^{\prime}=e^{p_{X_p}}
+\end{equation}
+
+The group of transformations \(e^\rho \rightarrow e^{\prime \rho}\) is called the
+\underline{adjoint} \underline{group}. We wish to determine its infinitesimal
+operators, produced by transformations \(S_a\) in the neighborhood of the identity. With
+\(S_a=1+\delta a^{\sigma} X_\sigma\) and \(S_\rho=1+\varepsilon X_\rho\) we have
+\[
+S_\rho^{\prime}=1+\varepsilon X_\rho^{\prime}=
+S_a S_\rho S_a^{-1}=
+\left(S_a S_\rho S_a^{-1} S_\rho^{-1}\right) S_\rho=
+\left(1+\left[\delta a^{\sigma} X_{\sigma}, \varepsilon X_\rho\right]\right)
+\left(1+\varepsilon X_\rho\right).
+\]
+or
+\[
+X_\rho^{\prime}-X_\rho \equiv \delta X_\rho=
+\delta a^{\sigma} \left[X_\sigma, X_\rho\right]=
+c_{\sigma \rho}^{\tau} \delta a^{\sigma} X_\tau .
+\]
+by (\ref{eq:14}). From (\ref{eq:17}), we have
+\[
+d e^\tau X_\tau=-e^\rho d X_\rho=
+e^\rho c_{\rho \sigma}^{\tau} \delta a{ }^\sigma X_\tau
+\]
+or
+\begin{equation}\label{eq:18}
+d e^\tau=e^\rho c_{\rho \sigma}^\tau \delta a^\sigma.
+\end{equation}
+If \(\mathrm{E}_\sigma\) are the infinitesimal operators of the adjoint group,
+we find by comparison of (\ref{eq:18}) with (\ref{eq:7}) and (\ref{eq:13}) that
+\begin{equation}\label{eq:19}
+E_{\sigma}=e^{\rho} c_{\rho \sigma}^{\tau} \frac{\partial}{\partial e^{\tau}}.
+\end{equation}

@@ -1,0 +1,57 @@
+%A few things to check as you transcribe:
+%Lie: I keyed it to 1893 but set year to 1971 since you cite the Chelsea reprint. If you’d rather cite the original, change year to 1893 and move the reprint information into the note.
+%Bianchi: The edition line looks garbled in the notes (“II edizions 1918, (Bologna 1928)”). I preserved it as written, but it’s worth looking at the original page. I left out publishers because I’m not certain of them, and WorldCat or the Internet Archive should settle that.
+%Cartan: “These” is presumably “Thèse”. I put the Paris Faculty of Sciences as the school, which is the standard attribution for his 1894 doctoral thesis.
+%Eisenhart: Your URL was split across lines in the source, so I rejoined it. You’ll need \usepackage{url} or hyperref for the url field.
+%Weyl: These were mimeographed notes, so @techreport is a reasonable fit. Some catalogs list the date as 1934–35, which is worth checking against the IAS record.
+
+@book{Lie1893,
+  author    = {Lie, Sophus},
+  editor    = {Scheffers, Georg},
+  title     = {Vorlesungen {\"u}ber continuierliche Gruppen mit geometrischen und anderen Anwendungen},
+  publisher = {Chelsea Publishing Co.},
+  address   = {Bronx, N.Y.},
+  year      = {1971},
+  note      = {Reprint of the 1893 Teubner (Leipzig) edition. Call number QA385 L7 1971}
+}
+
+@phdthesis{Cartan1894,
+  author  = {Cartan, {\'E}lie},
+  title   = {Sur la structure des groupes de transformations finis et continus},
+  school  = {Facult{\'e} des Sciences de Paris},
+  address = {Paris},
+  year    = {1894},
+  note    = {Second edition: Paris, Vuibert, 1933}
+}
+
+@book{Bianchi1903,
+  author    = {Bianchi, Luigi},
+  title     = {Lezioni sulla teoria dei gruppi continui finiti di trasformazioni},
+  address   = {Pisa},
+  year      = {1903},
+  note      = {Second edition 1918; further printing Bologna, 1928, confirm with Internet Archive or World Cat.}}
+
+}
+
+@book{Eisenhart1933,
+  author    = {Eisenhart, Luther Pfahler},
+  title     = {Continuous Groups of Transformations},
+  publisher = {Princeton University Press},
+  address   = {Princeton},
+  year      = {1933},
+  pages     = {300},
+  url       = {https://archive.org/details/continuousgroups032317mbp},
+  note      = {Also London: H. Milford, Oxford University Press. Call number 512.86 Ei8c}
+}
+
+@techreport{Weyl1934,
+  author      = {Weyl, Hermann},
+  editor      = {Brauer, Richard and Jacobson, Nathan},
+  title       = {The Structure and Representation of Continuous Groups},
+  institution = {Institute for Advanced Study},
+  address     = {Princeton, N.J.},
+  year        = {1934},
+  pages       = {330},
+  url         = {https://albert.ias.edu/20.500.12111/7997},
+  note        = {Lectures delivered January--April 1934}
+}

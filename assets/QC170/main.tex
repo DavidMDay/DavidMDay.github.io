@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,mathabx}%\for eqref
+\usepackage{xcolor}
+%\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{tikz}
+%\usepackage[backend=biber,autocite=plain,backref=true]{biblatex}
+%\usepackage[backend=biber,hyperref,autocite=plain,backref=true]{biblatex}
+%\usepackage[backend=biber,sorting=none,autocite=plain,backref=true]{biblatex}
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+%\usepackage[backend=biber,style=numeric,autocite=superscript,sorting=none]{biblatex}
+
+\addbibresource{lecture1claude.bib}
+\addbibresource{claude.bib}
+
+\title{The Institute for Advanced Study \\ Group Theory and Spectroscopy }
+\author{Giulio Racah \\The Hebrew University, Jerusalem\\Notes by Eugen Merzbacher and David Park}
+\date{Spring, 1951}
+
+\begin{document}
+\maketitle
+\section*{Preface}
+\input{preface}
+Also known as G. Racah, Group Theory and Spectroscopy, Report CERN61-8 (CERN, Geneva, 1961).
+\tableofcontents
+
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item THE REPRESENTATIONS OF THE SEMI-SIMPLE GROUPS
+\begin{enumerate}
+\item 32 Representations and weights
+\item 37 The classification of the irreducible representations
+\item 42 The problem of full reducibility
+\item 44 Casimir's operator and its generalization
+\item 50 Miscellaneous problems
+\item 55 The full linear group and the unitary group
+\end{enumerate}
+\item THE EIGENFUNCTIONS OF THE NUCLEAR SHELLS
+\begin{enumerate}
+\item 1. Introduction ..... 57
+\item 2. The coefficients of fractional parentage ..... 58
+\item 3. The classification of the states \(\ell^n\) ..... 62
+\item 4. The factorization of the coefficients of fractional parentage ..... 66
+\item 5. The algebra of tensor operators ..... 69
+\item 57 Tensor operators and Lie groups
+\item 78 Calculation of the coefficients of fractional parentage
+\end{enumerate}
+\item THE CALCULATION OF THE ENERGY MATRIX
+\begin{enumerate}
+\item 89 The interaction of two particles
+\item 90 The group-theoretical classification of the interactions
+\item 97 Calculation of the energy matrices
+\item 101 Spin-dependent interactions
+\end{enumerate}
+\end{enumerate}
+
+These lectures will treat the applications of group theory to problems of
+spectroscopy and nuclear structure. While developing the mathematical tools for
+this purpose, we shall occasionally forego the elaboration of a rigorous proof.
+In such cases, references will be quoted.
+
+\textcolor{red}{My corrections} \textcolor{blue}{and my calculations needed to
+follow the discussion are set off by colored text. DMD}
+
+\section{General Notions on Continuous Groups}
+``We shall therefore from this point on restrict ourselves to the study of semi-simple groups.'' 
+\subsection{Continuous groups and infinitesimal groups}
+\input{continuous_groups}
+\subsection{Parameter Groups and Adjoint Groups}
+\input{parameter_groups}
+\subsection{SubGroups: Simple and Semi-Simple Groups}
+\input{subgroups_simplegroups}
+
+For Lecture 1, also see \cite{Bianchi1903, Eisenhart1933, Weyl1934}.
+
+\section{Classification of the Semi-Simple Groups}
+\input{figure1}
+\subsection{The standard form of the infinitesimal group}
+\input{semisimplegroup_classification}
+\subsection{Properties of the roots}
+\subsection{The vector diagram}
+\input{figure2}
+
+For Lecture 2, also see \cite{Weyl1926a,Weyl1926b, vanderWaerden1933, Coxeter1973}
+and the article \cite[p.~186]{Weyl1934} by Coxeter.
+
+The references for Lecture 3 are \cite{Cartan1913, Casimir1931, Casimir1935, Weyl1939, Racah1950a}.
+
+The references for Lecture 4 are 
+\cite{Condon1935, Weyl:1950:GTQ, Eckart1930, Wigner1931, vanderWaerden1974, Racah1942a, Racah1942b, Racah1943, Racah1949a, Wigner1941, Racah1949b, Jahn1950}
+
+For Lecture 5 see \cite{Racah1950b}.
+%\input{acknowledgement}
+\printbibliography[heading=bibintoc,title={References}]
+\end{document}
